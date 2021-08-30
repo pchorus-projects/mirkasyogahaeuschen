@@ -1,0 +1,192 @@
+@import 'variables';
+
+@font-face {
+  font-family: 'Windsong';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/windsong-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/gothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('fonts/gothicb.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-family-default;
+  color: $font-color-default;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: $font-family-default;
+  color: $font-color-default;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 0 0 $space-xs 0;
+  list-style-type: none;
+}
+
+.u-font-xs {
+  font-size: $font-size-xs;
+  line-height: $line-height-xs;
+  &--paragraph {
+    margin-bottom: $line-height-xs;
+  }
+}
+
+.u-font-s {
+  font-size: $font-size-s;
+  line-height: $line-height-s;
+  &--paragraph {
+    margin-bottom: $line-height-s;
+  }
+}
+
+.u-font-m {
+  font-size: $font-size-m;
+  line-height: $line-height-m;
+  &--paragraph {
+    margin-bottom: $line-height-m;
+  }
+}
+
+.u-font-l {
+  font-size: $font-size-l;
+  line-height: $line-height-l;
+  &--paragraph {
+    margin-bottom: $line-height-l;
+  }
+}
+
+.u-font-xl {
+  font-size: $font-size-xl;
+  line-height: $line-height-xl;
+  &--paragraph {
+    margin-bottom: $line-height-l;
+  }
+}
+
+.u-font-xxl {
+  font-size: $font-size-xxl;
+  line-height: $line-height-xxl;
+  &--paragraph {
+    margin-bottom: $line-height-l;
+  }
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-heading {
+  font-family: $font-family-header-default;
+  font-size: $font-size-xl;
+  color: $font-color-default;
+  text-align: center;
+  padding: $space-xl;
+
+  &--white {
+    color: $font-color-white;
+  }
+}
+
+.section {
+  padding: $space-xxl 0;
+}
+
+.u-margin-top {
+  &-xs {
+    margin-top: $space-xs;
+  }
+  &-s {
+    margin-top: $space-s;
+  }
+  &-m {
+    margin-top: $space-m;
+  }
+  &-l {
+    margin-top: $space-l;
+  }
+  &-xl {
+    margin-top: $space-xl;
+  }
+}
+
+.u-margin-bottom {
+  &-xs {
+    margin-bottom: $space-xs;
+  }
+  &-s {
+    margin-bottom: $space-s;
+  }
+  &-m {
+    margin-bottom: $space-m;
+  }
+  &-l {
+    margin-bottom: $space-l;
+  }
+  &-xl {
+    margin-bottom: $space-xl;
+  }
+  &-xxl {
+    margin-bottom: $space-xxl;
+  }
+}
+
+.u-margin-left {
+  &-xs {
+    margin-left: $space-xs;
+  }
+  &-s {
+    margin-left: $space-s;
+  }
+  &-m {
+    margin-left: $space-m;
+  }
+  &-l {
+    margin-left: $space-l;
+  }
+  &-xl {
+    margin-left: $space-xl;
+  }
+}

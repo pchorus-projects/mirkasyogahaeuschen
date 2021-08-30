@@ -1,50 +1,80 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot />
+  <div>
+    <main class="main">
+      <slot />
+    </main>
+    <footer class="footer">
+      <div class="footer__social-links">
+        <a
+          class="footer__social-link"
+          href="https://www.instagram.com/mirkasyogahaeuschen"
+          target="_blank"
+          rel="noopener"
+        >
+          <g-image
+            class="footer__social-link-image"
+            src="@/assets/logos/instagram.svg"
+            alt="Instagram"
+            :immediate="true"
+          >
+          </g-image>
+        </a>
+        <a
+          class="footer__social-link"
+          href="https://www.facebook.com/mirkasyogahaeuschen"
+          target="_blank"
+          rel="noopener"
+        >
+          <g-image class="footer__social-link-image" src="@/assets/logos/facebook.svg" alt="Facebook" :immediate="true">
+          </g-image>
+        </a>
+        <a class="footer__social-link" href="mailto:mirka.carlsen@mirkasyogahaeuschen.de">
+          <g-image class="footer__social-link-image" src="@/assets/logos/email.svg" alt="E-Mail" :immediate="true">
+          </g-image>
+        </a>
+      </div>
+      <span class="footer__copyright">© Mirkas Yogahäuschen</span>
+    </footer>
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
+<script>
+export default {};
+</script>
 
-<style>
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
+<style lang="scss" scoped>
+@import '../assets/variables';
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
+.footer {
+  color: $font-color-white;
+  background-color: $background-color-dark;
+  font-size: $font-size-l;
+  padding: $space-l;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
+  justify-content: center;
 
-.nav__link {
-  margin-left: 20px;
+  &__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-s;
+    margin-bottom: $space-s;
+  }
+
+  &__social-link {
+    display: block;
+    width: $space-l;
+  }
+
+  &__social-link-image {
+    width: 100%;
+  }
+
+  &__copyright {
+    text-transform: uppercase;
+    font-size: $font-size-m;
+  }
 }
 </style>

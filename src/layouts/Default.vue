@@ -3,6 +3,9 @@
     <main class="main">
       <slot />
     </main>
+
+    <Navigation class="navigation" :is-footer="true"></Navigation>
+
     <footer class="footer">
       <div class="footer__social-links">
         <a
@@ -39,11 +42,19 @@
 </template>
 
 <script>
-export default {};
+import Navigation from '../components/Navigation';
+
+export default {
+  components: { Navigation },
+};
 </script>
 
 <style lang="scss" scoped>
 @import '../assets/variables';
+
+.navigation {
+  padding: $space-m;
+}
 
 .footer {
   color: $font-color-white;

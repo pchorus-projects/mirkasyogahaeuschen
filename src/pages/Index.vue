@@ -11,6 +11,7 @@
         :immediate="true"
       ></g-image>
     </div>
+    <EventsSection id="events"></EventsSection>
   </Layout>
 </template>
 
@@ -18,9 +19,10 @@
 import LandingPageHero from '../components/LandingPageHero';
 import YogahaeuschenSection from '../components/YogahaeuschenSection';
 import YogaUndMehrSection from '../components/YogaUndMehrSection';
+import EventsSection from '../components/EventsSection';
 
 export default {
-  components: { LandingPageHero, YogahaeuschenSection, YogaUndMehrSection },
+  components: { LandingPageHero, YogahaeuschenSection, YogaUndMehrSection, EventsSection },
   metaInfo: {
     title: 'Mirkas Yogahäuschen',
   },

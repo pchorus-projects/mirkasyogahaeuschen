@@ -12,6 +12,10 @@
       ></g-image>
     </div>
     <EventsSection id="events"></EventsSection>
+    <GallerySection></GallerySection>
+    <div class="illustration">
+      <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
+    </div>
   </Layout>
 </template>
 
@@ -20,9 +24,10 @@ import LandingPageHero from '../components/LandingPageHero';
 import YogahaeuschenSection from '../components/YogahaeuschenSection';
 import YogaUndMehrSection from '../components/YogaUndMehrSection';
 import EventsSection from '../components/EventsSection';
+import GallerySection from '../components/GallerySection';
 
 export default {
-  components: { LandingPageHero, YogahaeuschenSection, YogaUndMehrSection, EventsSection },
+  components: { GallerySection, LandingPageHero, YogahaeuschenSection, YogaUndMehrSection, EventsSection },
   metaInfo: {
     title: 'Mirkas Yogahäuschen',
   },

@@ -4,6 +4,8 @@
       <slot />
     </main>
 
+    <KontaktSection id="kontakt"></KontaktSection>
+
     <Navigation class="navigation" :is-footer="true"></Navigation>
 
     <footer class="footer">
@@ -43,9 +45,10 @@
 
 <script>
 import Navigation from '../components/Navigation';
+import KontaktSection from '../components/KontaktSection';
 
 export default {
-  components: { Navigation },
+  components: { KontaktSection, Navigation },
 };
 </script>
 

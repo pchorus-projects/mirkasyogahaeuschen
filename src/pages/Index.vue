@@ -16,6 +16,7 @@
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
     </div>
+    <TeilnehmerstimmenSection></TeilnehmerstimmenSection>
   </Layout>
 </template>
 
@@ -25,9 +26,17 @@ import YogahaeuschenSection from '../components/YogahaeuschenSection';
 import YogaUndMehrSection from '../components/YogaUndMehrSection';
 import EventsSection from '../components/EventsSection';
 import GallerySection from '../components/GallerySection';
+import TeilnehmerstimmenSection from '../components/TeilnehmerstimmenSection';
 
 export default {
-  components: { GallerySection, LandingPageHero, YogahaeuschenSection, YogaUndMehrSection, EventsSection },
+  components: {
+    GallerySection,
+    LandingPageHero,
+    YogahaeuschenSection,
+    YogaUndMehrSection,
+    EventsSection,
+    TeilnehmerstimmenSection,
+  },
   metaInfo: {
     title: 'Mirkas Yogahäuschen',
   },

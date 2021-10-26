@@ -1,32 +1,58 @@
 <template>
   <Layout>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-
-    <h1>Hello, world!</h1>
-
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste
-      tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
-
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <LandingPageHero id="willkommen"></LandingPageHero>
+    <YogahaeuschenSection id="mirka-und-das-yogahaeuschen"></YogahaeuschenSection>
+    <YogaUndMehrSection id="yoga-und-mehr"></YogaUndMehrSection>
+    <div class="illustration">
+      <g-image
+        class="illustration__image"
+        src="@/assets/images/yoga-mirka.png"
+        width="1000"
+        :immediate="true"
+      ></g-image>
+    </div>
+    <EventsSection id="events"></EventsSection>
+    <GallerySection></GallerySection>
+    <div class="illustration">
+      <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
+    </div>
+    <TeilnehmerstimmenSection></TeilnehmerstimmenSection>
   </Layout>
 </template>
 
 <script>
+import LandingPageHero from '../components/LandingPageHero';
+import YogahaeuschenSection from '../components/YogahaeuschenSection';
+import YogaUndMehrSection from '../components/YogaUndMehrSection';
+import EventsSection from '../components/EventsSection';
+import GallerySection from '../components/GallerySection';
+import TeilnehmerstimmenSection from '../components/TeilnehmerstimmenSection';
+
 export default {
+  components: {
+    GallerySection,
+    LandingPageHero,
+    YogahaeuschenSection,
+    YogaUndMehrSection,
+    EventsSection,
+    TeilnehmerstimmenSection,
+  },
   metaInfo: {
-    title: 'Hello, world!',
+    title: 'Mirkas Yogahäuschen',
   },
 };
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
+<style lang="scss" scoped>
+@import '../assets/variables';
+
+.illustration {
+  padding: $space-xl;
+  text-align: center;
+
+  &__image {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 </style>

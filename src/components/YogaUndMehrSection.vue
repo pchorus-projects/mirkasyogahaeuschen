@@ -1,0 +1,124 @@
+<template>
+  <section class="container">
+    <h2 class="u-heading">Yoga & mehr</h2>
+    <ul class="link-list">
+      <li v-for="linkItem in linkItems" :key="linkItem.to">
+        <g-link class="link" :to="`/yoga-und-mehr#${linkItem.to}`">
+          <g-image
+            class="link__image"
+            :src="require(`!!assets-loader?width=392!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
+          />
+          <p class="link__text u-font-s">{{ linkItem.name }}</p>
+        </g-link>
+      </li>
+    </ul>
+
+    <p class="u-heading">Lose your mind, find your soul.</p>
+
+    <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
+      Jetzt buchen
+    </a>
+  </section>
+</template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      linkItems: [
+        {
+          name: 'Familien Yoga',
+          to: 'familien-yoga',
+          image: 'familien-yoga.jpg',
+        },
+        {
+          name: 'Personal Training',
+          to: 'personal-training',
+          image: 'personal-training.jpg',
+        },
+        {
+          name: 'Kinder Yoga',
+          to: 'kinder-yoga',
+          image: 'kinder-yoga.jpg',
+        },
+        {
+          name: 'Ätherische Öle',
+          to: 'aetherische-oele',
+          image: 'aetherische-oele.jpg',
+        },
+        {
+          name: 'Yin Yoga',
+          to: 'yin-yoga',
+          image: 'yin-yoga.jpg',
+        },
+        {
+          name: 'Online Yoga',
+          to: 'online-yoga',
+          image: 'online-yoga.jpg',
+        },
+      ],
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+@import '../assets/variables';
+
+$link-image-width: 196px;
+
+.container {
+  background-color: $background-color-alternate;
+  display: flex;
+  flex-direction: column;
+}
+
+.link-list {
+  display: grid;
+  grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
+  justify-content: center;
+  row-gap: $space-l;
+}
+
+.link {
+  &__image {
+    width: $link-image-width;
+    height: $link-image-width;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__text {
+    padding-top: $space-xs;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.booking {
+  display: block;
+  align-self: center;
+  font-size: $font-size-m;
+  text-transform: uppercase;
+  padding: $space-s $space-xxl;
+  margin-bottom: $space-xl;
+  border: 2px solid $font-color-default;
+}
+
+@media (max-width: $max-width-desktop) {
+  .link-list {
+    grid-template-columns: $link-image-width $link-image-width $link-image-width;
+  }
+}
+
+@media (max-width: $max-width-tablet) {
+  .link-list {
+    grid-template-columns: $link-image-width $link-image-width;
+  }
+}
+
+@media (max-width: $max-width-mobile) {
+  .link-list {
+    grid-template-columns: $link-image-width;
+  }
+}
+</style>

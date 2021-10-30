@@ -11,16 +11,16 @@
   },
   "dependencies": {
     "@gridsome/plugin-sitemap": "^0.4.0",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.23"
   },
   "devDependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.24.0",
     "dotenv": "^10.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^7.17.0",
+    "eslint": "^8.1.0",
+    "eslint-plugin-vue": "^8.0.3",
     "gridsome-source-graphql-prismic": "^0.1.6",
     "node-sass": "^6.0.1",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.1",
     "sass-loader": "^10.1.1"
   }
 }

@@ -24,6 +24,38 @@
   src: url('fonts/gothicb.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/montserrat-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sensations and Qualities';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/sensations-and-qualities.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/cabin-sketch.ttf') format('truetype');
+}
+
 html {
   scroll-behavior: smooth;
 }

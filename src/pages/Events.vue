@@ -1,7 +1,6 @@
 <template>
   <Layout>
     <EventsHero></EventsHero>
-    <h1 class="u-heading">Events</h1>
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
     </div>
@@ -93,7 +92,7 @@ export default {
 @import '../assets/variables';
 
 .illustration {
-  padding: 0 $space-xl $space-xl $space-xl;
+  padding: $space-xl;
   text-align: center;
 
   &__image {
@@ -106,7 +105,7 @@ export default {
   &__item {
     width: 600px;
     height: 400px;
-    margin: $space-xl auto;
+    margin: 0 auto $space-xl auto;
   }
 }
 

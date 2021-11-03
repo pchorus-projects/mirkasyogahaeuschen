@@ -13,10 +13,8 @@
       </li>
     </ul>
 
-    <p class="u-heading">Lose your mind, find your soul.</p>
-
     <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Jetzt buchen
+      Lose your mind, find your soul.
     </a>
   </section>
 </template>
@@ -78,6 +76,7 @@ $link-image-width: 196px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: $space-l;
+  margin-bottom: $space-xl;
 }
 
 .link {

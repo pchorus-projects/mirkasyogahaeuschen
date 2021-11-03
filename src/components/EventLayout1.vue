@@ -1,12 +1,11 @@
 <template>
-  <div class="event">
+  <a class="event" :href="link" target="_blank" rel="noopener">
     <g-image class="event__image" :src="backgroundImageUrl" alt="Mirka liegt auf einem Baum"></g-image>
     <p class="event__titles">
       <span class="event__title1">{{ title1 }}</span>
       <span class="event__title2">{{ title2 }}</span>
     </p>
-    <a class="event__link" :href="link" target="_blank" rel="noopener">To the event</a>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -77,15 +76,6 @@ export default {
     font-size: 48px;
     color: $font-color-white;
     text-align: right;
-  }
-
-  &__link {
-    color: rgb(5, 10, 10);
-    background: $font-color-white;
-    font-size: $font-size-m;
-    text-transform: uppercase;
-    padding: $space-s $space-xxl;
-    margin-bottom: $space-m;
   }
 }
 

@@ -4,7 +4,7 @@
       class="card__icon u-margin-bottom-xl"
       :src="require(`!!assets-loader?width=440!@assets/images/teilnehmerstimmen/icon-${iconColor}.png`)"
     ></g-image>
-    <p class="u-font-s u-font-l--paragraph">{{ text }}</p>
+    <div class="card__text" v-html="text"></div>
     <p class="card__name u-font-l u-font-m--paragraph">{{ name }}</p>
     <p class="card__job u-font-m">{{ job }}</p>
   </div>
@@ -33,7 +33,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../assets/variables';
 
 .card {
@@ -46,6 +46,16 @@ export default {
 
   &__icon {
     width: 100px;
+  }
+
+  &__text {
+    font-size: $font-size-s;
+    line-height: $line-height-s;
+    flex: 1;
+
+    p {
+      margin-bottom: $line-height-l;
+    }
   }
 
   &__name {

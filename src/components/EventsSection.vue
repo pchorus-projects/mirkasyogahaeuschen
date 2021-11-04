@@ -5,7 +5,7 @@
 
     <div class="events-booking">
       <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-        Jetzt buchen
+        Book now
       </a>
     </div>
 

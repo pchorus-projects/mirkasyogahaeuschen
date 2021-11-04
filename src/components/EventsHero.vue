@@ -12,6 +12,8 @@
         alt="Logo Mirkas Yogahäuschen"
         :immediate="true"
       ></g-image>
+      <p class="hero__gap"></p>
+      <h1 class="hero__heading u-heading u-heading--white">Events</h1>
     </div>
   </section>
 </template>
@@ -31,6 +33,7 @@ export default {
   position: relative;
   margin-bottom: 0;
   padding: 0;
+  max-height: 768px;
 
   &__image {
     display: block; // remove gap at the image's bottom
@@ -65,13 +68,46 @@ export default {
     text-align: center;
   }
 
+  &__gap {
+    flex: 1;
+  }
+
   &__logo {
     width: 180px;
+  }
+
+  &__heading {
+    font-family: $font-family-header-default;
+    font-size: $font-size-xxxl;
+    text-align: center;
+    margin-top: $space-xl;
+    margin-bottom: $space-xxl;
+  }
+}
+
+@media (max-width: $max-width-desktop) {
+  .hero {
+    &__heading {
+      margin-top: $space-m;
+      margin-bottom: $space-m;
+    }
+  }
+}
+
+@media (max-width: $max-width-tablet) {
+  .hero {
+    &__heading {
+      margin-top: $space-s;
+      margin-bottom: $space-xxs;
+    }
   }
 }
 
 @media (max-width: $max-width-mobile-landscape) {
   .hero {
+    &__image {
+      min-height: 600px;
+    }
     &__content {
       background-image: linear-gradient(
         rgba(0, 0, 0, 0.7) 0%,
@@ -79,6 +115,19 @@ export default {
         rgba(0, 0, 0, 0) 55%,
         rgba(0, 0, 0, 0.7) 100%
       );
+    }
+    &__heading {
+      margin-top: $space-m;
+      margin-bottom: $space-m;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile) {
+  .hero {
+    &__heading {
+      margin-top: $space-xs;
+      margin-bottom: $space-xs;
     }
   }
 }

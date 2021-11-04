@@ -53,6 +53,10 @@ $link-image-height: 144px;
     object-fit: cover;
     display: block;
     z-index: 2;
+
+    &--3 {
+      object-position: 0 30%;
+    }
   }
 
   &__text {

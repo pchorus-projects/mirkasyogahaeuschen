@@ -1,9 +1,8 @@
 <template>
   <Layout>
     <YogaUndMehrHero></YogaUndMehrHero>
-    <h1 class="u-heading">Yoga & mehr</h1>
 
-    <ul>
+    <ul class="u-margin-top-xl">
       <li :id="item.to" class="yoga-list__item u-margin-bottom-xxl" v-for="item in yogaUndMehrItems" :key="item.to">
         <h2 class="yoga-list__title">{{ item.name }}</h2>
         <g-image

@@ -2,16 +2,17 @@
   <section class="container">
     <h2 class="u-heading">Teilnehmerstimmen</h2>
 
-    <ul class="cards">
-      <li v-for="card in cards" :key="card.name">
-        <TeilnehmerstimmeCard
-          :icon-color="card.iconColor"
-          :text="card.text"
-          :name="card.name"
-          :job="card.job"
-        ></TeilnehmerstimmeCard>
-      </li>
-    </ul>
+    <div class="cards">
+      <TeilnehmerstimmeCard
+        class="cards__item"
+        v-for="card in cards"
+        :key="card.name"
+        :icon-color="card.iconColor"
+        :text="card.text"
+        :name="card.name"
+        :job="card.job"
+      ></TeilnehmerstimmeCard>
+    </div>
   </section>
 </template>
 
@@ -24,21 +25,21 @@ export default {
       cards: [
         {
           iconColor: 'red',
-          text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren',
-          name: 'Angela',
-          job: 'Job One',
+          text: '<p>Liebevolle, (virtuelle) Raumgestaltung, gut aufeinander abgestimmte Sequenzen, dazu immer eine wunderbar harmonische Musikauswahl und vor allem eine beruhigende und wahnsinnig angenehme Stimme sorgen für Erdung und eine kleine Auszeit. Egal ob bei einem inspirierenden Workshop, einer tiefgründigen Yin Sequenz oder einer dynamischen Stunde, ich fühle mich immer gut durchbewegt, entspannt und erfrischt.</p><p>Mirka ist ein wunderbarer Mensch und dass sie liebt, was sie tut, vermittelt sie mit ihrem ganzen Wesen und transportiert genau das in ihren Yoga-Klassen. Ich bin froh, sie gefunden zu haben und freue mich auf weitere gemeinsame Zeit auf dem Yogaweg.</p>',
+          name: 'Sarah',
+          job: 'Sozialpädagogin, Aachen',
         },
         {
           iconColor: 'purple',
-          text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren',
-          name: 'Sophia',
-          job: 'Job Two',
+          text: '<p>Mirka, in dir wohnt ein großes Herz und eine traumhafte, entspannende Stimme. Du schaffst in jeder Location die richtige Atmosphäre. Danke für die immer passenden Übungen und Worte zu den einzelnen Stunden-Themen, dein einfühlsames Vorgehen und dieses wunderbar gelöste, friedvolle Gefühl, mit dem ich nachhause gehe. </p><p>Neben allem Geben an intensiven Arbeitstagen und als Mutter, Tochter, Partnerin, Freundin, ... tut es gut, mir selber etwas Zeit zu schenken und aufzutanken.</p>',
+          name: 'Ria',
+          job: 'Aldenhoven-Schleiden',
         },
         {
           iconColor: 'blue',
-          text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren',
-          name: 'Eva',
-          job: 'Job Three',
+          text: '<p>Mirka, deine Yoga-Retreat-Einheiten waren sehr warm, wertschätzend, tiefgehend, ruhig und dennoch intensiv. Danke für die Anregung, in mich zu horchen, zu spüren, bei mir zu bleiben, auf mich und meinen Körper zu vertrauen. Dein Yoga ist mehr, als "nur ein paar Körperübungen". Deine warme Stimme hat sehr dazu beigetragen, dass ich ganz aus dem Außen abtauchen konnte.</p>',
+          name: 'Verena',
+          job: 'Ergotherapeutin, Rennerod',
         },
       ],
     };
@@ -61,7 +62,13 @@ export default {
   padding: 0 $space-xl $space-xl $space-xl;
 
   &__item {
+    flex: 1 0 10px;
     margin: 0;
+    position: relative;
+
+    > * {
+      height: 100%;
+    }
   }
 }
 

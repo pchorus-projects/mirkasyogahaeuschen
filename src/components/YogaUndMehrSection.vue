@@ -2,9 +2,10 @@
   <section class="container">
     <h2 class="u-heading">Yoga & mehr</h2>
     <ul class="link-list">
-      <li v-for="linkItem in linkItems" :key="linkItem.to">
+      <li v-for="(linkItem, index) in linkItems" :key="linkItem.to">
         <g-link class="link" :to="`/yoga-und-mehr#${linkItem.to}`">
           <g-image
+            :class="`link__image link__image--${index + 1}`"
             class="link__image"
             :src="require(`!!assets-loader?width=392!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
           />
@@ -25,19 +26,19 @@ export default {
     return {
       linkItems: [
         {
-          name: 'Familien Yoga',
+          name: 'Ausbildung',
+          to: 'ausbildung',
+          image: 'ausbildung.jpg',
+        },
+        {
+          name: 'Kinder- und Familien-Yoga',
           to: 'familien-yoga',
           image: 'familien-yoga.jpg',
         },
         {
-          name: 'Personal Training',
-          to: 'personal-training',
-          image: 'personal-training.jpg',
-        },
-        {
-          name: 'Kinder Yoga',
-          to: 'kinder-yoga',
-          image: 'kinder-yoga.jpg',
+          name: 'Yoga Coaching',
+          to: 'yoga-coaching',
+          image: 'yoga-coaching.jpg',
         },
         {
           name: 'Ätherische Öle',
@@ -45,8 +46,8 @@ export default {
           image: 'aetherische-oele.jpg',
         },
         {
-          name: 'Yin Yoga',
-          to: 'yin-yoga',
+          name: '(Yin) Yoga',
+          to: 'yoga',
           image: 'yin-yoga.jpg',
         },
         {
@@ -85,7 +86,12 @@ $link-image-width: 196px;
     height: $link-image-width;
     object-fit: cover;
     object-position: top;
+
+    &--1 {
+      object-position: bottom;
+    }
   }
+
   &__text {
     padding-top: $space-xs;
     text-align: center;

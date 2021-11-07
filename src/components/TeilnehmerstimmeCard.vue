@@ -5,8 +5,8 @@
       :src="require(`!!assets-loader?width=440!@assets/images/teilnehmerstimmen/icon-${iconColor}.png`)"
     ></g-image>
     <div class="card__text" v-html="text"></div>
-    <p class="card__name u-font-l u-font-m--paragraph">{{ name }}</p>
-    <p class="card__job u-font-m">{{ job }}</p>
+    <p class="card__name u-font-l">{{ name }}</p>
+    <p class="card__job u-font-xs">{{ job }}</p>
   </div>
 </template>
 

@@ -46,7 +46,7 @@
         Meditieren, Yoga praktizieren, Auszeiten genießen.
       </p>
       <p>
-        Mehr zu mir:<br />
+        Mehr zu mir:<br /><br />
         Seit 2007 auf dem Yogaweg<br />
         Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln<br />
         Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
@@ -56,8 +56,8 @@
         Polarity Therapie I Emmanuelle Collinet<br />
         Aroma Yogalehrerin I Emmanuelle Collinet<br />
         Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster<br />
-        Teilnahme an diversen Yoga-Workshops zu verschiedenen Themen, wie Yin Yoga, Yoga Nidra, Women circles, Tantra,
-        Detox, Arm Balances, Thai Yoga Massage
+        Teilnahme an diversen Yoga-Workshops zu verschiedenen Themen, wie<br />
+        Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
       </p>
     </div>
   </section>

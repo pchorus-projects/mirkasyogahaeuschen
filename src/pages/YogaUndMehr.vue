@@ -105,22 +105,10 @@ export default {
           `,
         },
         {
-          name: 'Kinder- und Familien-Yoga',
-          to: 'familien-yoga',
-          image: 'familien-yoga.jpg',
-          text: '<p>Die Achtsamkeitsarbeit mit den Kindern ist immer wieder eine erfrischende Abwechslung. Es ist schön zu erleben, wie interessiert sie die einzelnen Themen, Yogapositionen und das Entspannen annehmen. Sie bringen sich so motiviert und ehrlich ein, ich höre ihnen gerne zu. Das was sie zu sagen haben ist für mich anregend und eine Einladung, das Leben aus aus anderer Perspektive zu sehen.</p><p>In meinen Kinderyogastunden gibt es eine bunte Mischung aus körperlicher Bewegung (dehnen, strecken, tanzen, springen), Spaß, Balanceübungen, Achtsamkeitstraining, Entspannung und Traumreisen. Die Kinder lernen das Meditieren und Mantra singen kennen, wie die Atmung den Geist beruhigen und Anspannung lösen kann. Yoga fördert ein gutes Körpergefühl, zeigt Wege in die Entspannung und mehr Konzentration.</p><p>Wir setzen uns in der Gruppe jedes mal neu mit einem Thema auseinander, das an wichtige menschliche Werte und einen respektvollen Umgang miteinander erinnert.</p><p>Im Familienyoga wird ein besonderer Raum zu zweit geschaffen. Sich hier in Ruhe zu begegnen, öffnet die Möglichkeit der intensiven Verbindung zwischen Elternteil und Kind. Wie in jeder Yogastunde darf hier mal alles, was nicht in den Moment gehört, draußen bleiben und unwichtig sein.</p>',
-        },
-        {
           name: 'Yoga Coaching',
           to: 'yoga-coaching',
           image: 'yoga-coaching.jpg',
           text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen? Oft braucht es mehr, als darüber zu sprechen und so biete ich dir all meine Erfahrung und mein Wissen an, um auch auf körperlicher Ebene für Veränderung zu sorgen. Damit du dich ganzheitlich und fokussiert deinen Wünschen und Zielen widmen kannst.</p><p>Ich gebe dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation selbst gut unterstützen kannst.</p>',
-        },
-        {
-          name: 'Ätherische Öle',
-          to: 'aetherische-oele',
-          image: 'aetherische-oele.jpg',
-          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p>',
         },
         {
           name: 'Yoga',
@@ -138,6 +126,18 @@ export default {
           to: 'online-yoga',
           image: 'online-yoga.jpg',
           text: '<p>Zuhause ein schönes Plätzchen schaffen, in das liebste Entspannungsoutfit schlüpfen und in Gemütlichkeit, bei Kerzenschein und Tee auf der Yogamatte sein. Keine Anfahrt und keine Parkplatzsuche, kein Arrangieren eines Babysitters.</p><p>Ich gebe zu, als die Pandemie kam, war ich von der mit so viel Technik verbundenen Yogavariante gar nicht begeistert und skeptisch, wie hier die Energie so gut fließen soll, als wären wir alle im selben Raum. Aber es funktioniert und zwar richtig gut. Ich habe meine Gruppe und viele Teilnehmer(innen), die von der ersten Online-Stunde an (immer wieder) dabei sind, sehr ins Herz geschlossen.</p><p>In unsicheren Zeiten des Rückzugs hat es gut getan, uns weiterhin zu schönen Yoga-Ritualen zusammenzufinden. Meine Dienstagsgruppe will ich nicht mehr missen.</p>',
+        },
+        {
+          name: 'Kinder- und Familien-Yoga',
+          to: 'familien-yoga',
+          image: 'familien-yoga.jpg',
+          text: '<p>Die Achtsamkeitsarbeit mit den Kindern ist immer wieder eine erfrischende Abwechslung. Es ist schön zu erleben, wie interessiert sie die einzelnen Themen, Yogapositionen und das Entspannen annehmen. Sie bringen sich so motiviert und ehrlich ein, ich höre ihnen gerne zu. Das was sie zu sagen haben ist für mich anregend und eine Einladung, das Leben aus aus anderer Perspektive zu sehen.</p><p>In meinen Kinderyogastunden gibt es eine bunte Mischung aus körperlicher Bewegung (dehnen, strecken, tanzen, springen), Spaß, Balanceübungen, Achtsamkeitstraining, Entspannung und Traumreisen. Die Kinder lernen das Meditieren und Mantra singen kennen, wie die Atmung den Geist beruhigen und Anspannung lösen kann. Yoga fördert ein gutes Körpergefühl, zeigt Wege in die Entspannung und mehr Konzentration.</p><p>Wir setzen uns in der Gruppe jedes mal neu mit einem Thema auseinander, das an wichtige menschliche Werte und einen respektvollen Umgang miteinander erinnert.</p><p>Im Familienyoga wird ein besonderer Raum zu zweit geschaffen. Sich hier in Ruhe zu begegnen, öffnet die Möglichkeit der intensiven Verbindung zwischen Elternteil und Kind. Wie in jeder Yogastunde darf hier mal alles, was nicht in den Moment gehört, draußen bleiben und unwichtig sein.</p>',
+        },
+        {
+          name: 'Ätherische Öle',
+          to: 'aetherische-oele',
+          image: 'aetherische-oele.jpg',
+          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p>',
         },
       ],
     };

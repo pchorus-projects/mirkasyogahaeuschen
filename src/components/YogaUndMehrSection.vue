@@ -31,19 +31,9 @@ export default {
           image: 'ausbildung.jpg',
         },
         {
-          name: 'Kinder- und Familien-Yoga',
-          to: 'familien-yoga',
-          image: 'familien-yoga.jpg',
-        },
-        {
           name: 'Yoga Coaching',
           to: 'yoga-coaching',
           image: 'yoga-coaching.jpg',
-        },
-        {
-          name: 'Ätherische Öle',
-          to: 'aetherische-oele',
-          image: 'aetherische-oele.jpg',
         },
         {
           name: '(Yin) Yoga',
@@ -54,6 +44,16 @@ export default {
           name: 'Online Yoga',
           to: 'online-yoga',
           image: 'online-yoga.jpg',
+        },
+        {
+          name: 'Kinder- und Familien-Yoga',
+          to: 'familien-yoga',
+          image: 'familien-yoga.jpg',
+        },
+        {
+          name: 'Ätherische Öle',
+          to: 'aetherische-oele',
+          image: 'aetherische-oele.jpg',
         },
       ],
     };

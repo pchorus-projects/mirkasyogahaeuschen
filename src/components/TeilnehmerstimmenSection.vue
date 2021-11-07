@@ -25,19 +25,19 @@ export default {
       cards: [
         {
           iconColor: 'red',
-          text: '<p>Liebevolle, (virtuelle) Raumgestaltung, gut aufeinander abgestimmte Sequenzen, dazu immer eine wunderbar harmonische Musikauswahl und vor allem eine beruhigende und wahnsinnig angenehme Stimme sorgen für Erdung und eine kleine Auszeit. Egal ob bei einem inspirierenden Workshop, einer tiefgründigen Yin Sequenz oder einer dynamischen Stunde, ich fühle mich immer gut durchbewegt, entspannt und erfrischt.</p><p>Mirka ist ein wunderbarer Mensch und dass sie liebt, was sie tut, vermittelt sie mit ihrem ganzen Wesen und transportiert genau das in ihren Yoga-Klassen. Ich bin froh, sie gefunden zu haben und freue mich auf weitere gemeinsame Zeit auf dem Yogaweg.</p>',
+          text: '<p>Mirka ist ein wunderbarer Mensch und dass sie liebt, was sie tut, vermittelt sie mit ihrem ganzen Wesen und transportiert genau das in ihren Yoga-Klassen.</p><p>Ich bin froh, sie gefunden zu haben und freue mich auf weitere gemeinsame Zeit auf dem Yogaweg.</p>',
           name: 'Sarah',
           job: 'Sozialpädagogin, Aachen',
         },
         {
           iconColor: 'purple',
-          text: '<p>Mirka, in dir wohnt ein großes Herz und eine traumhafte, entspannende Stimme. Du schaffst in jeder Location die richtige Atmosphäre. Danke für die immer passenden Übungen und Worte zu den einzelnen Stunden-Themen, dein einfühlsames Vorgehen und dieses wunderbar gelöste, friedvolle Gefühl, mit dem ich nachhause gehe. </p><p>Neben allem Geben an intensiven Arbeitstagen und als Mutter, Tochter, Partnerin, Freundin, ... tut es gut, mir selber etwas Zeit zu schenken und aufzutanken.</p>',
+          text: '<p>Mirka, in dir wohnt ein großes Herz und eine traumhafte, entspannende Stimme. Du schaffst in jeder Location die richtige Atmosphäre. Danke für dein einfühlsames Vorgehen und dieses wunderbar gelöste, friedvolle Gefühl, mit dem ich nachhause gehe. </p><p>Neben allem Geben an intensiven Arbeitstagen und als Mutter, Tochter, Partnerin, Freundin, ... tut es gut, mir selber etwas Zeit zu schenken und aufzutanken.</p>',
           name: 'Ria',
           job: 'Aldenhoven-Schleiden',
         },
         {
           iconColor: 'blue',
-          text: '<p>Mirka, deine Yoga-Retreat-Einheiten waren sehr warm, wertschätzend, tiefgehend, ruhig und dennoch intensiv. Danke für die Anregung, in mich zu horchen, zu spüren, bei mir zu bleiben, auf mich und meinen Körper zu vertrauen. Dein Yoga ist mehr, als "nur ein paar Körperübungen". Deine warme Stimme hat sehr dazu beigetragen, dass ich ganz aus dem Außen abtauchen konnte.</p>',
+          text: '<p>Mirka, deine Yoga-Retreat-Einheiten waren sehr warm, wertschätzend, tiefgehend, ruhig und dennoch intensiv.</p><p>Danke für die Anregung, in mich zu horchen, zu spüren, bei mir zu bleiben, auf mich und meinen Körper zu vertrauen.</p><p>Dein Yoga ist mehr, als "nur ein paar Körperübungen". Deine warme Stimme hat sehr dazu beigetragen, dass ich ganz aus dem Außen abtauchen konnte.</p>',
           name: 'Verena',
           job: 'Ergotherapeutin, Rennerod',
         },

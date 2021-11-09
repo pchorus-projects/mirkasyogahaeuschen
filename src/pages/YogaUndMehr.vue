@@ -6,7 +6,7 @@
       image-alt-text="Yoga im Wald"
     ></SimpleHero>
 
-    <ul class="u-margin-top-xl">
+    <ul>
       <li
         :id="item.to"
         class="yoga-list__item u-margin-bottom-xxl"
@@ -155,14 +155,13 @@ export default {
 .yoga-list {
   &__item {
     width: 768px;
-    margin: 0 auto $space-xxl auto;
+    margin: 0 auto;
   }
 
   &__title {
     text-transform: uppercase;
-    margin-bottom: $space-m;
     text-align: center;
-    padding: 0 $space-m;
+    padding: $space-xl $space-m $space-m $space-m;
   }
 
   &__image {

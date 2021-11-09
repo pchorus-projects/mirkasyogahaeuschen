@@ -1,7 +1,7 @@
 <template>
   <section class="hero">
     <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" :alt="imageAltText"></g-image>
-    <div class="hero__content">
+    <div class="hero__content" :class="{ 'hero__content--dark': dark }">
       <Navigation></Navigation>
       <p class="hero__welcome u-margin-bottom-m">
         A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
@@ -34,6 +34,10 @@ export default {
     imageAltText: {
       type: String,
       required: true,
+    },
+    dark: {
+      type: Boolean,
+      default: false,
     },
   },
   components: { Navigation },
@@ -73,6 +77,15 @@ export default {
     flex-direction: column;
     align-items: center;
     color: $font-color-white;
+
+    &--dark {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0) 70%,
+        rgba(0, 0, 0, 0) 70%,
+        rgba(0, 0, 0, 0.7) 100%
+      );
+    }
   }
 
   &__welcome {

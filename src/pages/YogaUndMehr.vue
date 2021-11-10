@@ -15,7 +15,6 @@
       >
         <h2 class="yoga-list__title">{{ item.name }}</h2>
         <g-image
-          v-if="item.image"
           :class="`yoga-list__image yoga-list__image--${index + 1}`"
           :src="require(`!!assets-loader?width=1536!@assets/images/yoga-und-mehr-thumbnails/${item.image}`)"
         />
@@ -115,15 +114,10 @@ export default {
           text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen? Oft braucht es mehr, als darüber zu sprechen und so biete ich dir all meine Erfahrung und mein Wissen an, um auch auf körperlicher Ebene für Veränderung zu sorgen. Damit du dich ganzheitlich und fokussiert deinen Wünschen und Zielen widmen kannst.</p><p>Ich gebe dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation selbst gut unterstützen kannst.</p>',
         },
         {
-          name: 'Yoga',
+          name: '(Yin) Yoga',
           to: 'yoga',
           image: 'yin-yoga.jpg',
-          text: '<p>Yoga ist für mich etwas sehr Besonderes. Unerwartet habe ich vor vielen Jahren gleich in meiner ersten Stunde meinen Körper auf eine überraschend intensive Weise gefühlt und wertgeschätzt. So suchte und fand ich mich immer wieder auf der Yogamatte und ich schätze diese wundervolle Methode, die Körper, Geist und Seele gleichermaßen anspricht, sehr.</p><p>Mein Yogastil ist einen lebhaften Mix aus Vinyasa, Anusara und Hatha Yoga beschreiben. Du wirst von mir mit viel Achtsamkeit und einer seelenvollen Wortpraxis geführt.</p><p>Du stärkst durch die Yogapraxis deine Muskulatur und somit deine Gelenke sowie dein Gleichgewicht auf allen Ebenen. Ein gezieltes Lenken deiner Atmung (Pranayama) sorgt für Entspannung und ein Mehr an Atemvolumen. Durch die Verbindung von Atem und Bewegung entstehen Ruhe und ein Wahrnehmen deines Körpers. Über eine regelmäßige Yoga- und Meditationspraxis sorgst du langfristig für dein ganzheitliches Wohl.</p><p>Gern plane ich eine persönliche Einzelsequenz zu deinen Wünschen und Themen.</p>',
-        },
-        {
-          name: 'Yin Yoga',
-          to: 'yin-yoga',
-          text: '<p>Dem Yin gehört mein Herz. Ich liebe diese passive, stille Yogaform. Einen großen Teil meines Lebens habe ich mich in meinem Umfeld angespannt und gestresst gefühlt, so dass in mir immer wieder eine tiefe Sehnsucht gestillt wird, wenn ich mir erlaube, mich auszugleichen, still zu werden, so dass ich meinen Körper ganz wahrnehmen kann. Spüre, was wichtig ist, was ich brauche, was Körper und Seele erzählen, wenn die Ruhe einkehrt.</p><p>Meine Yin Yoga Stunden beschreibe ich als eine tiefgründige Praxis, in der ich dich zum Loslassen, selbstreflektierten und zur ehrlichen Begegnung mit dir selbst einlade.</p><p>Über tiefe, langgehaltene Dehnungen ohne den Einsatz von Muskelkraft sorgen wir im Yin Yoga für das Aufweichen von verhärteten Strukturen, in Gewebe, Geist und Herz.</p>',
+          text: '<h2 class="yoga-list__title">Yoga</h2><p>Yoga ist für mich etwas sehr Besonderes. Unerwartet habe ich vor vielen Jahren gleich in meiner ersten Stunde meinen Körper auf eine überraschend intensive Weise gefühlt und wertgeschätzt. So suchte und fand ich mich immer wieder auf der Yogamatte und ich schätze diese wundervolle Methode, die Körper, Geist und Seele gleichermaßen anspricht, sehr.</p><p>Mein Yogastil ist einen lebhaften Mix aus Vinyasa, Anusara und Hatha Yoga beschreiben. Du wirst von mir mit viel Achtsamkeit und einer seelenvollen Wortpraxis geführt.</p><p>Du stärkst durch die Yogapraxis deine Muskulatur und somit deine Gelenke sowie dein Gleichgewicht auf allen Ebenen. Ein gezieltes Lenken deiner Atmung (Pranayama) sorgt für Entspannung und ein Mehr an Atemvolumen. Durch die Verbindung von Atem und Bewegung entstehen Ruhe und ein Wahrnehmen deines Körpers. Über eine regelmäßige Yoga- und Meditationspraxis sorgst du langfristig für dein ganzheitliches Wohl.</p><p>Gern plane ich eine persönliche Einzelsequenz zu deinen Wünschen und Themen.</p><h2 class="yoga-list__title">Yin Yoga</h2><p>Dem Yin gehört mein Herz. Ich liebe diese passive, stille Yogaform. Einen großen Teil meines Lebens habe ich mich in meinem Umfeld angespannt und gestresst gefühlt, so dass in mir immer wieder eine tiefe Sehnsucht gestillt wird, wenn ich mir erlaube, mich auszugleichen, still zu werden, so dass ich meinen Körper ganz wahrnehmen kann. Spüre, was wichtig ist, was ich brauche, was Körper und Seele erzählen, wenn die Ruhe einkehrt.</p><p>Meine Yin Yoga Stunden beschreibe ich als eine tiefgründige Praxis, in der ich dich zum Loslassen, selbstreflektierten und zur ehrlichen Begegnung mit dir selbst einlade.</p><p>Über tiefe, langgehaltene Dehnungen ohne den Einsatz von Muskelkraft sorgen wir im Yin Yoga für das Aufweichen von verhärteten Strukturen, in Gewebe, Geist und Herz.</p>',
         },
         {
           name: 'Online Yoga',

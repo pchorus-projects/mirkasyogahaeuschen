@@ -17,6 +17,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout1>
         <EventLayout2
@@ -24,6 +25,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout2>
         <EventLayout3
@@ -31,6 +33,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout3>
       </li>
@@ -83,6 +86,9 @@ export default {
     },
     getBackgroundImageUrl(backgroundImage) {
       return backgroundImage?.url;
+    },
+    getBackgroundImageAltText(backgroundImage) {
+      return backgroundImage?.alt;
     },
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <a class="event" :href="link" target="_blank" rel="noopener">
-    <g-image class="event__image" :src="backgroundImageUrl" alt="Mirka liegt auf einem Baum"></g-image>
-    <div class="event__titles">
+    <g-image class="event__image" :src="backgroundImageUrl" :alt="backgroundImageAltText"></g-image>
+    <div v-if="title1" class="event__titles">
       <p class="event__title1">{{ title1 }}</p>
       <p class="event__title2">{{ title2 }}</p>
     </div>
@@ -24,6 +24,10 @@ export default {
       required: true,
     },
     backgroundImageUrl: {
+      type: String,
+      required: true,
+    },
+    backgroundImageAltText: {
       type: String,
       required: true,
     },

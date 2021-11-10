@@ -33,7 +33,7 @@
           <g-image class="footer__social-link-image" src="@/assets/logos/facebook.svg" alt="Facebook" :immediate="true">
           </g-image>
         </a>
-        <a class="footer__social-link" href="mailto:mirka.carlsen@mirkasyogahaeuschen.de">
+        <a class="footer__social-link" href="mailto:mirka@mirkasyogahaeuschen.de">
           <g-image class="footer__social-link-image" src="@/assets/logos/email.svg" alt="E-Mail" :immediate="true">
           </g-image>
         </a>

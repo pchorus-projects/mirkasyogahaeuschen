@@ -21,9 +21,7 @@
 
     <p class="u-font-xl u-uppercase">Kontakt</p>
     <p class="kontakt-section__kontakt">
-      <a class="kontakt-section__link" href="mailto:mirka.carlsen@mirkasyogahaeuschen.de"
-        >Mirka.Carlsen@MirkasYogahaeuschen.de</a
-      >
+      <a class="kontakt-section__link" href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
       | Landgraben 65,52072 Aachen
     </p>
   </section>

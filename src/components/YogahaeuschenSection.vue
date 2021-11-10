@@ -82,10 +82,14 @@ export default {};
 .image-subtitle {
   text-align: center;
   padding: $space-m $space-xl;
+  max-width: 768px;
+  margin: auto;
 }
 
 .text {
   padding: 0 $space-xl $space-xl $space-xl;
+  max-width: 768px;
+  margin: auto;
 
   > p {
     padding-bottom: $space-m;

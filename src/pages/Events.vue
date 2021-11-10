@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <EventsHero></EventsHero>
+    <SimpleHero title="Events" image-path="images/events-hero.jpg" image-alt-text="Meditation"></SimpleHero>
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
     </div>
@@ -17,6 +17,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout1>
         <EventLayout2
@@ -24,6 +25,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout2>
         <EventLayout3
@@ -31,6 +33,7 @@
           :title1="getTitleText(edge.node.title1)"
           :title2="getTitleText(edge.node.title2)"
           :backgroundImageUrl="getBackgroundImageUrl(edge.node.background_image)"
+          :backgroundImageAltText="getBackgroundImageAltText(edge.node.background_image)"
           :link="getLinkText(edge.node.link)"
         ></EventLayout3>
       </li>
@@ -64,13 +67,13 @@ query Events {
 </page-query>
 
 <script>
-import EventsHero from '../components/EventsHero';
 import EventLayout1 from '../components/EventLayout1';
 import EventLayout2 from '../components/EventLayout2';
 import EventLayout3 from '../components/EventLayout3';
+import SimpleHero from '../components/SimpleHero';
 
 export default {
-  components: { EventLayout1, EventLayout2, EventLayout3, EventsHero },
+  components: { SimpleHero, EventLayout1, EventLayout2, EventLayout3 },
   metaInfo: {
     title: 'Events',
   },
@@ -83,6 +86,9 @@ export default {
     },
     getBackgroundImageUrl(backgroundImage) {
       return backgroundImage?.url;
+    },
+    getBackgroundImageAltText(backgroundImage) {
+      return backgroundImage?.alt;
     },
   },
 };

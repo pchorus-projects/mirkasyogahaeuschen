@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <g-image class="hero__image" src="@/assets/images/events-hero.jpg" alt="Meditation"></g-image>
+    <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" alt="Meditation"></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
       <p class="hero__welcome u-margin-bottom-xl">
@@ -9,11 +9,11 @@
       <g-image
         class="hero__logo"
         src="@/assets/logos/mirkas-yogahaeuschen.svg"
-        alt="Logo Mirkas Yogahäuschen"
+        :alt="imageAltText"
         :immediate="true"
       ></g-image>
       <p class="hero__gap"></p>
-      <h1 class="hero__heading u-heading u-heading--white">Events</h1>
+      <h1 class="hero__heading u-heading u-heading--white">{{ title }}</h1>
     </div>
   </section>
 </template>
@@ -22,6 +22,20 @@
 import Navigation from './Navigation';
 
 export default {
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    imagePath: {
+      type: String,
+      required: true,
+    },
+    imageAltText: {
+      type: String,
+      required: true,
+    },
+  },
   components: { Navigation },
 };
 </script>

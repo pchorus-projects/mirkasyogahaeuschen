@@ -1,6 +1,10 @@
 <template>
   <Layout>
-    <YogaUndMehrHero></YogaUndMehrHero>
+    <SimpleHero
+      title="Yoga & mehr"
+      image-path="images/yoga-und-mehr-hero.jpg"
+      image-alt-text="Yoga im Wald"
+    ></SimpleHero>
 
     <ul class="u-margin-top-xl">
       <li
@@ -22,10 +26,10 @@
 </template>
 
 <script>
-import YogaUndMehrHero from '../components/YogaUndMehrHero';
+import SimpleHero from '../components/SimpleHero';
 
 export default {
-  components: { YogaUndMehrHero },
+  components: { SimpleHero },
   metaInfo: {
     title: 'Yoga & mehr',
   },

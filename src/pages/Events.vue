@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <EventsHero></EventsHero>
+    <SimpleHero title="Events" image-path="images/events-hero.jpg" image-alt-text="Meditation"></SimpleHero>
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
     </div>
@@ -64,13 +64,13 @@ query Events {
 </page-query>
 
 <script>
-import EventsHero from '../components/EventsHero';
 import EventLayout1 from '../components/EventLayout1';
 import EventLayout2 from '../components/EventLayout2';
 import EventLayout3 from '../components/EventLayout3';
+import SimpleHero from '../components/SimpleHero';
 
 export default {
-  components: { EventLayout1, EventLayout2, EventLayout3, EventsHero },
+  components: { SimpleHero, EventLayout1, EventLayout2, EventLayout3 },
   metaInfo: {
     title: 'Events',
   },

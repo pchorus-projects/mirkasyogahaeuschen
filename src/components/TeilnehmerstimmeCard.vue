@@ -54,7 +54,7 @@ export default {
     flex: 1;
 
     p {
-      margin-bottom: $line-height-l;
+      margin-bottom: $line-height-s;
     }
   }
 

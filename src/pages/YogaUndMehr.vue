@@ -6,7 +6,7 @@
       image-alt-text="Yoga im Wald"
     ></SimpleHero>
 
-    <ul>
+    <ul class="u-margin-bottom-xxl">
       <li
         :id="item.to"
         class="yoga-list__item u-margin-bottom-xxl"
@@ -90,34 +90,19 @@ export default {
               <li>Du bist an allen Ausbildungstagen anwesend und präsent.</li>
               <li>Du praktizierst regelmäßig Yin Yoga, freust dich darauf, ein spannendes Buch zu lesen und dich über Fachliteratur auszutauschen, du bist bereit, zuhause etwas auszuarbeiten und dich auf die Prüfung vorzubereiten.</li>
             </ul>
-            <p class="text-margin-bottom-s">Termine</p>
-            <table>
-              <tr><td>14.01.&nbsp;-&nbsp;16.01.22</td><td>ESSENZ DES SEINS</td></tr>
-              <tr><td>18.02.&nbsp;-&nbsp;20.02.22</td><td>VOM GROBSTOFFLICHEN IN DEN FEINSTOFFLICHEN KÖRPER</td></tr>
-              <tr><td>04.03.&nbsp;-&nbsp;06.03.22</td><td>VOM SCHÜLER ZUM LEHRER</td></tr>
-              <tr><td>29.04.&nbsp;-&nbsp;01.05.22</td><td>MAGIC TOUCH - Klang, Stimme, Berührung, Massage</td></tr>
-              <tr><td>21.05.&nbsp;-&nbsp;22.05.22</td><td>PARYAPTI - Prüfung & Zeremonie</td></tr>
-            </table>
-            <p class="text-margin-bottom-s">Das investierst du</p>
-            <ul>
-              <li>100 Ausbildungsstunden, Zeit für dein Eigenstudium und die Prüfungsvorbereitung.</li>
-              <li>Mit deiner (schriftlichen) Anmeldung wird eine Anzahlung fällig. Diese sichert dir deinen Ausbildungsplatz verbindlich. Die Restzahlung ist in der ersten Januarwoche zu überweisen.</li>
-              <li>Wenn du in Raten bezahlen möchtest, mach uns einen fairen Vorschlag.</li>
-              <li>Eventuelle Reisekosten, wie deine An-/Abfahrt, Unterkunft etc. sowie die Anschaffung der Pflichtlektüre und deines Yogamaterials (Matte, Bolster und Yogablöcke) sind nicht in den Ausbildungsgebühren enthalten.</li>
-            </ul>
           `,
         },
         {
           name: 'Yoga Coaching',
           to: 'yoga-coaching',
           image: 'yoga-coaching.jpg',
-          text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen? Oft braucht es mehr, als darüber zu sprechen und so biete ich dir all meine Erfahrung und mein Wissen an, um auch auf körperlicher Ebene für Veränderung zu sorgen. Damit du dich ganzheitlich und fokussiert deinen Wünschen und Zielen widmen kannst.</p><p>Ich gebe dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation selbst gut unterstützen kannst.</p>',
+          text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen?</p><p>Oft braucht es mehr, als darüber zu sprechen und so biete ich dir all meine Erfahrung und mein Wissen an, um auch auf körperlicher Ebene für Veränderung zu sorgen. Damit du dich ganzheitlich und fokussiert deinen Wünschen und Zielen widmen kannst.</p><p>Ich gebe dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation durch (Yin) Yoga selbst gut unterstützen kannst.</p>',
         },
         {
           name: '(Yin) Yoga',
           to: 'yoga',
           image: 'yin-yoga.jpg',
-          text: '<h2 class="yoga-list__title">Yoga</h2><p>Yoga ist für mich etwas sehr Besonderes. Unerwartet habe ich vor vielen Jahren gleich in meiner ersten Stunde meinen Körper auf eine überraschend intensive Weise gefühlt und wertgeschätzt. So suchte und fand ich mich immer wieder auf der Yogamatte und ich schätze diese wundervolle Methode, die Körper, Geist und Seele gleichermaßen anspricht, sehr.</p><p>Mein Yogastil ist einen lebhaften Mix aus Vinyasa, Anusara und Hatha Yoga beschreiben. Du wirst von mir mit viel Achtsamkeit und einer seelenvollen Wortpraxis geführt.</p><p>Du stärkst durch die Yogapraxis deine Muskulatur und somit deine Gelenke sowie dein Gleichgewicht auf allen Ebenen. Ein gezieltes Lenken deiner Atmung (Pranayama) sorgt für Entspannung und ein Mehr an Atemvolumen. Durch die Verbindung von Atem und Bewegung entstehen Ruhe und ein Wahrnehmen deines Körpers. Über eine regelmäßige Yoga- und Meditationspraxis sorgst du langfristig für dein ganzheitliches Wohl.</p><p>Gern plane ich eine persönliche Einzelsequenz zu deinen Wünschen und Themen.</p><h2 class="yoga-list__title">Yin Yoga</h2><p>Dem Yin gehört mein Herz. Ich liebe diese passive, stille Yogaform. Einen großen Teil meines Lebens habe ich mich in meinem Umfeld angespannt und gestresst gefühlt, so dass in mir immer wieder eine tiefe Sehnsucht gestillt wird, wenn ich mir erlaube, mich auszugleichen, still zu werden, so dass ich meinen Körper ganz wahrnehmen kann. Spüre, was wichtig ist, was ich brauche, was Körper und Seele erzählen, wenn die Ruhe einkehrt.</p><p>Meine Yin Yoga Stunden beschreibe ich als eine tiefgründige Praxis, in der ich dich zum Loslassen, selbstreflektierten und zur ehrlichen Begegnung mit dir selbst einlade.</p><p>Über tiefe, langgehaltene Dehnungen ohne den Einsatz von Muskelkraft sorgen wir im Yin Yoga für das Aufweichen von verhärteten Strukturen, in Gewebe, Geist und Herz.</p>',
+          text: '<h2 class="yoga-list__subtitle">Yoga</h2><p>Yoga ist für mich etwas sehr Besonderes. Unerwartet habe ich vor vielen Jahren gleich in meiner ersten Stunde meinen Körper auf eine überraschend intensive Weise gefühlt und wertgeschätzt. So suchte und fand ich mich immer wieder auf der Yogamatte und ich schätze diese wundervolle Methode, die Körper, Geist und Seele gleichermaßen anspricht, sehr.</p><p>Meinen Yogastil beschreibe ich als einen lebhaften Mix aus Hatha, Anusara und Vinyasa Yoga. Du wirst von mir mit viel Achtsamkeit und einer seelenvollen Wortpraxis geführt.</p><p>Du stärkst durch die dynamische Yogapraxis deine Muskulatur und somit deine Gelenke sowie dein Gleichgewicht auf allen Ebenen. Ein gezieltes Lenken deiner Atmung (Pranayama) sorgt für Entspannung und ein Mehr an Atemvolumen. Durch die Verbindung von Atem und Bewegung entstehen Ruhe und ein Wahrnehmen deines Körpers. Über eine regelmäßige Yoga- und Meditationspraxis sorgst du langfristig für dein ganzheitliches Wohl.</p><p>Gern plane ich eine persönliche Einzelsequenz zu deinen Wünschen und Themen.</p><h2 class="yoga-list__subtitle">Yin Yoga</h2><p>Dem Yin gehört mein Herz. Ich liebe diese passive, stille Yogaform. Einen großen Teil meines Lebens habe ich mich in meinem Umfeld angespannt und gestresst gefühlt, so dass in mir immer wieder eine tiefe Sehnsucht gestillt wird, wenn ich mir erlaube, mich auszugleichen, still zu werden, so dass ich meinen Körper ganz wahrnehmen kann. Spüre, was wichtig ist, was ich brauche, was Körper und Seele erzählen, wenn die Ruhe einkehrt.</p><p>Meine Yin Yoga Stunden beschreibe ich als eine tiefgründige Praxis, in der ich dich zum Loslassen, Selbstreflektieren und zur ehrlichen Begegnung mit dir selbst einlade.</p><p>Über tiefe, langgehaltene Dehnungen und ohne den Einsatz von Muskelkraft, sorgen wir im Yin Yoga für das Aufweichen von verhärteten Strukturen in Gewebe, Geist und Herz.</p>',
         },
         {
           name: 'Online Yoga',
@@ -129,13 +114,13 @@ export default {
           name: 'Kinder- und Familien-Yoga',
           to: 'familien-yoga',
           image: 'familien-yoga.jpg',
-          text: '<p>Die Achtsamkeitsarbeit mit den Kindern ist immer wieder eine erfrischende Abwechslung. Es ist schön zu erleben, wie interessiert sie die einzelnen Themen, Yogapositionen und das Entspannen annehmen. Sie bringen sich so motiviert und ehrlich ein, ich höre ihnen gerne zu. Das was sie zu sagen haben ist für mich anregend und eine Einladung, das Leben aus aus anderer Perspektive zu sehen.</p><p>In meinen Kinderyogastunden gibt es eine bunte Mischung aus körperlicher Bewegung (dehnen, strecken, tanzen, springen), Spaß, Balanceübungen, Achtsamkeitstraining, Entspannung und Traumreisen. Die Kinder lernen das Meditieren und Mantra singen kennen, wie die Atmung den Geist beruhigen und Anspannung lösen kann. Yoga fördert ein gutes Körpergefühl, zeigt Wege in die Entspannung und mehr Konzentration.</p><p>Wir setzen uns in der Gruppe jedes mal neu mit einem Thema auseinander, das an wichtige menschliche Werte und einen respektvollen Umgang miteinander erinnert.</p><p>Im Familienyoga wird ein besonderer Raum zu zweit geschaffen. Sich hier in Ruhe zu begegnen, öffnet die Möglichkeit der intensiven Verbindung zwischen Elternteil und Kind. Wie in jeder Yogastunde darf hier mal alles, was nicht in den Moment gehört, draußen bleiben und unwichtig sein.</p>',
+          text: '<p>Die Achtsamkeitsarbeit mit den Kindern ist immer wieder eine erfrischende Abwechslung. Es ist schön zu erleben, wie interessiert sie die einzelnen Themen, Yogapositionen und das Entspannen annehmen. Sie bringen sich so motiviert und ehrlich ein, ich höre ihnen gerne zu. Das was sie zu sagen haben ist für mich anregend und eine Einladung, das Leben aus anderer Perspektive zu sehen.</p><p>In meinen Kinderyogastunden gibt es eine bunte Mischung aus körperlicher Bewegung (dehnen, strecken, tanzen, springen), Spaß, Balanceübungen, Achtsamkeitstraining, Entspannung und Traumreisen. Die Kinder lernen das Meditieren und Mantra singen kennen, wie die Atmung den Geist beruhigen und Anspannung lösen kann. Yoga fördert ein gutes Körpergefühl, zeigt Wege in die Entspannung und mehr Konzentration.</p><p>Wir setzen uns in der Gruppe jedes mal neu mit einem Thema auseinander, das an wichtige menschliche Werte und einen respektvollen Umgang miteinander erinnert.</p><p>Im Familienyoga wird ein besonderer Raum zu zweit geschaffen. Sich hier in Ruhe zu begegnen, öffnet die Möglichkeit der intensiven Verbindung zwischen Elternteil und Kind. Wie in jeder Yogastunde darf hier mal alles, was nicht in den Moment gehört, draußen bleiben und unwichtig sein.</p>',
         },
         {
           name: 'Ätherische Öle',
           to: 'aetherische-oele',
           image: 'aetherische-oele.jpg',
-          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p>',
+          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p><p>Gern berate ich dich ganz individuell zu deinem aktuellen Bedarf. Melde dich gerne.</p>',
         },
       ],
     };
@@ -156,6 +141,12 @@ export default {
     text-transform: uppercase;
     text-align: center;
     padding: $space-xl $space-m $space-m $space-m;
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    text-align: center;
+    padding: $space-m;
   }
 
   &__image {

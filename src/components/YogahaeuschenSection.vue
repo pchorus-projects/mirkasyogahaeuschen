@@ -4,10 +4,7 @@
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/mirka-by-the-sea.svg" :immediate="true"></g-image>
     </div>
-    <p class="image-subtitle">
-      "When you do things from your soul, you feel a river moving in you. Listen to your soul, trust your heart, feel,
-      believe, ..."
-    </p>
+    <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you.</p>
     <div class="text">
       <p>
         Herzlich Willkommen auf der Seite zu meinem Yogahäuschen. Ich bin Mirka, Aachenerin und habe Yoga sehr ins Herz
@@ -27,7 +24,7 @@
         an Selbstliebe zu wählen.
       </p>
       <p>
-        Im Herbst 2021 hat mich ein persönliches Ereignis in diesem kleinen Reihenhäuschen in Aachen-Richterich stehen
+        Im Herbst 2020 hat mich ein persönliches Ereignis in diesem kleinen Reihenhäuschen in Aachen-Richterich stehen
         lassen. Trotz schwieriger Zeiten entschied ich mich dafür, auf Bauch und Herz zu hören und hier Raum für
         Erholung, Entspannung und Begegnung zu schaffen.
       </p>
@@ -56,7 +53,7 @@
         Polarity Therapie I Emmanuelle Collinet<br />
         Aroma Yogalehrerin I Emmanuelle Collinet<br />
         Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster<br />
-        Teilnahme an diversen Yoga-Workshops zu verschiedenen Themen, wie<br />
+        Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
         Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
       </p>
     </div>

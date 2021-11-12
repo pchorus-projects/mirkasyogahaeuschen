@@ -10,15 +10,14 @@
         :src="require(`!!assets-loader?width=440!@assets/images/gallery/${item}.jpg`)"
       />
 
-      <p class="gallery__text gallery__text--1">Shine, darling, shine...</p>
-      <p class="gallery__text gallery__text--2">Back to your<br /><span class="u-margin-left-xl">heartbeat.</span></p>
-      <p class="gallery__text gallery__text--3">Your soul is whispering -<br />listen quietly for your answers...</p>
-      <p class="gallery__text gallery__text--4">Find peace, sister.</p>
-      <p class="gallery__text gallery__text--5">Inhale love,<br /><span class="u-margin-left-m">exhale love.</span></p>
-      <p class="gallery__text gallery__text--6">Follow your bliss.</p>
-      <p class="gallery__text gallery__text--7">Yoga is a key.</p>
-      <p class="gallery__text gallery__text--8">Your soul is whispering -<br />listen quietly for your answers...</p>
-      <p class="gallery__text gallery__text--9">Release, baby!</p>
+      <p class="gallery__text gallery__text--1">
+        <span class="u-margin-right-xl">Follow your</span><br /><span>bliss.</span>
+      </p>
+      <p class="gallery__text gallery__text--2">Your soul is whispering -<br />listen quietly for your answers...</p>
+      <p class="gallery__text gallery__text--3">Find peace,<br /><span class="u-margin-left-m">sister.</span></p>
+      <p class="gallery__text gallery__text--4">Inhale love,<br /><span class="u-margin-left-m">exhale love.</span></p>
+      <p class="gallery__text gallery__text--5">Your soul is whispering -<br />listen quietly for your answers...</p>
+      <p class="gallery__text gallery__text--6">Yoga is a key.</p>
     </div>
   </section>
 </template>
@@ -46,6 +45,8 @@ $link-image-height: 144px;
   justify-content: center;
   column-gap: $space-xxs;
   row-gap: $space-xxs;
+  margin-top: $space-xl;
+  margin-bottom: $space-xl;
 
   &__image {
     width: 100%;
@@ -67,43 +68,35 @@ $link-image-height: 144px;
     z-index: 1;
 
     &--1 {
-      top: 0;
-      left: calc(50% - (2 * #{$link-image-width}));
+      text-align: right;
+      font-size: $font-size-xl;
+      top: -9%;
+      left: calc(50% - (2 * #{$link-image-width}) + #{$space-xl});
     }
     &--2 {
       font-size: $font-size-l;
-      top: 25%;
-      left: calc(50% - (2 * #{$link-image-width}) - #{$space-xl});
+      top: 45%;
+      left: calc(50% - (2 * #{$link-image-width}) - 72px);
     }
     &--3 {
-      top: 50%;
-      left: calc(50% - (2 * #{$link-image-width}) - #{$space-xxl});
+      font-size: $font-size-l;
+      top: 95%;
+      left: calc(50% - (2 * #{$link-image-width}) + #{$space-xxs});
     }
     &--4 {
-      top: 75%;
-      left: calc(50% - (2 * #{$link-image-width}) - #{$space-s});
-    }
-    &--5 {
       font-size: $font-size-l;
       top: -5%;
       left: calc(50% + (1.4 * #{$link-image-width}));
     }
-    &--6 {
-      top: 20%;
-      left: calc(50% + (1.5 * #{$link-image-width}));
-    }
-    &--7 {
+    &--5 {
       font-size: $font-size-l;
-      top: 40%;
-      left: calc(50% + (1.5 * #{$link-image-width}));
+      top: 45%;
+      left: calc(50% + #{$link-image-width});
     }
-    &--8 {
-      top: 60%;
-      left: calc(50% + (1.5 * #{$link-image-width}));
-    }
-    &--9 {
-      top: 80%;
-      left: calc(50% + (1.7 * #{$link-image-width}));
+    &--6 {
+      font-size: $font-size-xl;
+      top: 95%;
+      left: calc(50% + (1 * #{$link-image-width}));
     }
   }
 }
@@ -133,36 +126,33 @@ $link-image-height: 144px;
 
       &--1 {
         display: block;
-        top: $space-xxs;
-        left: $space-m;
-      }
-
-      &--2 {
-        display: block;
         top: $space-xxl;
-        left: $space-xxl;
-      }
-
-      &--4 {
-        display: block;
-        top: $space-xxs;
         left: auto;
         right: $space-s;
       }
 
-      &--7 {
+      &--3 {
         display: block;
-        top: auto;
-        bottom: $space-s;
-        left: auto;
-        right: $space-m;
+        top: 0;
+        left: $space-l;
+        right: auto;
+        bottom: auto;
       }
 
-      &--8 {
+      &--4 {
         display: block;
         top: auto;
-        bottom: $space-xl;
-        left: $space-m;
+        left: auto;
+        right: $space-s;
+        bottom: $space-xxs;
+      }
+
+      &--6 {
+        display: block;
+        top: auto;
+        left: $space-xxs;
+        right: auto;
+        bottom: $space-xxl;
       }
     }
   }

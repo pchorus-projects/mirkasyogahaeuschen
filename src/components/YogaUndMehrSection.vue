@@ -15,7 +15,7 @@
     </ul>
 
     <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Lose your mind, find your soul.
+      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul.
     </a>
   </section>
 </template>
@@ -100,13 +100,20 @@ $link-image-width: 196px;
 }
 
 .booking {
-  display: block;
+  display: inline-block;
   align-self: center;
-  font-size: $font-size-m;
-  text-transform: uppercase;
-  padding: $space-s $space-xxl;
-  margin-bottom: $space-xl;
+  font-family: $font-family-header-default;
+  font-size: $font-size-l;
+  text-align: center;
+  padding: $space-xs $space-m;
+  margin: 0 $space-xl $space-xl $space-xl;
+  border-radius: 30px;
   border: 2px solid $font-color-default;
+
+  &:hover {
+    color: darken($font-color-default, 20%);
+    border-color: darken($font-color-default, 20%);
+  }
 }
 
 @media (max-width: $max-width-desktop) {

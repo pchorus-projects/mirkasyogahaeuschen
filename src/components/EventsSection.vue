@@ -5,7 +5,7 @@
 
     <div class="events-booking">
       <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-        Book now
+        Glow with Mirkas Workshops
       </a>
     </div>
 
@@ -90,9 +90,11 @@ export default {
     align-self: flex-end;
     color: rgb(5, 10, 10);
     background: $font-color-white;
-    font-size: $font-size-m;
-    text-transform: uppercase;
-    padding: $space-s $space-xxl;
+    font-family: $font-family-header-default;
+    font-size: $font-size-l;
+    text-align: center;
+    padding: $space-xs $space-m;
+    border-radius: 30px;
   }
 }
 .events-list {

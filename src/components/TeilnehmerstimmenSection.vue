@@ -37,7 +37,7 @@ export default {
         },
         {
           iconColor: 'blue',
-          text: '<p>Mirka, deine Yoga-Retreat-Einheiten waren sehr warm, wertschätzend, tiefgehend, ruhig und dennoch intensiv.</p><p>Danke für die Anregung, in mich zu horchen, zu spüren, bei mir zu bleiben, auf mich und meinen Körper zu vertrauen.</p><p>Dein Yoga ist mehr, als "nur ein paar Körperübungen". Deine warme Stimme hat sehr dazu beigetragen, dass ich ganz aus dem Außen abtauchen konnte.</p>',
+          text: '<p>Deine Yoga-Retreat-Einheiten waren sehr warm, wertschätzend, tiefgehend, ruhig und dennoch intensiv.</p><p>Danke für die Anregung, in mich zu horchen, zu spüren, bei mir zu bleiben, auf mich und meinen Körper zu vertrauen.</p><p>Dein Yoga ist mehr, als "nur ein paar Körperübungen". Deine warme Stimme hat sehr dazu beigetragen, dass ich ganz aus dem Außen abtauchen konnte.</p>',
           name: 'Verena',
           job: 'Ergotherapeutin, Rennerod',
         },

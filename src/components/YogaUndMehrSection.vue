@@ -108,7 +108,7 @@ $link-image-width: 196px;
   padding: $space-xs $space-m;
   margin: 0 $space-xl $space-xl $space-xl;
   border-radius: 30px;
-  border: 2px solid $font-color-default;
+  border: 1px solid $font-color-default;
 
   &:hover {
     color: darken($font-color-default, 20%);

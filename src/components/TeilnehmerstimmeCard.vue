@@ -52,7 +52,7 @@ export default {
     font-size: $font-size-s;
     line-height: $line-height-s;
     flex: 1;
-
+    margin-bottom: $line-height-s;
     p {
       margin-bottom: $line-height-s;
     }

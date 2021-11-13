@@ -74,6 +74,7 @@ export default {};
     font-size: $font-size-m;
     margin-bottom: $space-xl;
     text-align: center;
+    text-transform: uppercase;
   }
 
   &__link {

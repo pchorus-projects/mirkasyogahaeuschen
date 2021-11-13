@@ -4,7 +4,7 @@
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/mirka-by-the-sea.svg" :immediate="true"></g-image>
     </div>
-    <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you.</p>
+    <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you."</p>
     <div class="text">
       <p>
         Herzlich Willkommen auf der Seite zu meinem Yogahäuschen. Ich bin Mirka, Aachenerin und habe Yoga sehr ins Herz
@@ -42,20 +42,22 @@
         Die Angebote für euch wachsen, ihr seid herzlich Willkommen zum Tee trinken, im Garten sein, Entspannen,
         Meditieren, Yoga praktizieren, Auszeiten genießen.
       </p>
-      <p>
-        Mehr zu mir:<br /><br />
-        Seit 2007 auf dem Yogaweg<br />
-        Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln<br />
-        Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
-        Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
-        Beate Meyer (Anatomie)<br />
-        Dr. Maitreya Larios (Philosophie)<br />
-        Polarity Therapie I Emmanuelle Collinet<br />
-        Aroma Yogalehrerin I Emmanuelle Collinet<br />
-        Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster<br />
-        Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
-        Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
-      </p>
+      <p>Mehr zu mir:</p>
+      <ul>
+        <li>Seit 2007 auf dem Yogaweg</li>
+        <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
+        <li>Yogalehrerin (300 Std.) I Om Shanti, Ratingen</li>
+        <li>Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)</li>
+        <li>Beate Meyer (Anatomie)</li>
+        <li>Dr. Maitreya Larios (Philosophie)</li>
+        <li>Polarity Therapie I Emmanuelle Collinet</li>
+        <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
+        <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
+        <li>
+          Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
+          Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
+        </li>
+      </ul>
     </div>
   </section>
 </template>

@@ -3,12 +3,6 @@
     <g-image class="events-section__image" src="@/assets/images/events.jpg" alt="Mirka liegt auf einem Baum"></g-image>
     <h2 class="events-heading u-heading u-heading--white">Events</h2>
 
-    <div class="events-booking">
-      <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-        Glow with Mirkas Workshops
-      </a>
-    </div>
-
     <ul class="events-list">
       <li
         class="events-list__item u-margin-bottom-xl"
@@ -22,6 +16,12 @@
         <g-link class="events-list__button" :to="`events#${edge.node._meta.uid}`">More</g-link>
       </li>
     </ul>
+
+    <div class="events-booking">
+      <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
+        Glow with Mirkas Workshops
+      </a>
+    </div>
   </section>
 </template>
 
@@ -100,7 +100,7 @@ export default {
 .events-list {
   width: 30%;
   align-self: flex-end;
-  padding: 0 $space-xl $space-xl $space-xl;
+  padding: 0 $space-xl;
 
   &__item {
     display: flex;

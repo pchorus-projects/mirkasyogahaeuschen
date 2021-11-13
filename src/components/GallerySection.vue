@@ -75,13 +75,13 @@ $link-image-height: 144px;
     }
     &--2 {
       font-size: $font-size-l;
-      top: 45%;
+      top: 40%;
       left: calc(50% - (2 * #{$link-image-width}) - 72px);
     }
     &--3 {
-      font-size: $font-size-l;
-      top: 95%;
-      left: calc(50% - (2 * #{$link-image-width}) + #{$space-xxs});
+      font-size: $font-size-xl;
+      top: 93%;
+      left: calc(50% - (2 * #{$link-image-width}) - #{$space-l});
     }
     &--4 {
       font-size: $font-size-l;
@@ -90,7 +90,7 @@ $link-image-height: 144px;
     }
     &--5 {
       font-size: $font-size-l;
-      top: 45%;
+      top: 55%;
       left: calc(50% + #{$link-image-width});
     }
     &--6 {

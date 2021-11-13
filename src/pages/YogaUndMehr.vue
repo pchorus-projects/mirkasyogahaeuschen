@@ -90,13 +90,15 @@ export default {
               <li>Du bist an allen Ausbildungstagen anwesend und präsent.</li>
               <li>Du praktizierst regelmäßig Yin Yoga, freust dich darauf, ein spannendes Buch zu lesen und dich über Fachliteratur auszutauschen, du bist bereit, zuhause etwas auszuarbeiten und dich auf die Prüfung vorzubereiten.</li>
             </ul>
+            <p>Interesse? Wir freuen uns auf deine Nachricht.</p>
+
           `,
         },
         {
           name: 'Yoga Coaching',
           to: 'yoga-coaching',
           image: 'yoga-coaching.jpg',
-          text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen?</p><p>Oft braucht es mehr, als darüber zu sprechen und so biete ich dir all meine Erfahrung und mein Wissen an, um auch auf körperlicher Ebene für Veränderung zu sorgen. Damit du dich ganzheitlich und fokussiert deinen Wünschen und Zielen widmen kannst.</p><p>Ich gebe dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation durch (Yin) Yoga selbst gut unterstützen kannst.</p>',
+          text: '<p>Du wünscht dir Unterstützung dabei, bestimmte Themen in deinem Leben anzugehen?</p><p>Oft braucht es mehr, als darüber zu sprechen. Denn dabei wird etwas Wichtiges nicht einbezogen: Dein Körper. Ich finde es wichtig, den Gefühlen Raum im Körper zu geben und somit ganzheitlich für Veränderung sorgen zu können.</p><p>Ich biete dir meine Unterstützung, meine Erfahrung und mein Wissen an um über individuelle Methoden, wie die körperliche Arbeit über Yin Yoga neue Ansätze zu finden. Gern gebe ich dir Impulse und Ideen, wie du dich in einer aktuellen, herausfordernden Lebenssituation auch selbst gut unterstützen kannst.</p>',
         },
         {
           name: '(Yin) Yoga',
@@ -120,7 +122,7 @@ export default {
           name: 'Ätherische Öle',
           to: 'aetherische-oele',
           image: 'aetherische-oele.jpg',
-          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p><p>Gern berate ich dich ganz individuell zu deinem aktuellen Bedarf. Melde dich gerne.</p>',
+          text: '<p>Die ätherischen Öle kamen zu einer Zeit in mein Leben, in der ich sie brauchte. Zunächst waren es zwei besondere Ölmischungen, die über eine heilsame Polarity Sitzung zu mir fanden und mich einige Monate lang, wie zwei stützende Freunde, begleitet haben.</p><p>Ich wurde neugierig und beschäftigte mich mehr und mehr mit Heilpflanzen, ihren Essenzen und Wirkungsmöglichkeiten. Es folgte eine Aroma-Yogalehrerausbildung, viel Literatur und praktische Selbsterfahrung.</p><p>Nun genieße ich es sehr, auch in diesem Bereich meine eigene Erfahrung und mein Wissen mit denen zu teilen, die die natürlichen Kräfte einsetzen möchten und in ihrer aktuellen Lebensphase Unterstützung suchen.</p><p>Es gibt diverse Möglichkeiten, die Energie der Pflanzen, Früchte und Bäume in den Körper einzuladen. Ich selbst nutze zum Beispiel jeden Morgen Zitrusöle über den ersten Liter Wasser, um mich zu reinigen und für einen freundlichen und schwungvollen Start in den Tag zu sorgen. Ich lasse mich in meiner Yogapraxis über ein Einmassieren und Inhalieren der Essenzen von passenden Aromen unterstützen und nutze die Öle für eine erholsame Nacht.</p><p>Ich arbeite mit hochwertigen, naturbelassenen, reinen Bio-Ölen von Young Living. Diese Produkte überzeugen mich ganzheitlich, sie sind Fairtrade hergestellt und dies schwingt für mich mit in der Energie der Aromen. Die Young Living Öle sind die Kraftvollsten, die ich kenne.</p><p>Gern berate ich dich ganz individuell zu deinem aktuellen Bedarf.</p>',
         },
       ],
     };
@@ -146,7 +148,7 @@ export default {
   &__subtitle {
     text-transform: uppercase;
     text-align: center;
-    padding: $space-m;
+    padding: 0 $space-m $space-m $space-m;
   }
 
   &__image {

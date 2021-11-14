@@ -1,15 +1,11 @@
 <template>
   <section class="kontakt-section">
-    <g-image
-      class="kontakt-section__image"
-      src="@/assets/images/kontakt.jpg"
-      alt="Mirka liegt auf einem Baum"
-    ></g-image>
+    <g-image class="kontakt-section__image" src="@/assets/images/kontakt.jpg" alt="Mirka meditiert im Wald."></g-image>
 
     <g-image
       class="kontakt-section__logo"
       src="@/assets/logos/mirkas-yogahaeuschen.svg"
-      alt="Mirka liegt auf einem Baum"
+      alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
       :immediate="true"
     ></g-image>
 

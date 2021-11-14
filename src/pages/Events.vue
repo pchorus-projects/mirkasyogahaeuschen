@@ -1,6 +1,10 @@
 <template>
   <Layout>
-    <SimpleHero title="Events" image-path="images/events-hero.jpg" image-alt-text="Meditation"></SimpleHero>
+    <SimpleHero
+      title="Events"
+      image-path="images/events-hero.jpg"
+      image-alt-text="Ausschnitt einer meditierenden Frau, die mit buntem Puder bemalt ist."
+    ></SimpleHero>
     <div class="illustration">
       <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
     </div>

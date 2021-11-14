@@ -8,6 +8,7 @@
         :key="item"
         :class="`gallery__image gallery__image--${item}`"
         :src="require(`!!assets-loader?width=440!@assets/images/gallery/${item}.jpg`)"
+        :alt="imageAltTexts[item]"
       />
 
       <p class="gallery__text gallery__text--1">
@@ -23,7 +24,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: function () {
+    return {
+      imageAltTexts: {
+        1: 'Mirka umarmt Baum am See.',
+        2: 'Yogamatte im Wald.',
+        3: 'Mirka und Frau genießen Sonnenschein.',
+        4: 'Mirka sitzt am Strand und blickt aufs Meer.',
+        5: 'Mirka beim Yoga im Yogahäuschen.',
+        6: 'Mirka dreht sich froh in der Aachener Innenstadt an einer Laterne.',
+        7: 'Mirka lächelt verträumt.',
+        8: 'Mala-Kette auf Blatt im Wald.',
+        9: 'Mirka mit bunten Blumen im Wald.',
+      },
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -2,7 +2,12 @@
   <section>
     <h2 class="u-heading">Mirka & das Yogahäuschen</h2>
     <div class="illustration">
-      <g-image class="illustration__image" src="@/assets/images/mirka-by-the-sea.svg" :immediate="true"></g-image>
+      <g-image
+        class="illustration__image"
+        src="@/assets/images/mirka-by-the-sea.svg"
+        :immediate="true"
+        alt="Zeichnung von Mirka, die am Strand sitzt und aufs Meer blickt."
+      ></g-image>
     </div>
     <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you."</p>
     <div class="text">

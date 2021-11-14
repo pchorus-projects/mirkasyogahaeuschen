@@ -1,6 +1,10 @@
 <template>
   <section class="hero">
-    <g-image class="hero__image" src="@/assets/images/landing-page-hero.jpg" alt="Mirka liegt auf einem Baum"></g-image>
+    <g-image
+      class="hero__image"
+      src="@/assets/images/landing-page-hero.jpg"
+      alt="Mirka liegt auf Baum in Sonne am See."
+    ></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
       <p class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></p>
@@ -8,7 +12,7 @@
       <g-image
         class="hero__logo"
         src="@/assets/logos/mirkas-yogahaeuschen.svg"
-        alt="Mirka liegt auf einem Baum"
+        alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
         :immediate="true"
       ></g-image>
 

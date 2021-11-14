@@ -7,7 +7,7 @@
     ></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
-      <p class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></p>
+      <h1 class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></h1>
       <p class="hero__gap"></p>
       <g-image
         class="hero__logo"

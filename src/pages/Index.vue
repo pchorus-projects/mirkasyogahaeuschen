@@ -9,12 +9,18 @@
         src="@/assets/images/yoga-mirka.png"
         width="1000"
         :immediate="true"
+        alt="Zeichnung von Mirka als Meerjungfrau"
       ></g-image>
     </div>
     <EventsSection id="events"></EventsSection>
     <GallerySection></GallerySection>
     <div class="illustration">
-      <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
+      <g-image
+        class="illustration__image"
+        src="@/assets/images/moon-mirka.svg"
+        :immediate="true"
+        alt="Zeichnung eines Mandala in Kreisform mit Mirka im Portrait."
+      ></g-image>
     </div>
     <TeilnehmerstimmenSection></TeilnehmerstimmenSection>
   </Layout>

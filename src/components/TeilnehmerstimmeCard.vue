@@ -3,6 +3,7 @@
     <g-image
       class="card__icon u-margin-bottom-xl"
       :src="require(`!!assets-loader?width=440!@assets/images/teilnehmerstimmen/icon-${iconColor}.png`)"
+      alt="Gezeichnetes Yogahäuschen-Herz"
     ></g-image>
     <div class="card__text" v-html="text"></div>
     <p class="card__name u-font-l">{{ name }}</p>

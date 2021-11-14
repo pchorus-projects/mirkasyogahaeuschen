@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" alt="Meditation"></g-image>
+    <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" :alt="imageAltText"></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
       <p class="hero__welcome u-margin-bottom-xl">
@@ -9,7 +9,7 @@
       <g-image
         class="hero__logo"
         src="@/assets/logos/mirkas-yogahaeuschen.svg"
-        :alt="imageAltText"
+        alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
         :immediate="true"
       ></g-image>
       <p class="hero__gap"></p>

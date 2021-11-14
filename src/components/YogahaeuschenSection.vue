@@ -2,7 +2,12 @@
   <section>
     <h2 class="u-heading">Mirka & das Yogahäuschen</h2>
     <div class="illustration">
-      <g-image class="illustration__image" src="@/assets/images/mirka-by-the-sea.svg" :immediate="true"></g-image>
+      <g-image
+        class="illustration__image"
+        src="@/assets/images/mirka-by-the-sea.svg"
+        :immediate="true"
+        alt="Zeichnung von Mirka, die am Strand sitzt und aufs Meer blickt."
+      ></g-image>
     </div>
     <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you."</p>
     <div class="text">
@@ -10,13 +15,17 @@
         Herzlich Willkommen auf der Seite zu meinem Yogahäuschen. Ich bin Mirka, Aachenerin und habe Yoga sehr ins Herz
         geschlossen, weil ich über die Praxis Jahr für Jahr mehr und mehr zu mir gereist bin. Mit mehr Bewusstsein,
         Achtsamkeit, Zufriedenheit und Dankbarkeit gehe ich dank Yoga durchs Leben. Das Schöne ist, dass dieser Weg
-        niemals endet. Meine Lehrerin hat mir dazu ein passendes Mantra mitgegeben: „Been travelling a day, been
-        travelling a year, been travelling a lifetime to find my way home. Home is where my heart is, my heart is my
-        home.“
+        niemals endet. Meine Lehrerin hat mir dazu ein passendes Mantra mitgegeben:
+      </p>
+      <p>
+        „Been travelling a day,<br />
+        been travelling a year,<br />
+        been travelling a lifetime to find my way home. Home is where my heart is,<br />
+        my heart is my home.“
       </p>
       <p>
         Auf meinem Yogaweg habe ich nicht nur mich selbst besser kennengelernt, sondern viele besondere und spannende
-        Menschen und weitere wertvolle Unterstützer, wie die Ätherischen Öle, Musik, Coaching-Wege, Berührung.
+        Menschen und weitere wertvolle Unterstützer, wie die ätherischen Öle, Musik, Coaching-Wege, Berührung.
       </p>
       <p>
         So gerne teile ich mit anderen Menschen über die Energiearbeit meine persönliche und fachliche Erfahrung,
@@ -39,17 +48,19 @@
         Transformation und Regeneration sein.
       </p>
       <p>
-        Die Angebote für euch wachsen, ihr seid herzlich Willkommen zum Tee trinken, im Garten sein, Entspannen,
-        Meditieren, Yoga praktizieren, Auszeiten genießen.
+        Die Angebote für euch wachsen. Ihr seid herzlich Willkommen zum Yoga praktizieren, Meditieren, Entspannen, Tee
+        trinken, im Garten sein.
       </p>
       <p>Mehr zu mir:</p>
       <ul>
         <li>Seit 2007 auf dem Yogaweg</li>
         <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
-        <li>Yogalehrerin (300 Std.) I Om Shanti, Ratingen</li>
-        <li>Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)</li>
-        <li>Beate Meyer (Anatomie)</li>
-        <li>Dr. Maitreya Larios (Philosophie)</li>
+        <li>
+          Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
+          Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
+          Beate Meyer (Anatomie)<br />
+          Dr. Maitreya Larios (Philosophie)
+        </li>
         <li>Polarity Therapie I Emmanuelle Collinet</li>
         <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
         <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>

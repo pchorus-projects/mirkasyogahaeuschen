@@ -1,6 +1,10 @@
 <template>
   <section class="events-section">
-    <g-image class="events-section__image" src="@/assets/images/events.jpg" alt="Mirka liegt auf einem Baum"></g-image>
+    <g-image
+      class="events-section__image"
+      src="@/assets/images/events.jpg"
+      alt="Mirka in der Nacht mit leuchtender Lichterkette."
+    ></g-image>
     <h2 class="events-heading u-heading u-heading--white">Events</h2>
 
     <ul class="events-list">

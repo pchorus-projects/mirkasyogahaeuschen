@@ -8,6 +8,7 @@
             :class="`link__image link__image--${index + 1}`"
             class="link__image"
             :src="require(`!!assets-loader?width=392!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
+            :alt="linkItem.imageAltText"
           />
           <p class="link__text u-font-s">{{ linkItem.name }}</p>
         </g-link>
@@ -15,7 +16,7 @@
     </ul>
 
     <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul.
+      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul
     </a>
   </section>
 </template>
@@ -29,31 +30,37 @@ export default {
           name: 'Ausbildung',
           to: 'ausbildung',
           image: 'ausbildung.jpg',
+          imageAltText: 'Mirka unterstützt Schülerin in Yoga-Asana.',
         },
         {
           name: 'Yoga Coaching',
           to: 'yoga-coaching',
           image: 'yoga-coaching.jpg',
+          imageAltText: 'Mirka unterstützt Kundin in Entspannungshaltung.',
         },
         {
           name: '(Yin) Yoga',
           to: 'yoga',
           image: 'yin-yoga.jpg',
+          imageAltText: 'Mirka liegt in Rückenlage und hält Hände in Gebetshaltung an ihre Stirn.',
         },
         {
           name: 'Online Yoga',
           to: 'online-yoga',
           image: 'online-yoga.jpg',
+          imageAltText: 'Notebook steht vor Yogaplatz zuhause.',
         },
         {
           name: 'Kinder- und Familien-Yoga',
           to: 'familien-yoga',
           image: 'familien-yoga.jpg',
+          imageAltText: 'Mutter und Tochter schmiegen Stirn an Stirn.',
         },
         {
           name: 'Ätherische Öle',
           to: 'aetherische-oele',
           image: 'aetherische-oele.jpg',
+          imageAltText: 'Mirka im Wald, hält Blätter in Händen und riecht daran.',
         },
       ],
     };

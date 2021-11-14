@@ -19,7 +19,7 @@
       into your deepest being.
     </p>
 
-    <p class="u-font-xl u-uppercase">Kontakt</p>
+    <p class="u-uppercase">Kontakt</p>
     <p class="kontakt-section__kontakt">
       <a class="kontakt-section__link" href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
       | Landgraben 65,52072 Aachen

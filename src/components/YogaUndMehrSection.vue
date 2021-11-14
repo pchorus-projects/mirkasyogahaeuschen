@@ -15,7 +15,7 @@
     </ul>
 
     <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul.
+      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul
     </a>
   </section>
 </template>

@@ -13,7 +13,7 @@
       ></g-image>
 
       <p class="hero__saying">
-        One cannot reflect in streaming water<br />
+        One cannot reflect in streaming water.<br />
         Only those who know internal peace can give it others.
       </p>
     </div>

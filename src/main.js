@@ -19,10 +19,4 @@ export default function (Vue, { head }) {
   addMetaTag('og:image', `${siteUrl}/og-image.jpg`);
   addMetaTag('og:locale', 'de_DE');
   addMetaTag('twitter:card', 'summary');
-
-  // TODO: remove when website is live
-  head.meta.push({
-    name: 'robots',
-    content: 'noindex',
-  });
 }

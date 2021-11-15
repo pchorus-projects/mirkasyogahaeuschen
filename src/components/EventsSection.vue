@@ -32,7 +32,7 @@
 <static-query>
 query Events {
   prismic {
-    events: allEvents {
+    events: allEvents(sortBy: date_ASC) {
       edges {
         node {
           _meta {

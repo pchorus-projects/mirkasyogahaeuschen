@@ -6,7 +6,12 @@
       image-alt-text="Ausschnitt einer meditierenden Frau, die mit buntem Puder bemalt ist."
     ></SimpleHero>
     <div class="illustration">
-      <g-image class="illustration__image" src="@/assets/images/moon-mirka.svg" :immediate="true"></g-image>
+      <g-image
+        class="illustration__image"
+        src="@/assets/images/moon-mirka.svg"
+        :immediate="true"
+        alt="Zeichnung eines Mandala in Kreisform mit Mirka im Portrait."
+      ></g-image>
     </div>
 
     <ul>

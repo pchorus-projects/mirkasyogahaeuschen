@@ -204,19 +204,23 @@ export default {
   }
 }
 
-@media (max-width: $max-width-mobile-landscape) {
+@media (max-width: $max-width-tablet) {
   .yoga-list {
     &__item {
       width: 100%;
       margin: 0 auto $space-xxl auto;
     }
 
-    &__image {
-      height: 380px;
-    }
-
     &__text {
       padding: 0 $space-m;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile-landscape) {
+  .yoga-list {
+    &__image {
+      height: 380px;
     }
   }
 }

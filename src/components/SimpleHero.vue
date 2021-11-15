@@ -3,7 +3,7 @@
     <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" :alt="imageAltText"></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
-      <p class="hero__welcome u-margin-bottom-xl">
+      <p class="hero__welcome u-margin-bottom-m">
         A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
       </p>
       <g-image

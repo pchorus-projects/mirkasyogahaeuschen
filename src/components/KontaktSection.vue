@@ -15,10 +15,9 @@
       into your deepest being.
     </p>
 
-    <p class="u-uppercase">Kontakt</p>
     <p class="kontakt-section__kontakt">
       <a class="kontakt-section__link" href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
-      | Landgraben 65,52072 Aachen
+      | Landgraben&nbsp;65,52072&nbsp;Aachen
     </p>
   </section>
 </template>
@@ -64,11 +63,13 @@ export default {};
     text-align: center;
     margin-top: $space-m;
     margin-bottom: $space-xl;
+    padding: 0 $space-m;
   }
 
   &__kontakt {
     font-size: $font-size-m;
     margin-bottom: $space-xl;
+    padding: 0 $space-m;
     text-align: center;
     text-transform: uppercase;
   }

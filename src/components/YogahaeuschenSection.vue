@@ -20,7 +20,8 @@
       <p>
         „Been travelling a day,<br />
         been travelling a year,<br />
-        been travelling a lifetime to find my way home. Home is where my heart is,<br />
+        been travelling a lifetime to find my way home.<br />
+        Home is where my heart is,<br />
         my heart is my home.“
       </p>
       <p>

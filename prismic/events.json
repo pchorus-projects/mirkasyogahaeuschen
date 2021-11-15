@@ -1,0 +1,68 @@
+{
+  "Main": {
+    "layout": {
+      "type": "Select",
+      "config": {
+        "options": ["1", "2", "3"],
+        "label": "Layout",
+        "placeholder": "Layout"
+      }
+    },
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "ID",
+        "placeholder": "ID"
+      }
+    },
+    "title1": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Titel 1",
+        "placeholder": "Titel 1"
+      }
+    },
+    "title2": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1,heading2,heading3,heading4,heading5,heading6",
+        "label": "Titel 2",
+        "placeholder": "Titel 2"
+      }
+    },
+    "text": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl",
+        "label": "Text",
+        "placeholder": "Text"
+      }
+    },
+    "date": {
+      "type": "Date",
+      "config": {
+        "label": "Datum"
+      }
+    },
+    "link": {
+      "type": "Link",
+      "config": {
+        "label": "Link",
+        "placeholder": "Link",
+        "select": null
+      }
+    },
+    "background_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 1200,
+          "height": 800
+        },
+        "thumbnails": [],
+        "label": "Hintergrundbild"
+      }
+    }
+  }
+}

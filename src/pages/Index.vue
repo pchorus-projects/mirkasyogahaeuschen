@@ -44,7 +44,7 @@ export default {
     TeilnehmerstimmenSection,
   },
   metaInfo: {
-    title: 'Mirkas Yogahäuschen',
+    title: 'Welcome',
   },
 };
 </script>

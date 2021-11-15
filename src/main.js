@@ -11,6 +11,8 @@ export default function (Vue, { head }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
 
+  head.htmlAttrs = { lang: 'de' };
+
   addMetaTag('application-name', siteName);
   addMetaTag('apple-mobile-web-app-title', siteName);
   addMetaTag('og:type', 'website');

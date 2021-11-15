@@ -7,7 +7,7 @@
           <g-image
             :class="`link__image link__image--${index + 1}`"
             class="link__image"
-            :src="require(`!!assets-loader?width=392!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
+            :src="require(`!!assets-loader?width=750!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
             :alt="linkItem.imageAltText"
           />
           <p class="link__text u-font-s">{{ linkItem.name }}</p>
@@ -129,15 +129,16 @@ $link-image-width: 196px;
   }
 }
 
-@media (max-width: $max-width-tablet) {
-  .link-list {
-    grid-template-columns: $link-image-width $link-image-width;
-  }
-}
-
 @media (max-width: $max-width-mobile) {
   .link-list {
-    grid-template-columns: $link-image-width;
+    grid-template-columns: 100%;
+  }
+
+  .link {
+    &__image {
+      width: 100vw;
+      height: 100vw;
+    }
   }
 }
 </style>

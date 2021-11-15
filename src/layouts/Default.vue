@@ -73,7 +73,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: $space-xs;
+    gap: $space-xxs;
     margin-bottom: $space-s;
   }
 

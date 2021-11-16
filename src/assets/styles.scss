@@ -155,7 +155,7 @@ li {
   font-size: $font-size-xl;
   color: $font-color-default;
   text-align: center;
-  padding: $space-xl;
+  padding: $space-xl $space-m;
 
   &--white {
     color: $font-color-white;
@@ -244,5 +244,46 @@ li {
   }
   &-xxl {
     margin-right: $space-xxl;
+  }
+}
+
+.u-text-block {
+  h1 {
+    text-transform: uppercase;
+    font-size: $font-size-xl;
+    line-height: $line-height-xl;
+    color: $font-color-default;
+    margin-top: $space-xl;
+    margin-bottom: $space-m;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: $font-size-l;
+    line-height: $line-height-l;
+    color: $font-color-default;
+    margin-top: $space-xl;
+    margin-bottom: $space-m;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    color: $font-color-default;
+    margin-top: $space-l;
+    margin-bottom: $space-m;
+  }
+
+  p {
+    @extend .u-font-m;
+    @extend .u-font-m--paragraph;
+  }
+
+  .u-font-s {
+    @extend .u-font-s;
+  }
+  .u-font-s--paragraph {
+    @extend .u-font-s--paragraph;
   }
 }

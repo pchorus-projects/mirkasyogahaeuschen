@@ -38,6 +38,7 @@
           </g-image>
         </a>
       </div>
+      <g-link to="/impressum-und-datenschutz" class="footer__imprint">Impressum | Datenschutz</g-link>
       <span class="footer__copyright">© Mirkas Yogahäuschen</span>
     </footer>
   </div>
@@ -74,7 +75,7 @@ export default {
     align-items: center;
     justify-content: center;
     gap: $space-xxs;
-    margin-bottom: $space-s;
+    margin-bottom: $space-xxs;
   }
 
   &__social-link {
@@ -84,6 +85,13 @@ export default {
 
   &__social-link-image {
     width: 100%;
+  }
+
+  &__imprint {
+    color: $font-color-white;
+    text-transform: uppercase;
+    font-size: $font-size-m;
+    margin-bottom: $space-m;
   }
 
   &__copyright {

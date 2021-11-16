@@ -121,6 +121,7 @@ export default {
     width: 600px;
     height: 400px;
     margin: 0 auto $space-xl auto;
+    overflow-x: hidden;
   }
 }
 

@@ -8,8 +8,8 @@ module.exports = {
   siteName: 'Mirkas Yogahäuschen',
   siteUrl: 'https://mirkasyogahaeuschen.de',
   chainWebpack: (config) => config.resolve.alias.set('@assets', '@/assets'),
-  // TODO: siteDescription
-  siteDescription: 'Yoga & mehr',
+  siteDescription:
+    'kleines, ländliches, gut erreichbares Yogastudio in Aachen. Persönliches Yogatraining, Coaching sowie regelmäßige Termine in Klein-Gruppen',
   plugins: [
     {
       use: 'gridsome-source-graphql-prismic',

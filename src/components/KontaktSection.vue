@@ -1,5 +1,6 @@
 <template>
   <section class="kontakt-section">
+    <h2 hidden>Kontakt</h2>
     <g-image class="kontakt-section__image" src="@/assets/images/kontakt.jpg" alt="Mirka meditiert im Wald."></g-image>
 
     <g-image

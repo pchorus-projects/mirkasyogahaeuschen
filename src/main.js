@@ -5,7 +5,7 @@ import '~/assets/styles.scss';
 import DefaultLayout from '~/layouts/Default.vue';
 import { siteName, siteUrl } from '../gridsome.config';
 
-export default function (Vue, { head }) {
+export default function (Vue, { head, router }) {
   const addMetaTag = (name, content) => head.meta.push({ key: name, name, content });
 
   // Set default layout as a global component
@@ -21,4 +21,19 @@ export default function (Vue, { head }) {
   addMetaTag('og:image', `${siteUrl}/og-image.jpg`);
   addMetaTag('og:locale', 'de_DE');
   addMetaTag('twitter:card', 'summary');
+
+  router.options.scrollBehavior = (to, from) => {
+    const behavior = to.path === from.path ? 'smooth' : 'auto';
+    return to.hash ? { selector: to.hash, behavior } : { x: 0, y: 0, behavior };
+  };
+
+  if (process.isClient) {
+    const removeHashFromLocation = () => {
+      if (window.location.hash) {
+        history.replaceState(history.state, '', window.location.href.replace(window.location.hash, ''));
+      }
+    };
+
+    window.addEventListener('scroll', removeHashFromLocation);
+  }
 }

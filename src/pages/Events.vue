@@ -97,7 +97,7 @@ export default {
       return backgroundImage?.url;
     },
     getBackgroundImageAltText(backgroundImage) {
-      return backgroundImage?.alt;
+      return backgroundImage?.alt ?? '';
     },
   },
 };

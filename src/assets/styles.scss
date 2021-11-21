@@ -56,10 +56,6 @@
   src: url('fonts/cabin-sketch.ttf') format('truetype');
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: $font-family-default;
   color: $font-color-default;

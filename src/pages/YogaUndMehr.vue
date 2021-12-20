@@ -27,12 +27,14 @@
 
 <script>
 import SimpleHero from '../components/SimpleHero';
+import { getMetaInfo } from '../utils';
 
 export default {
   components: { SimpleHero },
-  metaInfo: {
-    title: 'Yoga & mehr',
-  },
+  metaInfo: getMetaInfo(
+    'Yoga & mehr',
+    'Detaillierte Beschreibung der Yoga & Coaching Leistungen von Mirka Carlsen & Team des Mirkas Yogahäuschen in Aachen Richterich, Raum Laurensberg, Herzogenrath.'
+  ),
   data: function () {
     return {
       yogaUndMehrItems: [

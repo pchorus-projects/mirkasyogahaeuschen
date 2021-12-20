@@ -33,6 +33,7 @@ import YogaUndMehrSection from '../components/YogaUndMehrSection';
 import EventsSection from '../components/EventsSection';
 import GallerySection from '../components/GallerySection';
 import TeilnehmerstimmenSection from '../components/TeilnehmerstimmenSection';
+import { getMetaInfo } from '../utils';
 
 export default {
   components: {
@@ -43,9 +44,10 @@ export default {
     EventsSection,
     TeilnehmerstimmenSection,
   },
-  metaInfo: {
-    title: 'Welcome',
-  },
+  metaInfo: getMetaInfo(
+    'Welcome',
+    'kleines, ländliches, gut erreichbares Yogastudio in Aachen. Persönliches Yogatraining, Coaching sowie regelmäßige Termine in Klein-Gruppen'
+  ),
 };
 </script>
 

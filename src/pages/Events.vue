@@ -80,12 +80,14 @@ import EventLayout1 from '../components/EventLayout1';
 import EventLayout2 from '../components/EventLayout2';
 import EventLayout3 from '../components/EventLayout3';
 import SimpleHero from '../components/SimpleHero';
+import { getMetaInfo } from '../utils';
 
 export default {
   components: { SimpleHero, EventLayout1, EventLayout2, EventLayout3 },
-  metaInfo: {
-    title: 'Events',
-  },
+  metaInfo: getMetaInfo(
+    'Events',
+    'Zusammenstellung der nächsten 5 Yoga & Coaching Events von Mirkas Yogahäuschen Aachen Richterich, Raum Laurensberg, Herzogenrath und Weiterleitung zum Buchen.'
+  ),
   methods: {
     getTitleText(title) {
       return title ? title[0].text : '';

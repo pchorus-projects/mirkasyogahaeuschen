@@ -122,6 +122,7 @@ export default {
   &__item {
     width: 600px;
     height: 400px;
+    aspect-ratio: 6/4;
     margin: 0 auto $space-xl auto;
     overflow-x: hidden;
   }
@@ -131,7 +132,7 @@ export default {
   .events-list {
     &__item {
       width: 100%;
-      height: 300px;
+      height: auto;
     }
   }
 }

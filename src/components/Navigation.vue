@@ -25,10 +25,6 @@ export default {
     return {
       navItems: [
         {
-          name: 'Willkommen',
-          to: '/#willkommen',
-        },
-        {
           name: 'Mirka & Das Yogahäuschen',
           to: '/#mirka-und-das-yogahaeuschen',
         },

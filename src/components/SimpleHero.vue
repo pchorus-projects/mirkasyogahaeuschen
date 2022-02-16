@@ -6,12 +6,14 @@
       <p class="hero__welcome u-margin-bottom-m">
         A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
       </p>
-      <g-image
-        class="hero__logo"
-        src="@/assets/logos/mirkas-yogahaeuschen.svg"
-        alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
-        :immediate="true"
-      ></g-image>
+      <g-link to="/#willkommen">
+        <g-image
+          class="hero__logo"
+          src="@/assets/logos/mirkas-yogahaeuschen.svg"
+          alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
+          :immediate="true"
+        ></g-image>
+      </g-link>
       <p class="hero__gap"></p>
       <h1 class="hero__heading u-heading u-heading--white">{{ title }}</h1>
     </div>

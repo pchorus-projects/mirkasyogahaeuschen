@@ -18,7 +18,7 @@
 
     <p class="kontakt-section__kontakt">
       <a class="kontakt-section__link" href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
-      | Landgraben&nbsp;65,52072&nbsp;Aachen
+      | Monschauer Straße&nbsp;12,&nbsp;52076&nbsp;Aachen
     </p>
   </section>
 </template>

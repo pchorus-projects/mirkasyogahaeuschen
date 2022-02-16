@@ -15,16 +15,19 @@
       </li>
     </ul>
 
-    <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul
-    </a>
+    <p class="u-heading">Lose your mind, find your soul.</p>
+
+    <a class="booking" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
   </section>
 </template>
 
 <script>
+import { coursePlanUrl } from '../constants';
+
 export default {
   data: function () {
     return {
+      coursePlanUrl,
       linkItems: [
         {
           name: 'Ausbildung',
@@ -84,7 +87,6 @@ $link-image-width: 196px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: $space-l;
-  margin-bottom: $space-xl;
 }
 
 .link {
@@ -107,15 +109,13 @@ $link-image-width: 196px;
 }
 
 .booking {
-  display: inline-block;
+  display: block;
   align-self: center;
-  font-family: $font-family-header-default;
-  font-size: $font-size-l;
-  text-align: center;
-  padding: $space-xs $space-m;
-  margin: 0 $space-xl $space-xl $space-xl;
-  border-radius: 30px;
-  border: 1px solid $font-color-default;
+  font-size: $font-size-m;
+  text-transform: uppercase;
+  padding: $space-s $space-xxl;
+  margin-bottom: $space-xl;
+  border: 2px solid $font-color-default;
 
   &:hover {
     color: darken($font-color-default, 20%);

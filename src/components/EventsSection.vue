@@ -22,9 +22,7 @@
     </ul>
 
     <div class="events-booking">
-      <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-        Glow with Mirkas Workshops
-      </a>
+      <a class="events-booking__button" :href="coursePlanUrl" target="_blank" rel="noopener"> Kursplan </a>
     </div>
   </section>
 </template>
@@ -49,11 +47,18 @@ query Events {
 </static-query>
 
 <script>
+import { coursePlanUrl } from '../constants';
+
 export default {
   methods: {
     getTitle(node) {
       return `${node.title1?.[0].text ?? ''} ${node.title2?.[0].text ?? ''}`.trim();
     },
+  },
+  data: function () {
+    return {
+      coursePlanUrl,
+    };
   },
 };
 </script>
@@ -94,11 +99,14 @@ export default {
     align-self: flex-end;
     color: rgb(5, 10, 10);
     background: $font-color-white;
-    font-family: $font-family-header-default;
-    font-size: $font-size-l;
+    font-size: $font-size-m;
+    text-transform: uppercase;
+    padding: $space-s $space-xxl;
     text-align: center;
-    padding: $space-xs $space-m;
-    border-radius: 30px;
+
+    &:hover {
+      background-color: darken($font-color-white, 10%);
+    }
   }
 }
 .events-list {
@@ -124,6 +132,11 @@ export default {
     text-transform: uppercase;
     border: 2px solid $font-color-white;
     padding: $space-xs $space-xxl;
+
+    &:hover {
+      color: darken($font-color-white, 10%);
+      border-color: darken($font-color-white, 10%);
+    }
   }
 }
 

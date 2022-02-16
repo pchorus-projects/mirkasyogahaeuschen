@@ -34,19 +34,21 @@
         an Selbstliebe zu wählen.
       </p>
       <p>
-        Im Herbst 2020 hat mich ein persönliches Ereignis in diesem kleinen Reihenhäuschen in Aachen-Richterich stehen
-        lassen. Trotz schwieriger Zeiten entschied ich mich dafür, auf Bauch und Herz zu hören und hier Raum für
-        Erholung, Entspannung und Begegnung zu schaffen.
+        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlseins sein. Hier findest du Raum für
+        Selbsterfahrung, Transformation und Regeneration.
       </p>
       <p>
-        Das kleine Haus wurde von seinen Eigentümern 9 Monate lang kernsaniert und vielleicht sollte es so sein, dass
-        erst einmal Ruhe einkehrt und über den langen Lockdown ein Winter-Savasana an der Reihe sein sollte, damit
-        anschließend die Energie stimmt und mein Wunsch, dass ihr hier Ruhe und Frieden findet, aufgeht.
+        Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
+        Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
+        Entspannen dem Wetter zusehen und manchmal huscht auch sogar ein Eichhörnchen, Hase oder Reh vorbei.
       </p>
       <p>
-        Seit diesem Sommer ist die Tür geöffnet und ich freue mich sehr, dass meine Vision anfangen darf, zu leben. Ihr
-        sollt euch wie zuhause fühlen. Zeit für euch finden. Das Yogahäuschen soll für euch ein Ort zur Selbsterfahrung,
-        Transformation und Regeneration sein.
+        Von Frühling bis Herbst nutzen wir auch den privaten, großzügigen, geschützten Garten um noch mehr in den Genuss
+        des besonderen Umfelds zu kommen. Wir fühlen die Sonne und den Wind auf der Haut, hören dem fröhlichen
+        Gezwitscher der Vögel zu und lassen unsere Seelen mit einstimmen…
+      </p>
+      <p>
+        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen.
       </p>
       <p>
         Die Angebote für euch wachsen. Ihr seid herzlich Willkommen zum Yoga praktizieren, Meditieren, Entspannen, Tee

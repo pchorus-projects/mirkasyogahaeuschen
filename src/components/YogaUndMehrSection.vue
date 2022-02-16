@@ -4,12 +4,14 @@
     <ul class="link-list">
       <li v-for="(linkItem, index) in linkItems" :key="linkItem.to">
         <g-link class="link" :to="`/yoga-und-mehr#${linkItem.to}`">
-          <g-image
-            :class="`link__image link__image--${index + 1}`"
-            class="link__image"
-            :src="require(`!!assets-loader?width=750!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
-            :alt="linkItem.imageAltText"
-          />
+          <div class="link__image-container">
+            <g-image
+              :class="`link__image link__image--${index + 1}`"
+              class="link__image"
+              :src="require(`!!assets-loader?width=750!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
+              :alt="linkItem.imageAltText"
+            />
+          </div>
           <p class="link__text u-font-s">{{ linkItem.name }}</p>
         </g-link>
       </li>
@@ -90,11 +92,18 @@ $link-image-width: 196px;
 }
 
 .link {
+  &__image-container {
+    width: $link-image-width;
+    height: $link-image-width;
+    overflow: hidden;
+  }
+
   &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
+    transition: transform 0.4s;
 
     &--1 {
       object-position: bottom;
@@ -105,6 +114,16 @@ $link-image-width: 196px;
     padding-top: $space-xs;
     text-align: center;
     text-transform: uppercase;
+  }
+
+  &:hover {
+    .link__image {
+      transform: scale(1.1);
+    }
+
+    .link__text {
+      color: darken($font-color-default, 20%);
+    }
   }
 }
 
@@ -125,7 +144,7 @@ $link-image-width: 196px;
   }
 
   .link {
-    &__image {
+    &__image-container {
       width: 50vw;
       height: 50vw;
     }

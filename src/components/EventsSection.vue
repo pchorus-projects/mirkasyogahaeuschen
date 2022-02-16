@@ -22,7 +22,14 @@
     </ul>
 
     <div class="events-booking">
-      <a class="events-booking__button" :href="coursePlanUrl" target="_blank" rel="noopener"> Kursplan </a>
+      <a
+        class="events-booking__button u-button u-button--primary-white"
+        :href="coursePlanUrl"
+        target="_blank"
+        rel="noopener"
+      >
+        Kursplan
+      </a>
     </div>
   </section>
 </template>
@@ -95,18 +102,7 @@ export default {
   flex-direction: column;
 
   &__button {
-    display: block;
     align-self: flex-end;
-    color: rgb(5, 10, 10);
-    background: $font-color-white;
-    font-size: $font-size-m;
-    text-transform: uppercase;
-    padding: $space-s $space-xxl;
-    text-align: center;
-
-    &:hover {
-      background-color: darken($font-color-white, 10%);
-    }
   }
 }
 .events-list {
@@ -131,6 +127,7 @@ export default {
     font-size: $font-size-s;
     text-transform: uppercase;
     border: 2px solid $font-color-white;
+    border-radius: 4px;
     padding: $space-xs $space-xxl;
 
     &:hover {

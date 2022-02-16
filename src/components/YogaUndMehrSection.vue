@@ -17,7 +17,7 @@
 
     <p class="u-heading">Lose your mind, find your soul.</p>
 
-    <a class="booking" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
+    <a class="booking u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
   </section>
 </template>
 
@@ -109,18 +109,8 @@ $link-image-width: 196px;
 }
 
 .booking {
-  display: block;
   align-self: center;
-  font-size: $font-size-m;
-  text-transform: uppercase;
-  padding: $space-s $space-xxl;
   margin-bottom: $space-xl;
-  border: 2px solid $font-color-default;
-
-  &:hover {
-    color: darken($font-color-default, 20%);
-    border-color: darken($font-color-default, 20%);
-  }
 }
 
 @media (max-width: $max-width-desktop) {

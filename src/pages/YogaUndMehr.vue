@@ -20,6 +20,7 @@
           :alt="item.imageAltText"
         />
         <div class="yoga-list__text" v-html="item.text"></div>
+        <a class="u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
       </li>
     </ul>
   </Layout>
@@ -28,6 +29,7 @@
 <script>
 import SimpleHero from '../components/SimpleHero';
 import { getMetaInfo } from '../utils';
+import { coursePlanUrl } from '../constants';
 
 export default {
   components: { SimpleHero },
@@ -37,6 +39,7 @@ export default {
   ),
   data: function () {
     return {
+      coursePlanUrl,
       yogaUndMehrItems: [
         {
           name: 'Ausbildung',

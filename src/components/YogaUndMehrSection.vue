@@ -91,8 +91,8 @@ $link-image-width: 196px;
 
 .link {
   &__image {
-    width: $link-image-width;
-    height: $link-image-width;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: top;
 
@@ -121,13 +121,13 @@ $link-image-width: 196px;
 
 @media (max-width: $max-width-mobile) {
   .link-list {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 
   .link {
     &__image {
-      width: 100vw;
-      height: 100vw;
+      width: 50vw;
+      height: 50vw;
     }
   }
 }

@@ -17,7 +17,7 @@
           {{ getTitle(edge.node) }}
         </p>
         <p class="u-font-s u-font-s--paragraph">{{ edge.node.text[0].text }}</p>
-        <g-link class="events-list__button" :to="`events#${edge.node._meta.uid}`">More</g-link>
+        <g-link class="events-list__button" :to="`events#${edge.node._meta.uid}`">Mehr</g-link>
       </li>
     </ul>
 

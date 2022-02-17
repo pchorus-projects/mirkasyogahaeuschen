@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="nav" :class="{ 'is-footer': isFooter }">
     <g-link
       v-for="navItem in navItems"
       class="nav__item"
@@ -10,10 +10,15 @@
     >
       {{ navItem.name }}
     </g-link>
+    <a class="u-button u-button--primary-white u-button--small" :href="coursePlanUrl" target="_blank" rel="noopener"
+      >Kursplan</a
+    >
   </nav>
 </template>
 
 <script>
+import { coursePlanUrl } from '../constants';
+
 export default {
   props: {
     isFooter: {
@@ -23,6 +28,7 @@ export default {
   },
   data: function () {
     return {
+      coursePlanUrl,
       navItems: [
         {
           name: 'Mirka & Das Yogahäuschen',
@@ -51,6 +57,7 @@ export default {
 
 .nav {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   background-color: transparent;
@@ -77,7 +84,21 @@ export default {
 
 @media (max-width: $max-width-mobile) {
   .nav {
-    display: none;
+    align-self: flex-end;
+    margin-bottom: $space-s;
+
+    &__item {
+      display: none;
+    }
+
+    &.is-footer {
+      margin-bottom: 0;
+
+      .nav__item {
+        display: block;
+        margin-bottom: $space-xs;
+      }
+    }
   }
 }
 </style>

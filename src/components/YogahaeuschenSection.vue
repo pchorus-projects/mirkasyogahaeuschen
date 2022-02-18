@@ -54,24 +54,29 @@
         Die Angebote für euch wachsen. Ihr seid herzlich Willkommen zum Yoga praktizieren, Meditieren, Entspannen, Tee
         trinken, im Garten sein.
       </p>
-      <p>Mehr zu mir:</p>
-      <ul>
-        <li>Seit 2007 auf dem Yogaweg</li>
-        <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
-        <li>
-          Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
-          Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
-          Beate Meyer (Anatomie)<br />
-          Dr. Maitreya Larios (Philosophie)
-        </li>
-        <li>Polarity Therapie I Emmanuelle Collinet</li>
-        <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
-        <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
-        <li>
-          Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
-          Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
-        </li>
-      </ul>
+      <div class="cv">
+        <div>
+          <p>Mehr zu mir:</p>
+          <ul>
+            <li>Seit 2007 auf dem Yogaweg</li>
+            <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
+            <li>
+              Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
+              Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
+              Beate Meyer (Anatomie)<br />
+              Dr. Maitreya Larios (Philosophie)
+            </li>
+            <li>Polarity Therapie I Emmanuelle Collinet</li>
+            <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
+            <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
+            <li>
+              Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
+              Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
+            </li>
+          </ul>
+        </div>
+        <g-image class="cv__portrait" src="@/assets/images/mirka-portrait.jpg" alt="Portrait von Mirka"></g-image>
+      </div>
     </div>
   </section>
 </template>
@@ -106,6 +111,32 @@ export default {};
 
   > p {
     padding-bottom: $space-m;
+  }
+}
+
+.cv {
+  display: flex;
+  align-items: center;
+
+  &__portrait {
+    margin-left: $space-l;
+    height: 260px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $max-width-mobile) {
+  .cv {
+    flex-direction: column;
+
+    &__portrait {
+      margin-left: 0;
+      margin-top: $space-l;
+      height: 200px;
+      width: 100%;
+    }
   }
 }
 </style>

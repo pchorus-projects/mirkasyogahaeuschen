@@ -37,6 +37,15 @@
         MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlseins sein. Hier findest du Raum für
         Selbsterfahrung, Transformation und Regeneration.
       </p>
+      <div class="location">
+        <div class="location__image"><g-image src="@/assets/images/kursraum-1.jpg" alt="Kursraum"></g-image></div>
+        <div class="location__image"><g-image src="@/assets/images/kursraum-2.jpg" alt="Kursraum"></g-image></div>
+        <div class="location__image">
+          <video controls>
+            <source src="videos/kursraum.mp4" />
+          </video>
+        </div>
+      </div>
       <p>
         Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
         Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
@@ -114,6 +123,31 @@ export default {};
   }
 }
 
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: $space-l;
+
+  &__image {
+    display: block;
+    height: 300px;
+
+    &:not(:last-child) {
+      margin-right: $space-l;
+    }
+
+    img,
+    video {
+      object-fit: cover;
+      display: block;
+      width: 25vw;
+      max-width: 225px;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+
 .cv {
   display: flex;
   align-items: center;
@@ -128,6 +162,24 @@ export default {};
 }
 
 @media (max-width: $max-width-mobile) {
+  .location {
+    flex-direction: column;
+
+    &__image {
+      height: 160px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: $space-l;
+      }
+
+      img,
+      video {
+        width: auto;
+      }
+    }
+  }
+
   .cv {
     flex-direction: column;
 

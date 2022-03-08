@@ -20,8 +20,8 @@
         <h3>Betreiber der Webseite</h3>
         <p>
           Mirka Carlsen<br />
-          Landgraben 65<br />
-          52072 Aachen<br />
+          Monschauer Straße 12<br />
+          52076 Aachen<br />
           Telefon: 0151 59173563<br />
           Email: <a href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
         </p>
@@ -158,7 +158,7 @@
           bzw. Stelle:<br />
           <span class="adsimple-311879228" style="font-weight: 400"
             >Mirka Carlsen<br />
-            Landgraben 65, 52072 Aachen, Deutschland</span
+            Monschauer Straße 12, 52076 Aachen, Deutschland</span
           >
         </p>
         <p>

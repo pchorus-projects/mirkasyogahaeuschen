@@ -12,7 +12,7 @@
       <div class="footer__social-links">
         <a
           class="footer__social-link"
-          href="https://www.instagram.com/mirkasyogahaeuschen"
+          href="https://www.instagram.com/yogahaeuschen_aachen"
           target="_blank"
           rel="noopener"
         >

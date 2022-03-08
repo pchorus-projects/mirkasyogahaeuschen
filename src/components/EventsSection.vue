@@ -17,13 +17,18 @@
           {{ getTitle(edge.node) }}
         </p>
         <p class="u-font-s u-font-s--paragraph">{{ edge.node.text[0].text }}</p>
-        <g-link class="events-list__button" :to="`events#${edge.node._meta.uid}`">More</g-link>
+        <g-link class="events-list__button" :to="`events#${edge.node._meta.uid}`">Mehr</g-link>
       </li>
     </ul>
 
     <div class="events-booking">
-      <a class="events-booking__button" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-        Glow with Mirkas Workshops
+      <a
+        class="events-booking__button u-button u-button--primary-white"
+        :href="coursePlanUrl"
+        target="_blank"
+        rel="noopener"
+      >
+        Kursplan
       </a>
     </div>
   </section>
@@ -49,11 +54,18 @@ query Events {
 </static-query>
 
 <script>
+import { coursePlanUrl } from '../constants';
+
 export default {
   methods: {
     getTitle(node) {
       return `${node.title1?.[0].text ?? ''} ${node.title2?.[0].text ?? ''}`.trim();
     },
+  },
+  data: function () {
+    return {
+      coursePlanUrl,
+    };
   },
 };
 </script>
@@ -90,15 +102,7 @@ export default {
   flex-direction: column;
 
   &__button {
-    display: block;
     align-self: flex-end;
-    color: rgb(5, 10, 10);
-    background: $font-color-white;
-    font-family: $font-family-header-default;
-    font-size: $font-size-l;
-    text-align: center;
-    padding: $space-xs $space-m;
-    border-radius: 30px;
   }
 }
 .events-list {
@@ -122,8 +126,14 @@ export default {
     color: $font-color-white;
     font-size: $font-size-s;
     text-transform: uppercase;
-    border: 2px solid $font-color-white;
+    border: 1px solid $font-color-white;
+    border-radius: 4px;
     padding: $space-xs $space-xxl;
+
+    &:hover {
+      color: darken($font-color-white, 10%);
+      border-color: darken($font-color-white, 10%);
+    }
   }
 }
 

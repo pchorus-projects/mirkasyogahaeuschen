@@ -4,27 +4,32 @@
     <ul class="link-list">
       <li v-for="(linkItem, index) in linkItems" :key="linkItem.to">
         <g-link class="link" :to="`/yoga-und-mehr#${linkItem.to}`">
-          <g-image
-            :class="`link__image link__image--${index + 1}`"
-            class="link__image"
-            :src="require(`!!assets-loader?width=750!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
-            :alt="linkItem.imageAltText"
-          />
+          <div class="link__image-container">
+            <g-image
+              :class="`link__image link__image--${index + 1}`"
+              class="link__image"
+              :src="require(`!!assets-loader?width=750!@assets/images/yoga-und-mehr-thumbnails/${linkItem.image}`)"
+              :alt="linkItem.imageAltText"
+            />
+          </div>
           <p class="link__text u-font-s">{{ linkItem.name }}</p>
         </g-link>
       </li>
     </ul>
 
-    <a class="booking" href="https://calendly.com/mirkas-yogahaeuschen" target="_blank" rel="noopener">
-      Lose&nbsp;your&nbsp;mind, find&nbsp;your&nbsp;soul
-    </a>
+    <p class="u-heading">Lose your mind, find your soul.</p>
+
+    <a class="booking u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
   </section>
 </template>
 
 <script>
+import { coursePlanUrl } from '../constants';
+
 export default {
   data: function () {
     return {
+      coursePlanUrl,
       linkItems: [
         {
           name: 'Ausbildung',
@@ -84,15 +89,21 @@ $link-image-width: 196px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: $space-l;
-  margin-bottom: $space-xl;
 }
 
 .link {
-  &__image {
+  &__image-container {
     width: $link-image-width;
     height: $link-image-width;
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     object-position: top;
+    transition: transform 0.4s;
 
     &--1 {
       object-position: bottom;
@@ -104,23 +115,21 @@ $link-image-width: 196px;
     text-align: center;
     text-transform: uppercase;
   }
+
+  &:hover {
+    .link__image {
+      transform: scale(1.1);
+    }
+
+    .link__text {
+      color: darken($font-color-default, 20%);
+    }
+  }
 }
 
 .booking {
-  display: inline-block;
   align-self: center;
-  font-family: $font-family-header-default;
-  font-size: $font-size-l;
-  text-align: center;
-  padding: $space-xs $space-m;
-  margin: 0 $space-xl $space-xl $space-xl;
-  border-radius: 30px;
-  border: 1px solid $font-color-default;
-
-  &:hover {
-    color: darken($font-color-default, 20%);
-    border-color: darken($font-color-default, 20%);
-  }
+  margin-bottom: $space-xl;
 }
 
 @media (max-width: $max-width-desktop) {
@@ -131,13 +140,13 @@ $link-image-width: 196px;
 
 @media (max-width: $max-width-mobile) {
   .link-list {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 
   .link {
-    &__image {
-      width: 100vw;
-      height: 100vw;
+    &__image-container {
+      width: 50vw;
+      height: 50vw;
     }
   }
 }

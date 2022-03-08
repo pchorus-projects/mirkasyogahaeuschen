@@ -7,14 +7,18 @@
     ></g-image>
     <div class="hero__content">
       <Navigation></Navigation>
-      <h1 class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></h1>
+      <g-link to="/#willkommen">
+        <h1 class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></h1>
+      </g-link>
       <p class="hero__gap"></p>
-      <g-image
-        class="hero__logo"
-        src="@/assets/logos/mirkas-yogahaeuschen.svg"
-        alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
-        :immediate="true"
-      ></g-image>
+      <g-link to="/#willkommen">
+        <g-image
+          class="hero__logo"
+          src="@/assets/logos/mirkas-yogahaeuschen.svg"
+          alt="Mirkas Yogahäuschen Logo: Haus, in der Mitte ein gezeichnetes Herz, aus Kamin treten Herzchen aus."
+          :immediate="true"
+        ></g-image>
+      </g-link>
 
       <p class="hero__saying">
         One cannot reflect in streaming water.<br />
@@ -70,6 +74,7 @@ export default {
     margin-top: $space-xs;
     text-transform: uppercase;
     text-align: center;
+    color: $font-color-white;
   }
 
   &__gap {

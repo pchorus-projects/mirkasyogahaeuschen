@@ -30,28 +30,35 @@
       </p>
       <p>
         So gerne teile ich mit anderen Menschen über die Energiearbeit meine persönliche und fachliche Erfahrung,
-        erinnere ans Achtsam sein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr
-        an Selbstliebe zu wählen.
+        erinnere ans Achtsamsein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr an
+        Selbstliebe zu wählen.
       </p>
       <p>
-        Im Herbst 2020 hat mich ein persönliches Ereignis in diesem kleinen Reihenhäuschen in Aachen-Richterich stehen
-        lassen. Trotz schwieriger Zeiten entschied ich mich dafür, auf Bauch und Herz zu hören und hier Raum für
-        Erholung, Entspannung und Begegnung zu schaffen.
+        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlfühlens sein. Hier findest du Raum für
+        Selbsterfahrung, Transformation und Regeneration.
       </p>
       <p>
-        Das kleine Haus wurde von seinen Eigentümern 9 Monate lang kernsaniert und vielleicht sollte es so sein, dass
-        erst einmal Ruhe einkehrt und über den langen Lockdown ein Winter-Savasana an der Reihe sein sollte, damit
-        anschließend die Energie stimmt und mein Wunsch, dass ihr hier Ruhe und Frieden findet, aufgeht.
+        Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
+        Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
+        Entspannen dem Wetter zusehen und manchmal huscht auch sogar ein Eichhörnchen, Hase oder Reh vorbei.
       </p>
       <p>
-        Seit diesem Sommer ist die Tür geöffnet und ich freue mich sehr, dass meine Vision anfangen darf, zu leben. Ihr
-        sollt euch wie zuhause fühlen. Zeit für euch finden. Das Yogahäuschen soll für euch ein Ort zur Selbsterfahrung,
-        Transformation und Regeneration sein.
+        Von Frühling bis Herbst nutzen wir auch den privaten, großzügigen, geschützten Garten um noch mehr in den Genuss
+        des besonderen Umfelds zu kommen. Wir fühlen die Sonne und den Wind auf der Haut, hören dem fröhlichen
+        Gezwitscher der Vögel zu und lassen unsere Seelen mit einstimmen…
       </p>
       <p>
-        Die Angebote für euch wachsen. Ihr seid herzlich Willkommen zum Yoga praktizieren, Meditieren, Entspannen, Tee
-        trinken, im Garten sein.
+        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen
+        zum Yoga praktizieren, Meditieren, Entspannen, Tee trinken, im Garten sein...
       </p>
+
+      <div class="location">
+        <div class="location__image"><g-image src="@/assets/images/kursraum-2.jpg" alt="Kursraum"></g-image></div>
+        <div class="location__image">
+          <g-image class="cv__portrait" src="@/assets/images/mirka-portrait.jpg" alt="Portrait von Mirka"></g-image>
+        </div>
+      </div>
+
       <p>Mehr zu mir:</p>
       <ul>
         <li>Seit 2007 auf dem Yogaweg</li>
@@ -98,12 +105,49 @@ export default {};
 }
 
 .text {
-  padding: 0 $space-xl $space-xl $space-xl;
+  padding-bottom: $space-xl;
   max-width: 768px;
   margin: auto;
 
-  > p {
-    padding-bottom: $space-m;
+  > p,
+  > ul {
+    padding: 0 $space-xl $space-m $space-xl;
+  }
+}
+
+.location {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: $space-l;
+  padding: 0 $space-xl;
+
+  &__image {
+    display: block;
+
+    &:not(:last-child) {
+      margin-right: $space-l;
+    }
+
+    img {
+      object-fit: cover;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: $max-width-mobile) {
+  .location {
+    flex-direction: column;
+    padding: 0;
+
+    &__image {
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: $space-l;
+      }
+    }
   }
 }
 </style>

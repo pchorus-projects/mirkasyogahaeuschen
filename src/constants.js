@@ -1,1 +1,1 @@
-export const coursePlanUrl = 'https://calendly.com/mirkas-yogahaeuschen';
+export const coursePlanUrl = 'https://www.eversports.de/s/mirkas-yogahauschen';

@@ -10,7 +10,7 @@
     >
       {{ navItem.name }}
     </g-link>
-    <a class="u-button u-button--primary-white u-button--small" :href="coursePlanUrl" target="_blank" rel="noopener"
+    <a class="u-button u-button--primary-gray-blue u-button--small" :href="coursePlanUrl" target="_blank" rel="noopener"
       >Kursplan</a
     >
   </nav>

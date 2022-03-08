@@ -30,22 +30,13 @@
       </p>
       <p>
         So gerne teile ich mit anderen Menschen über die Energiearbeit meine persönliche und fachliche Erfahrung,
-        erinnere ans Achtsam sein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr
-        an Selbstliebe zu wählen.
+        erinnere ans Achtsamsein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr an
+        Selbstliebe zu wählen.
       </p>
       <p>
-        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlseins sein. Hier findest du Raum für
+        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlfühlens sein. Hier findest du Raum für
         Selbsterfahrung, Transformation und Regeneration.
       </p>
-      <div class="location">
-        <div class="location__image"><g-image src="@/assets/images/kursraum-1.jpg" alt="Kursraum"></g-image></div>
-        <div class="location__image"><g-image src="@/assets/images/kursraum-2.jpg" alt="Kursraum"></g-image></div>
-        <div class="location__image">
-          <video controls>
-            <source src="videos/kursraum.mp4" />
-          </video>
-        </div>
-      </div>
       <p>
         Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
         Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
@@ -57,35 +48,35 @@
         Gezwitscher der Vögel zu und lassen unsere Seelen mit einstimmen…
       </p>
       <p>
-        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen.
+        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen
+        zum Yoga praktizieren, Meditieren, Entspannen, Tee trinken, im Garten sein...
       </p>
-      <p>
-        Die Angebote für euch wachsen. Ihr seid herzlich Willkommen zum Yoga praktizieren, Meditieren, Entspannen, Tee
-        trinken, im Garten sein.
-      </p>
-      <div class="cv">
-        <div>
-          <p>Mehr zu mir:</p>
-          <ul>
-            <li>Seit 2007 auf dem Yogaweg</li>
-            <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
-            <li>
-              Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
-              Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
-              Beate Meyer (Anatomie)<br />
-              Dr. Maitreya Larios (Philosophie)
-            </li>
-            <li>Polarity Therapie I Emmanuelle Collinet</li>
-            <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
-            <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
-            <li>
-              Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
-              Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
-            </li>
-          </ul>
+
+      <div class="location">
+        <div class="location__image"><g-image src="@/assets/images/kursraum-2.jpg" alt="Kursraum"></g-image></div>
+        <div class="location__image">
+          <g-image class="cv__portrait" src="@/assets/images/mirka-portrait.jpg" alt="Portrait von Mirka"></g-image>
         </div>
-        <g-image class="cv__portrait" src="@/assets/images/mirka-portrait.jpg" alt="Portrait von Mirka"></g-image>
       </div>
+
+      <p>Mehr zu mir:</p>
+      <ul>
+        <li>Seit 2007 auf dem Yogaweg</li>
+        <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
+        <li>
+          Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
+          Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
+          Beate Meyer (Anatomie)<br />
+          Dr. Maitreya Larios (Philosophie)
+        </li>
+        <li>Polarity Therapie I Emmanuelle Collinet</li>
+        <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
+        <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
+        <li>
+          Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
+          Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
+        </li>
+      </ul>
     </div>
   </section>
 </template>
@@ -114,80 +105,48 @@ export default {};
 }
 
 .text {
-  padding: 0 $space-xl $space-xl $space-xl;
+  padding-bottom: $space-xl;
   max-width: 768px;
   margin: auto;
 
-  > p {
-    padding-bottom: $space-m;
+  > p,
+  > ul {
+    padding: 0 $space-xl $space-m $space-xl;
   }
 }
 
 .location {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin-bottom: $space-l;
+  padding: 0 $space-xl;
 
   &__image {
     display: block;
-    height: 300px;
 
     &:not(:last-child) {
       margin-right: $space-l;
     }
 
-    img,
-    video {
+    img {
       object-fit: cover;
       display: block;
-      width: 25vw;
-      max-width: 225px;
+      width: 100%;
       height: 100%;
-      border-radius: 8px;
     }
-  }
-}
-
-.cv {
-  display: flex;
-  align-items: center;
-
-  &__portrait {
-    margin-left: $space-l;
-    height: 260px;
-    width: 200px;
-    object-fit: cover;
-    border-radius: 8px;
   }
 }
 
 @media (max-width: $max-width-mobile) {
   .location {
     flex-direction: column;
+    padding: 0;
 
     &__image {
-      height: 160px;
-
       &:not(:last-child) {
         margin-right: 0;
         margin-bottom: $space-l;
       }
-
-      img,
-      video {
-        width: auto;
-      }
-    }
-  }
-
-  .cv {
-    flex-direction: column;
-
-    &__portrait {
-      margin-left: 0;
-      margin-top: $space-l;
-      height: 200px;
-      width: 100%;
     }
   }
 }

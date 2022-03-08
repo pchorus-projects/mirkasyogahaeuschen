@@ -3,9 +3,11 @@
     <g-image class="hero__image" :src="require(`!!assets-loader!@assets/${imagePath}`)" :alt="imageAltText"></g-image>
     <div class="hero__content" :class="{ 'hero__content--dark': dark }">
       <Navigation></Navigation>
-      <p class="hero__welcome u-margin-bottom-m">
-        A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
-      </p>
+      <g-link to="/#willkommen">
+        <p class="hero__welcome u-margin-bottom-m">
+          A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
+        </p>
+      </g-link>
       <g-link to="/#willkommen">
         <g-image
           class="hero__logo"
@@ -95,6 +97,7 @@ export default {
     margin-top: $space-xs;
     text-transform: uppercase;
     text-align: center;
+    color: $font-color-white;
   }
 
   &__gap {

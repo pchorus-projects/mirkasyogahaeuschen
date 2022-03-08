@@ -126,7 +126,7 @@ export default {
     color: $font-color-white;
     font-size: $font-size-s;
     text-transform: uppercase;
-    border: 2px solid $font-color-white;
+    border: 1px solid $font-color-white;
     border-radius: 4px;
     padding: $space-xs $space-xxl;
 

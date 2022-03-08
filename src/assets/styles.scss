@@ -99,7 +99,7 @@ li {
   font-size: $font-size-m;
   text-transform: uppercase;
   padding: $space-s $space-xxl;
-  border: 2px solid $font-color-default;
+  border: 1px solid $font-color-default;
   border-radius: 4px;
 
   &:hover {
@@ -124,6 +124,18 @@ li {
       color: rgb(5, 10, 10);
       background-color: darken($font-color-white, 10%);
       border-color: darken($font-color-white, 10%);
+    }
+  }
+
+  &--primary-gray-blue {
+    color: rgb(5, 10, 10);
+    background-color: #7ea7bf;
+    border-color: #7ea7bf;
+
+    &:hover {
+      color: rgb(5, 10, 10);
+      background-color: darken(#7ea7bf, 10%);
+      border-color: darken(#7ea7bf, 10%);
     }
   }
 

@@ -20,7 +20,7 @@
           :alt="item.imageAltText"
         />
         <div class="yoga-list__text" v-html="item.text"></div>
-        <a class="u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
+        <a class="yoga-list__button u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
       </li>
     </ul>
   </Layout>
@@ -218,6 +218,10 @@ export default {
 
     &__text {
       padding: 0 $space-m;
+    }
+
+    &__button {
+      margin: 0 $space-m;
     }
   }
 }

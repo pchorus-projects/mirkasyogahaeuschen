@@ -53,7 +53,7 @@
       </p>
 
       <div class="location">
-        <div class="location__image"><g-image src="@/assets/images/kursraum-2.jpg" alt="Kursraum"></g-image></div>
+        <div class="location__image"><g-image src="@/assets/images/forsthaus.jpg" alt="Kursraum"></g-image></div>
         <div class="location__image">
           <g-image class="cv__portrait" src="@/assets/images/mirka-portrait.jpg" alt="Portrait von Mirka"></g-image>
         </div>

@@ -17,14 +17,22 @@
     </p>
 
     <p class="kontakt-section__kontakt">
-      <a class="kontakt-section__link" href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
+      <a class="kontakt-section__link" :href="mailtoMirkaHref">mirka@mirkasyogahaeuschen.de</a>
       | Monschauer Straße&nbsp;12,&nbsp;52076&nbsp;Aachen
     </p>
   </section>
 </template>
 
 <script>
-export default {};
+import { mailtoMirkaHref } from '../constants';
+
+export default {
+  data: function () {
+    return {
+      mailtoMirkaHref,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -18,8 +18,7 @@
     </ul>
 
     <p class="u-heading">Lose your mind, find your soul.</p>
-
-    <a class="booking u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
+    <iframe class="eversports" width="100%" height="1450px" src="https://www.eversports.de/widget/w/iZsalE"></iframe>
   </section>
 </template>
 
@@ -130,6 +129,10 @@ $link-image-width: 196px;
 .booking {
   align-self: center;
   margin-bottom: $space-xl;
+}
+
+.eversports {
+  border: none;
 }
 
 @media (max-width: $max-width-desktop) {

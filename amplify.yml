@@ -3,16 +3,12 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - corepack enable
+        - npx --yes nypm i
     build:
       commands:
-        - npm run prettier-check
-        - npm run lint
-        - npm run generate
+        - npm run build
   artifacts:
-    baseDirectory: /.output/public
+    baseDirectory: .amplify-hosting
     files:
       - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*

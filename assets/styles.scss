@@ -1,0 +1,340 @@
+@use 'sass:color';
+@use 'variables';
+
+@font-face {
+  font-family: 'Windsong';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/windsong-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/gothic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Gothic';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url('fonts/gothicb.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/montserrat-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('fonts/montserrat-light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sensations and Qualities';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/sensations-and-qualities.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cabin Sketch';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url('fonts/cabin-sketch.ttf') format('truetype');
+}
+
+body {
+  font-family: variables.$font-family-default;
+  color: variables.$font-color-default;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: variables.$font-family-default;
+  color: variables.$font-color-default;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin: 0 0 variables.$space-xxs 0;
+  list-style-type: none;
+}
+
+.u-button {
+  display: inline-block;
+  font-size: variables.$font-size-m;
+  text-transform: uppercase;
+  padding: variables.$space-s variables.$space-xxl;
+  border: 1px solid variables.$font-color-default;
+  border-radius: 4px;
+
+  &:hover {
+    color: color.adjust(variables.$font-color-default, $lightness: -20%);
+    border-color: color.adjust(variables.$font-color-default, $lightness: -20%);
+  }
+
+  &--primary {
+    background-color: variables.$font-color-default;
+
+    &:hover {
+      background-color: color.adjust(variables.$font-color-default, $lightness: -20%);
+    }
+  }
+
+  &--primary-white {
+    color: rgb(5, 10, 10);
+    background-color: variables.$font-color-white;
+    border-color: variables.$font-color-white;
+
+    &:hover {
+      color: rgb(5, 10, 10);
+      background-color: color.adjust(variables.$font-color-white, $lightness: -10%);
+      border-color: color.adjust(variables.$font-color-white, $lightness: -10%);
+    }
+  }
+
+  &--primary-gray-blue {
+    color: rgb(5, 10, 10);
+    background-color: #7ea7bf;
+    border-color: #7ea7bf;
+
+    &:hover {
+      color: rgb(5, 10, 10);
+      background-color: color.adjust(#7ea7bf, $lightness: -10%);
+      border-color: color.adjust(#7ea7bf, $lightness: -10%);
+    }
+  }
+
+  &--small {
+    padding: variables.$space-xs variables.$space-s;
+  }
+}
+
+.u-font-xs {
+  font-size: variables.$font-size-xs;
+  line-height: variables.$line-height-xs;
+  &--paragraph {
+    margin-bottom: variables.$line-height-xs;
+  }
+}
+
+.u-font-s {
+  font-size: variables.$font-size-s;
+  line-height: variables.$line-height-s;
+  &--paragraph {
+    margin-bottom: variables.$line-height-s;
+  }
+}
+
+.u-font-m {
+  font-size: variables.$font-size-m;
+  line-height: variables.$line-height-m;
+  &--paragraph {
+    margin-bottom: variables.$line-height-m;
+  }
+}
+
+.u-font-l {
+  font-size: variables.$font-size-l;
+  line-height: variables.$line-height-l;
+  &--paragraph {
+    margin-bottom: variables.$line-height-l;
+  }
+}
+
+.u-font-xl {
+  font-size: variables.$font-size-xl;
+  line-height: variables.$line-height-xl;
+  &--paragraph {
+    margin-bottom: variables.$line-height-l;
+  }
+}
+
+.u-font-xxl {
+  font-size: variables.$font-size-xxl;
+  line-height: variables.$line-height-xxl;
+  &--paragraph {
+    margin-bottom: variables.$line-height-l;
+  }
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-heading {
+  font-family: variables.$font-family-header-default;
+  font-size: variables.$font-size-xl;
+  color: variables.$font-color-default;
+  text-align: center;
+  padding: variables.$space-xl variables.$space-m;
+
+  &--white {
+    color: variables.$font-color-white;
+  }
+}
+
+.section {
+  padding: variables.$space-xxl 0;
+}
+
+.u-margin-top {
+  &-xs {
+    margin-top: variables.$space-xs;
+  }
+  &-s {
+    margin-top: variables.$space-s;
+  }
+  &-m {
+    margin-top: variables.$space-m;
+  }
+  &-l {
+    margin-top: variables.$space-l;
+  }
+  &-xl {
+    margin-top: variables.$space-xl;
+  }
+}
+
+.u-margin-bottom {
+  &-xs {
+    margin-bottom: variables.$space-xs;
+  }
+  &-s {
+    margin-bottom: variables.$space-s;
+  }
+  &-m {
+    margin-bottom: variables.$space-m;
+  }
+  &-l {
+    margin-bottom: variables.$space-l;
+  }
+  &-xl {
+    margin-bottom: variables.$space-xl;
+  }
+  &-xxl {
+    margin-bottom: variables.$space-xxl;
+  }
+}
+
+.u-margin-left {
+  &-xs {
+    margin-left: variables.$space-xs;
+  }
+  &-s {
+    margin-left: variables.$space-s;
+  }
+  &-m {
+    margin-left: variables.$space-m;
+  }
+  &-l {
+    margin-left: variables.$space-l;
+  }
+  &-xl {
+    margin-left: variables.$space-xl;
+  }
+  &-xxl {
+    margin-left: variables.$space-xxl;
+  }
+}
+
+.u-margin-right {
+  &-xs {
+    margin-right: variables.$space-xs;
+  }
+  &-s {
+    margin-right: variables.$space-s;
+  }
+  &-m {
+    margin-right: variables.$space-m;
+  }
+  &-l {
+    margin-right: variables.$space-l;
+  }
+  &-xl {
+    margin-right: variables.$space-xl;
+  }
+  &-xxl {
+    margin-right: variables.$space-xxl;
+  }
+}
+
+.u-text-block {
+  h1 {
+    text-transform: uppercase;
+    font-size: variables.$font-size-xl;
+    line-height: variables.$line-height-xl;
+    color: variables.$font-color-default;
+    margin-top: variables.$space-xl;
+    margin-bottom: variables.$space-m;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: variables.$font-size-l;
+    line-height: variables.$line-height-l;
+    color: variables.$font-color-default;
+    margin-top: variables.$space-xl;
+    margin-bottom: variables.$space-m;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: variables.$font-size-m;
+    line-height: variables.$line-height-m;
+    color: variables.$font-color-default;
+    margin-top: variables.$space-l;
+    margin-bottom: variables.$space-m;
+  }
+
+  p {
+    @extend .u-font-m;
+    @extend .u-font-m--paragraph;
+  }
+
+  .u-font-s {
+    @extend .u-font-s;
+  }
+  .u-font-s--paragraph {
+    @extend .u-font-s--paragraph;
+  }
+}
+
+.u-text-justify {
+  text-align: justify;
+}

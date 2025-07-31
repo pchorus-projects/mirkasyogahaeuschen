@@ -28,6 +28,7 @@ function getBackgroundImageAltText(backgroundImage: ImageField) {
       title="Events"
       image-path="images/events-hero.jpg"
       image-alt-text="Ausschnitt einer meditierenden Frau, die mit buntem Puder bemalt ist."
+      width="1000"
     />
     <div class="illustration">
       <NuxtImg

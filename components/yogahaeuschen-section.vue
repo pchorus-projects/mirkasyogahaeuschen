@@ -55,9 +55,11 @@
       </p>
 
       <div class="location">
-        <div class="location__image"><NuxtImg src="images/forsthaus.jpg" alt="Kursraum" width="570" /></div>
         <div class="location__image">
-          <NuxtImg class="cv__portrait" src="images/mirka-portrait.jpg" alt="Portrait von Mirka" width="570" />
+          <NuxtImg src="images/forsthaus.jpg" alt="Kursraum" width="320" />
+        </div>
+        <div class="location__image">
+          <NuxtImg class="cv__portrait" src="images/mirka-portrait.jpg" alt="Portrait von Mirka" width="320" />
         </div>
       </div>
 

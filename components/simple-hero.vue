@@ -6,7 +6,7 @@ withDefaults(defineProps<{ title: string; imagePath: string; imageAltText: strin
 
 <template>
   <section class="hero">
-    <NuxtImg class="hero__image" :src="imagePath" :alt="imageAltText" width="1600" />
+    <NuxtImg class="hero__image" :src="imagePath" :alt="imageAltText" width="1000" />
     <div class="hero__content" :class="{ 'hero__content--dark': dark }">
       <MainNavigation />
       <NuxtLink to="/#willkommen">

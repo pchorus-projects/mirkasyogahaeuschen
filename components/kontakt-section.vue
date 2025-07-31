@@ -5,7 +5,7 @@ import { mailtoMirkaHref } from '~/constants';
 <template>
   <section class="kontakt-section">
     <h2 hidden>Kontakt</h2>
-    <NuxtImg class="kontakt-section__image" src="images/kontakt.jpg" alt="Mirka meditiert im Wald." />
+    <NuxtImg class="kontakt-section__image" src="images/kontakt.jpg" alt="Mirka meditiert im Wald." width="1000" />
 
     <NuxtImg
       class="kontakt-section__logo"

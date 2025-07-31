@@ -10,7 +10,7 @@ defineProps<{
 
 <template>
   <a class="event" :href="link" target="_blank" rel="noopener">
-    <NuxtImg class="event__image" :src="backgroundImageUrl" :alt="backgroundImageAltText" />
+    <NuxtImg class="event__image" :src="backgroundImageUrl" :alt="backgroundImageAltText" width="600" />
     <div v-if="title1" class="event__titles">
       <p class="event__title1">{{ title1 }}</p>
       <p class="event__title2">{{ title2 }}</p>

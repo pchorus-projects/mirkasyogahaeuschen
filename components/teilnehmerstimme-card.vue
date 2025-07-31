@@ -8,7 +8,7 @@ defineProps<{ iconColor: string; text: string; name: string; job: string }>();
       class="card__icon u-margin-bottom-xl"
       :src="`images/teilnehmerstimmen/icon-${iconColor}.png`"
       alt="Gezeichnetes Yogahäuschen-Herz"
-      width="440"
+      width="100"
     />
     <div class="card__text" v-html="text" />
     <p class="card__name u-font-l">{{ name }}</p>

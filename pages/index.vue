@@ -14,7 +14,7 @@ useMeta(
       <NuxtImg
         class="illustration__image"
         src="images/yoga-mirka.png"
-        width="1000"
+        width="500"
         :immediate="true"
         alt="Zeichnung von Mirka als Meerjungfrau"
       />

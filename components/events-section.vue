@@ -17,6 +17,7 @@ function getTitle(event: EventDocument) {
       class="events-section__image"
       src="images/events.jpg"
       alt="Mirka in der Nacht mit leuchtender Lichterkette."
+      width="1000"
     />
     <h2 class="events-heading u-heading u-heading--white">Events</h2>
 

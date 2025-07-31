@@ -53,7 +53,7 @@ const linkItems = [
               class="link__image"
               :src="`images/yoga-und-mehr-thumbnails/${linkItem.image}`"
               :alt="linkItem.imageAltText"
-              width="750"
+              width="196"
             />
           </div>
           <p class="link__text u-font-s">{{ linkItem.name }}</p>

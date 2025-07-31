@@ -6,7 +6,7 @@
       class="hero__image"
       src="images/landing-page-hero.jpg"
       alt="Mirka liegt auf Baum in Sonne am See."
-      width="1600"
+      width="1000"
     />
     <div class="hero__content">
       <MainNavigation />

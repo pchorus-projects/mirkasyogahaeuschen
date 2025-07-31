@@ -198,7 +198,7 @@ const yogaUndMehrItems = [
           :class="`yoga-list__image yoga-list__image--${index + 1}`"
           :src="`images/yoga-und-mehr-thumbnails/${item.image}`"
           :alt="item.imageAltText"
-          width="1536"
+          width="768"
         />
         <div class="yoga-list__text" v-html="item.text" />
         <a

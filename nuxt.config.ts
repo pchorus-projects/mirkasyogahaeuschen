@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   css: ['~/assets/styles.scss'],
   devtools: { enabled: true },
   image: {
+    provider: 'ipx',
     format: ['avif', 'webp', 'jpeg'],
     domains: ['images.prismic.io'],
   },

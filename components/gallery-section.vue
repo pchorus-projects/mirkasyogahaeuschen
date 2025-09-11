@@ -1,39 +1,113 @@
 <script setup lang="ts">
-const imageAltTexts = {
-  1: 'Mirka umarmt Baum am See.',
-  2: 'Yogamatte im Wald.',
-  3: 'Mirka und Frau genießen Sonnenschein.',
-  4: 'Mirka sitzt am Strand und blickt aufs Meer.',
-  5: 'Mirka beim Yoga im Yogahäuschen.',
-  6: 'Mirka dreht sich froh in der Aachener Innenstadt an einer Laterne.',
-  7: 'Mirka lächelt verträumt.',
-  8: 'Mala-Kette auf Blatt im Wald.',
-  9: 'Mirka mit bunten Blumen im Wald.',
-};
+const images = [
+  {
+    name: 'Mirka',
+    description: 'Tiefgründige Seele,<br>Yin-verliebt, Licht-Löwin<br>Studio-Inhaberin',
+    image: {
+      filename: 'Mirka.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Micha',
+    description: 'Humorvoll, Weltoffen,<br>always caring<br>im Mutterschutz',
+    image: {
+      filename: 'Micha.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Johanna',
+    description: 'Holistic, Flow Goddess,<br>Sun & Paws<br>Yin Yoga Ausbilderin, Flow Into Restorative, Workshops',
+    image: {
+      filename: 'Johanna.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Isabell',
+    description: 'Strahelnd, liebevoll, kreativ<br>Yin & Yang, Klang,<br>Special-Queen',
+    image: {
+      filename: 'Isabell.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Katrin',
+    description: 'Lebensfreude,<br>Sonnenschein,<br>Natur- & Tierfreundin,<br>Vinyasa Yoga',
+    image: {
+      filename: 'Katrin.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Sabrina',
+    description: 'Fels in der Brandung,<br>ruhige Kraft, Garden Soul<br>Yin Yoga',
+    image: {
+      filename: 'Sabrina.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Kathrin',
+    description: 'Klar, ruhig, stark<br>Postnatal/Mothers Yoga',
+    image: {
+      filename: 'Kathrin.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Nikki',
+    description: 'Waldherz, Creative Soul, Herzensnah<br>Hatha Yoga, Shake the Dust, Kreativ-Workshops',
+    image: {
+      filename: 'Nikki.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Mira',
+    description: 'Soulful Fire, Intuitive Dancer, Inspired & Inspiring<br>Kundalini Yoga, Soul Motion, Coaching',
+    image: {
+      filename: 'Mira.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Carlchen',
+    description: 'Kleiner Clown, großes Herz, Lebensfreude<br>Begleitet Mirka',
+    image: {
+      filename: 'Carlchen.jpg',
+      altText: '',
+    },
+  },
+  {
+    name: 'Milo',
+    description: 'Herzens-Eisbär,<br>Yoga Buddy, always kind<br>Begleitet Isabell',
+    image: {
+      filename: 'Milo.jpg',
+      altText: '',
+    },
+  },
+];
 </script>
 
 <template>
   <section class="container">
-    <h2 class="u-heading u-heading--white">Yoga is always with me</h2>
+    <h2 class="u-heading">Dein Yogahäuschen-Team</h2>
 
     <div class="gallery">
-      <NuxtImg
-        v-for="item in [1, 2, 3, 4, 5, 6, 7, 8, 9]"
-        :key="item"
-        :class="`gallery__image gallery__image--${item}`"
-        :src="`images/gallery/${item}.jpg`"
-        :alt="imageAltTexts[item]"
-        width="440"
-      />
-
-      <p class="gallery__text gallery__text--1">
-        <span class="u-margin-right-xl">Follow your</span><br /><span>bliss.</span>
-      </p>
-      <p class="gallery__text gallery__text--2">Your soul is whispering -<br />listen quietly for your answers...</p>
-      <p class="gallery__text gallery__text--3">Find peace,<br /><span class="u-margin-left-m">sister.</span></p>
-      <p class="gallery__text gallery__text--4">Inhale love,<br /><span class="u-margin-left-m">exhale love.</span></p>
-      <p class="gallery__text gallery__text--5">Your soul is whispering -<br />listen quietly for your answers...</p>
-      <p class="gallery__text gallery__text--6">Yoga is a key.</p>
+      <div v-for="item in images" :key="item.name" class="gallery__item">
+        <NuxtImg
+          class="gallery__image"
+          :src="`images/gallery/${item.image.filename}`"
+          :alt="item.image.altText"
+          width="440"
+        />
+        <div class="gallery__image-overlay"></div>
+        <div class="gallery__image-name">{{ item.name }}</div>
+        <div class="gallery__image-description" v-html="item.description"></div>
+      </div>
+      <div class="gallery__item gallery__item--empty">Hier<br />könntest<br />Du<br />strahlen</div>
     </div>
   </section>
 </template>
@@ -41,24 +115,37 @@ const imageAltTexts = {
 <style lang="scss" scoped>
 @use '../assets/variables';
 
-$link-image-width: 220px;
-$link-image-height: 144px;
+$link-image-width: 260px;
+$link-image-height: 220px;
 
 .container {
-  background-color: variables.$background-color-dark;
+  background-color: variables.$background-color-alternate;
   padding-bottom: variables.$space-xl;
 }
 
 .gallery {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, $link-image-width);
-  grid-template-rows: $link-image-height 2 * $link-image-height $link-image-height;
+  grid-template-rows: repeat(4, $link-image-height);
   justify-content: center;
-  column-gap: variables.$space-xxs;
-  row-gap: variables.$space-xxs;
-  margin-top: variables.$space-xl;
-  margin-bottom: variables.$space-xl;
+
+  &__item {
+    position: relative;
+    &:hover .gallery__image-description {
+      visibility: visible;
+    }
+
+    &--empty {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: variables.$background-color-alternate-light;
+      font-family: variables.$font-family-header-default;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
 
   &__image {
     width: 100%;
@@ -66,107 +153,62 @@ $link-image-height: 144px;
     object-fit: cover;
     display: block;
     z-index: 2;
-
-    &--3 {
-      object-position: 0 30%;
-    }
   }
 
-  &__text {
-    font-family: variables.$font-family-header-default;
-    color: variables.$font-color-white;
+  &__image-overlay {
     position: absolute;
-    transform: rotate(-20deg);
-    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      354deg,
+      rgba(107, 78, 67, 0.7) 0%,
+      rgba(107, 78, 67, 0) 30%,
+      rgba(107, 78, 67, 0) 70%,
+      rgba(107, 78, 67, 0) 100%
+    );
+  }
 
-    &--1 {
-      text-align: right;
-      font-size: variables.$font-size-xl;
-      top: -9%;
-      left: calc(50% - (2 * #{$link-image-width}) + #{variables.$space-xl});
-    }
-    &--2 {
-      font-size: variables.$font-size-l;
-      top: 40%;
-      left: calc(50% - (2 * #{$link-image-width}) - 72px);
-    }
-    &--3 {
-      font-size: variables.$font-size-xl;
-      top: 93%;
-      left: calc(50% - (2 * #{$link-image-width}) - #{variables.$space-l});
-    }
-    &--4 {
-      font-size: variables.$font-size-l;
-      top: -5%;
-      left: calc(50% + (1.4 * #{$link-image-width}));
-    }
-    &--5 {
-      font-size: variables.$font-size-l;
-      top: 55%;
-      left: calc(50% + #{$link-image-width});
-    }
-    &--6 {
-      font-size: variables.$font-size-xl;
-      top: 95%;
-      left: calc(50% + (1 * #{$link-image-width}));
-    }
+  &__image-name {
+    position: absolute;
+    left: variables.$space-s;
+    bottom: variables.$space-s;
+    right: variables.$space-m;
+    color: variables.$font-color-white;
+    font-family: variables.$font-family-header-default;
+    font-size: variables.$font-size-l;
+    text-align: right;
+  }
+
+  &__image-description {
+    display: flex;
+    visibility: hidden;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    background: radial-gradient(rgba(107, 78, 67, 0.7) 0%, rgba(107, 78, 67, 0) 70%);
+    top: variables.$space-s;
+    left: variables.$space-s;
+    right: variables.$space-s;
+    bottom: variables.$space-s;
+    color: variables.$font-color-white;
+    font-size: variables.$font-size-s;
+    text-align: center;
   }
 }
 
 @media (max-width: variables.$max-width-tablet) {
   .gallery {
-    &__text {
-      display: none;
-    }
+    grid-template-columns: repeat(2, $link-image-width);
+    grid-template-rows: repeat(6, $link-image-height);
   }
 }
 
 @media (max-width: variables.$max-width-mobile) {
   .gallery {
-    padding: variables.$space-xxxl 0;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, $link-image-height);
-
-    &__image {
-      &--9 {
-        display: none;
-      }
-    }
-
-    &__text {
-      display: none;
-
-      &--1 {
-        display: block;
-        top: variables.$space-xxl;
-        left: auto;
-        right: variables.$space-s;
-      }
-
-      &--3 {
-        display: block;
-        top: 0;
-        left: variables.$space-l;
-        right: auto;
-        bottom: auto;
-      }
-
-      &--4 {
-        display: block;
-        top: auto;
-        left: auto;
-        right: variables.$space-s;
-        bottom: variables.$space-xxs;
-      }
-
-      &--6 {
-        display: block;
-        top: auto;
-        left: variables.$space-xxs;
-        right: auto;
-        bottom: variables.$space-xxl;
-      }
-    }
   }
 }
 </style>

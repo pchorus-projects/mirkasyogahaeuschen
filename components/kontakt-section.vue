@@ -22,7 +22,7 @@ import { mailtoMirkaHref } from '~/constants';
 
     <p class="kontakt-section__kontakt">
       <a class="kontakt-section__link" :href="mailtoMirkaHref">mirka@mirkasyogahaeuschen.de</a>
-      | Monschauer Straße&nbsp;12,&nbsp;52076&nbsp;Aachen
+      | Am Viadukt&nbsp;7,&nbsp;52066&nbsp;Aachen
     </p>
   </section>
 </template>

@@ -36,7 +36,7 @@ withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
     >
       {{ navItem.name }}
     </NuxtLink>
-    <a class="u-button u-button--primary-gray-blue u-button--small" :href="coursePlanUrl" target="_blank" rel="noopener"
+    <a class="u-button u-button--primary-beige u-button--small" :href="coursePlanUrl" target="_blank" rel="noopener"
       >Kursplan</a
     >
   </nav>

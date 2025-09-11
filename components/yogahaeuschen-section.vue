@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section>
-    <h2 class="u-heading">Mirka & das Yogahäuschen</h2>
+  <section class="section u-background-alternate">
+    <h2 class="u-heading u-heading--no-padding-top">Mirka & das Yogahäuschen</h2>
     <div class="illustration">
       <NuxtImg
         class="illustration__image"
@@ -14,72 +14,70 @@
     <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you."</p>
     <div class="text">
       <p>
-        Herzlich Willkommen auf der Seite zu meinem Yogahäuschen. Ich bin Mirka, Aachenerin und habe Yoga sehr ins Herz
-        geschlossen, weil ich über die Praxis Jahr für Jahr mehr und mehr zu mir gereist bin. Mit mehr Bewusstsein,
-        Achtsamkeit, Zufriedenheit und Dankbarkeit gehe ich dank Yoga durchs Leben. Das Schöne ist, dass dieser Weg
-        niemals endet. Meine Lehrerin hat mir dazu ein passendes Mantra mitgegeben:
+        Herzlich Willkommen auf der Seite zum Yogahäuschen. Dein Wohlfühlort für Ruhe, Tiefe und Selbstliebe. Wie schön,
+        dass du hier bist.
       </p>
       <p>
-        „Been travelling a day,<br />
-        been travelling a year,<br />
-        been travelling a lifetime to find my way home.<br />
-        Home is where my heart is,<br />
-        my heart is my home.“
+        Mit Mirkas Yogahäuschen steht für dich ein Praxisraum für Tiefe, Stille, bewusstes Erleben und echte Erfahrung
+        offen. Ein Platz, an dem du dich erinnern darfst, wie wichtig DU bist und wie Achtsamkeit dir dabei hilft,
+        langsamer zu werden und bewusst wahrzunehmen. In Mirkas Yogahäuschen bist du eingeladen, dich zu fühlen, zu
+        deiner Essenz zurückzukehren, dich weiterzuentwickeln und in einem Meer voller Selbstliebe zu wachsen.
       </p>
       <p>
-        Auf meinem Yogaweg habe ich nicht nur mich selbst besser kennengelernt, sondern viele besondere und spannende
-        Menschen und weitere wertvolle Unterstützer, wie die ätherischen Öle, Musik, Coaching-Wege, Berührung.
+        Ich bin Mirka, Löwin, dem Herzen folgend und liebe es, zugewandt tief nach innen zu tauchen, zu erforschen und
+        zu erleben. Für uns gemeinsam wünsche ich mir diesen lichtvollen Ort. An dem wir gemeinsam 'sein' können. All
+        das, das ich selber als faszinierend, heilsam, stärkend und unterstützend erlebe, teile ich von Herzen gerne
+        über meine energetische Arbeit mit dir. Dazu zählen neben meiner tiefen Begeisterung für das Yin und die innere
+        Arbeit auch ätherische Öle, Berührung und Klang.
       </p>
       <p>
-        So gerne teile ich mit anderen Menschen über die Energiearbeit meine persönliche und fachliche Erfahrung,
-        erinnere ans Achtsamsein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr an
-        Selbstliebe zu wählen.
+        Seit ein paar Jahren wirke ich nun gemeinsam mit meinem Team – mit bezaubernden, kreativen und herzlichen
+        Menschen. Gemeinsam möchten wir dich über die Philosophie des Yoga an wichtige Werte erinnern und dich dabei
+        unterstützen, dir selber wieder näher zu kommen. Bei uns findest du einen Ort zum Yogapraktizieren, Atmen,
+        Meditieren, Reflektieren, Tanzen, Entspannen, Regenerieren und Fühlen.
       </p>
-      <p>
-        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlfühlens sein. Hier findest du Raum für
-        Selbsterfahrung, Transformation und Regeneration.
-      </p>
-      <p>
-        Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
-        Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
-        Entspannen dem Wetter zusehen und manchmal huscht auch sogar ein Eichhörnchen, Hase oder Reh vorbei.
-      </p>
-      <p>
-        Von Frühling bis Herbst nutzen wir auch den privaten, großzügigen, geschützten Garten um noch mehr in den Genuss
-        des besonderen Umfelds zu kommen. Wir fühlen die Sonne und den Wind auf der Haut, hören dem fröhlichen
-        Gezwitscher der Vögel zu und lassen unsere Seelen mit einstimmen…
-      </p>
-      <p>
-        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen
-        zum Yoga praktizieren, Meditieren, Entspannen, Tee trinken, im Garten sein...
-      </p>
+      <p>Ganz egal, wo du gerade auf deinem Weg stehst: du bist willkommen. Von Herzen.</p>
 
       <div class="location">
         <div class="location__image">
-          <NuxtImg src="images/forsthaus.jpg" alt="Kursraum" width="320" />
+          <NuxtImg
+            class="cv__portrait"
+            src="images/mirka-portrait.jpg"
+            alt="Mirka lächelt über ein schwarz-weiß Porträt"
+            width="320"
+          />
         </div>
         <div class="location__image">
-          <NuxtImg class="cv__portrait" src="images/mirka-portrait.jpg" alt="Portrait von Mirka" width="320" />
+          <NuxtImg
+            src="images/studio.jpg"
+            alt="Gezeichnetes Viadukut Aachen mit Sicht auf Dachgeschoss zu Mirkas Yogahäuschen mit Logo"
+            width="320"
+          />
         </div>
       </div>
+    </div>
+  </section>
 
-      <p>Mehr zu mir:</p>
+  <section class="section">
+    <div class="text">
+      <p class="u-margin-bottom-xs">Meine Qualifikationen und Lehrtätigkeiten:</p>
       <ul>
-        <li>Seit 2007 auf dem Yogaweg</li>
-        <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
         <li>
-          Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
-          Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
-          Beate Meyer (Anatomie)<br />
-          Dr. Maitreya Larios (Philosophie)
+          Yin-Ausbildung, Yin Yoga Sessions, Yin-Yoga-Coaching<br />(Ausbildung Yin-Yoga und Coaching: Andrea Huson)
         </li>
-        <li>Polarity Therapie I Emmanuelle Collinet</li>
-        <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
-        <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
+        <li>Aroma-Yoga®-Lehrerin<br />(Ausbildung: Emmanuelle Collinet)</li>
         <li>
-          Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
-          Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
+          Polarity-Körperarbeit - energetische Balancearbeit mit Akupressur, Aromaölen und Chakrabalancing<br />(Ausbildung
+          Polarity Therapie: Emmanuelle Collinet)
         </li>
+        <li>Yogalehrerin<br />(Ausbildung: Vanessa Stilp & Silja Mahlow mit Beate Meyer und Dr. Maitreya Larios)</li>
+        <li>Prä-, Postnatal- & Mama-Baby-Yogalehrerin<br />(Ausbildung: Stefanie Weyrauch)</li>
+        <li>Beckenbodentrainerin<br />(Ausbildung: AHAB Akademie)</li>
+        <li>
+          Planung und Begleitung von Zeremonien & Ritualen<br />(Blessing-Way-Circle, Freundinnen- und Familien-Rituale
+          u.a.)
+        </li>
+        <li>Kinder- & Familien-Yoga<br />(Ausbildung Kinder-Yoga: Carolin Richard)</li>
       </ul>
     </div>
   </section>
@@ -87,6 +85,12 @@
 
 <style lang="scss" scoped>
 @use '../assets/variables';
+
+li {
+  &:not(:last-child) {
+    margin-bottom: variables.$space-m;
+  }
+}
 
 .illustration {
   text-align: center;
@@ -105,7 +109,6 @@
 }
 
 .text {
-  padding-bottom: variables.$space-xl;
   max-width: 768px;
   margin: auto;
 
@@ -119,7 +122,6 @@
   display: flex;
   align-items: stretch;
   gap: variables.$space-l;
-  margin-bottom: variables.$space-l;
   padding: 0 variables.$space-xl;
 
   &__image {

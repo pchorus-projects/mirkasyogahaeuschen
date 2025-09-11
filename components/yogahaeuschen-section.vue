@@ -14,44 +14,42 @@
     <p class="image-subtitle">"When you do things from your soul, you feel a river moving in you."</p>
     <div class="text">
       <p>
-        Herzlich Willkommen auf der Seite zu meinem Yogahäuschen. Ich bin Mirka, Aachenerin und habe Yoga sehr ins Herz
-        geschlossen, weil ich über die Praxis Jahr für Jahr mehr und mehr zu mir gereist bin. Mit mehr Bewusstsein,
-        Achtsamkeit, Zufriedenheit und Dankbarkeit gehe ich dank Yoga durchs Leben. Das Schöne ist, dass dieser Weg
-        niemals endet. Meine Lehrerin hat mir dazu ein passendes Mantra mitgegeben:
+        Herzlich Willkommen auf der Seite zum Yogahäuschen. Dein Ort für Ruhe, Tiefe und Selbstliebe. Ein Platz, der
+        umarmt ist von Burtscheid und Frankenberg.
       </p>
       <p>
-        „Been travelling a day,<br />
-        been travelling a year,<br />
-        been travelling a lifetime to find my way home.<br />
-        Home is where my heart is,<br />
-        my heart is my home.“
+        Wie schön, dass du hier bist. Ich bin Mirka, meinen ersten Atemzug habe ich in Aachen-Burtscheid, nur wenige
+        Meter vom Studio entfernt, gemacht. Ich liebe es, hier zu leben und das zu praktizieren, was mich erfüllt und
+        glücklich macht. Yoga habe ich schon vor vielen Jahren tief ins Herz geschlossen. Über die Praxis und
+        Philosophie bin ich Jahr für Jahr mehr zu mir selbst gereist – mit mehr Bewusstsein, Achtsamkeit, Zufriedenheit
+        und Dankbarkeit.
       </p>
       <p>
-        Auf meinem Yogaweg habe ich nicht nur mich selbst besser kennengelernt, sondern viele besondere und spannende
-        Menschen und weitere wertvolle Unterstützer, wie die ätherischen Öle, Musik, Coaching-Wege, Berührung.
+        Mein Weg wurde dabei immer intensiver, war immer vielfältig und bunt – und zugleich meine Ruhe und Basis. Das
+        Schönste ist: dieser Weg endet nie. So wie der Weg unserer Seele. Einer meiner Lehrer schenkte mir dazu ein
+        Mantra, das mich sehr berührt und mit Liebe und Frieden füllt:
+      </p>
+      <p class="image-subtitle">"If we walk forever, we have time for now."</p>
+      <p>
+        Auf meinem Yogaweg darf ich mich nicht nur selbst besser kennenlernen, sondern auch viele besondere Menschen.
+        Außerdem habe ich weitere, wertvolle Begleiter gefunden, wie die Energie ätherischer Öle, die Kraft von Musik
+        und Klang, heilsame Coaching-Wege und die Wirkung von Berührung. All das fließt heute in meine Arbeit ein.
       </p>
       <p>
-        So gerne teile ich mit anderen Menschen über die Energiearbeit meine persönliche und fachliche Erfahrung,
-        erinnere ans Achtsamsein, unterstütze dabei, über Yoga mehr Raum zum Fühlen zu öffnen und den Weg in ein Mehr an
-        Selbstliebe zu wählen.
+        Mit Mirkas Yogahäuschen möchte ich einen Raum für dich öffnen – für Tiefe, Stille, bewusstes Erleben und echte
+        Erfahrung. Einen Ort, an dem du dich erinnern darfst, wie wichtig Achtsamkeit ist. Wo du Raum findest, dich
+        selbst wieder zu spüren, zu deiner Essenz zurückzukehren, dich weiterzuentwickeln und in einem Meer voller
+        Selbstliebe zu wachsen.
       </p>
       <p>
-        MIRKAS YOGAHÄUSCHEN soll für dich ein Ort der Ruhe und des Wohlfühlens sein. Hier findest du Raum für
-        Selbsterfahrung, Transformation und Regeneration.
+        Seit ein paar Jahren wirke ich nun gemeinsam mit meinem Team – bezaubernden, kreativen, herzlichen Menschen.
+        Gemeinsam möchten wir dich über die Philosophie des Yoga an wichtige Werte erinnern und dich dabei unterstützen,
+        dir selber näher zu kommen.
       </p>
       <p>
-        Dieses naturnahe Fleckchen, an das ich dich einlade, bietet dir beste Voraussetzungen dafür. Durch die hohen
-        Fenster des exklusiven Wintergartens siehst du direkt in den Wald, bist von alten Bäumen umgeben, kannst beim
-        Entspannen dem Wetter zusehen und manchmal huscht auch sogar ein Eichhörnchen, Hase oder Reh vorbei.
-      </p>
-      <p>
-        Von Frühling bis Herbst nutzen wir auch den privaten, großzügigen, geschützten Garten um noch mehr in den Genuss
-        des besonderen Umfelds zu kommen. Wir fühlen die Sonne und den Wind auf der Haut, hören dem fröhlichen
-        Gezwitscher der Vögel zu und lassen unsere Seelen mit einstimmen…
-      </p>
-      <p>
-        Ich verspreche dir: dieser einzigartige Ort hat zu jeder Jahreszeit seinen Charme. Du bist herzlich Willkommen
-        zum Yoga praktizieren, Meditieren, Entspannen, Tee trinken, im Garten sein...
+        Bei uns bist du eingeladen, Yoga zu praktizieren, zu atmen, zu meditieren, zu reflektieren, zu tanzen, zu
+        entspannen, zu regenerieren, zu fühlen – und ein Tässchen Tee zu genießen. Ganz egal, wo du gerade auf deinem
+        Weg stehst: du bist willkommen. Von Herzen.
       </p>
 
       <div class="location">
@@ -66,20 +64,15 @@
       <p>Mehr zu mir:</p>
       <ul>
         <li>Seit 2007 auf dem Yogaweg</li>
-        <li>Yin Yogalehrerin und - Coach I verliebt-in-yoga, Andrea Huson, Köln</li>
-        <li>
-          Yogalehrerin (300 Std.) I Om Shanti, Ratingen<br />
-          Vanessa Stilp & Silja Mahlow (Yoga & Yogatherapie, Coaching)<br />
-          Beate Meyer (Anatomie)<br />
-          Dr. Maitreya Larios (Philosophie)
-        </li>
-        <li>Polarity Therapie I Emmanuelle Collinet</li>
-        <li>Aroma Yogalehrerin I Emmanuelle Collinet</li>
-        <li>Kinderyogalehrerin I Yoga & Familie, Carolin Richard, Münster</li>
-        <li>
-          Teilnahme an diversen Yoga-Workshops zu Themen, wie<br />
-          Yin Yoga, Yoga Nidra, Women circles, Tantra, Detox, Arm Balances, Thai Yoga Massage
-        </li>
+        <li>Ausbilderin Yin Yoga Lehre</li>
+        <li>Yin Yoga Coach</li>
+        <li>Yoga- & Yin Yogalehrerin</li>
+        <li>Polarity Therapie</li>
+        <li>Aroma Yogalehrerin</li>
+        <li>Kinder Yogalehrerin</li>
+        <li>Prä- und Postnatal Yogalehrerin</li>
+        <li>Beckenboden Trainerin</li>
+        <li>Yogalehrerin für Mama und Baby</li>
       </ul>
     </div>
   </section>

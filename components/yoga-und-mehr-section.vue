@@ -3,40 +3,46 @@ import { coursePlanUrl } from '~/constants';
 
 const linkItems = [
   {
-    name: 'Ausbildung',
-    to: 'ausbildung',
-    image: 'ausbildung.jpg',
-    imageAltText: 'Mirka unterstützt Schülerin in Yoga-Asana.',
+    name: 'Yoga & mehr',
+    to: 'yoga-und-mehr',
+    image: 'yoga-und-mehr.jpg',
+    imageAltText: '',
+  },
+  {
+    name: 'Rund um die Geburt & Blessing Way',
+    to: 'geburt-und-blessing-way',
+    image: 'rund-um-die-geburt.jpg',
+    imageAltText: '',
+  },
+  {
+    name: 'Specials, Workshops, Events & Retreats',
+    to: 'specials',
+    image: 'specials.jpg',
+    imageAltText: '',
+  },
+  {
+    name: 'Herzensfeste & Yoga',
+    to: 'herzensfeste',
+    image: 'herzensfeste.jpg',
+    imageAltText: '',
+  },
+  {
+    name: 'Yin Ausbildung',
+    to: 'yin-ausbildung',
+    image: 'yin-ausbildung.jpg',
+    imageAltText: '',
   },
   {
     name: 'Yoga Coaching',
     to: 'yoga-coaching',
     image: 'yoga-coaching.jpg',
-    imageAltText: 'Mirka unterstützt Kundin in Entspannungshaltung.',
+    imageAltText: '',
   },
   {
-    name: '(Yin) Yoga',
-    to: 'yoga',
-    image: 'yin-yoga.jpg',
-    imageAltText: 'Mirka liegt in Rückenlage und hält Hände in Gebetshaltung an ihre Stirn.',
-  },
-  {
-    name: 'Online Yoga',
-    to: 'online-yoga',
-    image: 'online-yoga.jpg',
-    imageAltText: 'Notebook steht vor Yogaplatz zuhause.',
-  },
-  {
-    name: 'Kinder- und Familien-Yoga',
-    to: 'familien-yoga',
-    image: 'familien-yoga.jpg',
-    imageAltText: 'Mutter und Tochter schmiegen Stirn an Stirn.',
-  },
-  {
-    name: 'Ätherische Öle',
-    to: 'aetherische-oele',
-    image: 'aetherische-oele.jpg',
-    imageAltText: 'Mirka im Wald, hält Blätter in Händen und riecht daran.',
+    name: 'Chakra Clearing',
+    to: 'chakra-clearing',
+    image: 'chakra-clearing.jpg',
+    imageAltText: '',
   },
 ];
 </script>
@@ -71,7 +77,8 @@ const linkItems = [
 @use 'sass:color';
 @use '../assets/variables';
 
-$link-image-width: 196px;
+$link-image-width: 168px;
+$link-image-height: 120px;
 
 .container {
   background-color: variables.$background-color-alternate;
@@ -81,7 +88,7 @@ $link-image-width: 196px;
 
 .link-list {
   display: grid;
-  grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
+  grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: variables.$space-l;
 }
@@ -89,7 +96,7 @@ $link-image-width: 196px;
 .link {
   &__image-container {
     width: $link-image-width;
-    height: $link-image-width;
+    height: $link-image-height;
     overflow: hidden;
   }
 
@@ -141,7 +148,7 @@ $link-image-width: 196px;
   .link {
     &__image-container {
       width: 50vw;
-      height: 50vw;
+      height: 32vw;
     }
   }
 }

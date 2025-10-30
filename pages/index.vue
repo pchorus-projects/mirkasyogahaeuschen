@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import NewsletterSection from '~/components/newsletter-section.vue';
+
 useMeta(
   'Welcome',
-  'kleines, ländliches, gut erreichbares Yogastudio in Aachen. Persönliches Yogatraining, Coaching sowie regelmäßige Termine in Klein-Gruppen',
+  'Gemütliches, modernes Yogastudio zwischen Burtscheid und Frankenberger Viertel. Besondere Yogakurse und herzwärmende Yoga-Events, Blessing Way Zeremonien und Einzel-Sessions.',
 );
 </script>
 
@@ -10,16 +12,6 @@ useMeta(
     <LandingPageHero id="willkommen" />
     <YogahaeuschenSection id="mirka-und-das-yogahaeuschen" />
     <YogaUndMehrSection id="yoga-und-mehr" />
-    <div class="illustration">
-      <NuxtImg
-        class="illustration__image"
-        src="images/yoga-mirka.png"
-        width="500"
-        :immediate="true"
-        alt="Zeichnung von Mirka als Meerjungfrau"
-      />
-    </div>
-
     <EventsSection id="events" />
     <GallerySection />
     <div class="illustration">
@@ -31,6 +23,7 @@ useMeta(
       />
     </div>
     <TeilnehmerstimmenSection />
+    <NewsletterSection />
   </div>
 </template>
 
@@ -40,6 +33,7 @@ useMeta(
 .illustration {
   padding: variables.$space-xl;
   text-align: center;
+  background-color: variables.$background-color-alternate;
 
   &__image {
     width: 100%;

@@ -33,11 +33,10 @@ defineProps<{ iconColor: string; text: string; name: string; job: string }>();
 
   &__text {
     font-size: variables.$font-size-s;
-    line-height: variables.$line-height-s;
     flex: 1;
-    margin-bottom: variables.$line-height-s;
+    margin-bottom: variables.$font-size-s * variables.$line-height-default;
     p {
-      margin-bottom: variables.$line-height-s;
+      margin-bottom: variables.$font-size-s * variables.$line-height-default;
     }
   }
 

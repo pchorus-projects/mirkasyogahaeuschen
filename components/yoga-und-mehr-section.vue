@@ -1,42 +1,51 @@
 <script setup lang="ts">
-import { coursePlanUrl } from '~/constants';
+useHead({
+  script: [
+    {
+      src: 'https://widget-static.eversports.io/loader.js',
+      type: 'module',
+      async: true,
+      defer: true,
+    },
+  ],
+});
 
 const linkItems = [
   {
-    name: 'Ausbildung',
-    to: 'ausbildung',
-    image: 'ausbildung.jpg',
-    imageAltText: 'Mirka unterstützt Schülerin in Yoga-Asana.',
+    name: 'Yoga & mehr',
+    to: 'yoga-und-mehr',
+    image: 'yoga-und-mehr.jpg',
+    imageAltText: 'Mirka in Fisch-Asana',
   },
   {
-    name: 'Yoga Coaching',
-    to: 'yoga-coaching',
-    image: 'yoga-coaching.jpg',
-    imageAltText: 'Mirka unterstützt Kundin in Entspannungshaltung.',
+    name: 'Rund um die Geburt',
+    to: 'rund-um-die-geburt',
+    image: 'rund-um-die-geburt.jpg',
+    imageAltText: 'Mutter und Baby Kopf an Kopf',
   },
   {
-    name: '(Yin) Yoga',
-    to: 'yoga',
-    image: 'yin-yoga.jpg',
-    imageAltText: 'Mirka liegt in Rückenlage und hält Hände in Gebetshaltung an ihre Stirn.',
+    name: 'Specials/Events',
+    to: 'specials',
+    image: 'specials.jpg',
+    imageAltText: 'Frau im Yogisitz mit bunter Farbe auf der Haut',
   },
   {
-    name: 'Online Yoga',
-    to: 'online-yoga',
-    image: 'online-yoga.jpg',
-    imageAltText: 'Notebook steht vor Yogaplatz zuhause.',
+    name: 'Herzensfeste & Yoga',
+    to: 'herzensfeste',
+    image: 'herzensfeste.jpg',
+    imageAltText: 'Vier strahlende Freundinnen, die Freude ausstrahlen mit bunten Konfetti um sie herum',
   },
   {
-    name: 'Kinder- und Familien-Yoga',
-    to: 'familien-yoga',
-    image: 'familien-yoga.jpg',
-    imageAltText: 'Mutter und Tochter schmiegen Stirn an Stirn.',
+    name: 'Yin Ausbildung',
+    to: 'yin-ausbildung',
+    image: 'yin-ausbildung.jpg',
+    imageAltText: 'Ausbilderin Johanna zeigt Meridiane an Puppe',
   },
   {
-    name: 'Ätherische Öle',
-    to: 'aetherische-oele',
-    image: 'aetherische-oele.jpg',
-    imageAltText: 'Mirka im Wald, hält Blätter in Händen und riecht daran.',
+    name: 'Coaching & Chakra',
+    to: 'coaching-und-chakra',
+    image: 'coaching-und-chakra.jpg',
+    imageAltText: 'gemalter Mensch bei Nacht vor buntem Mond, der seine Hand auf seinen bunten Herzraum legt',
   },
 ];
 </script>
@@ -61,9 +70,9 @@ const linkItems = [
       </li>
     </ul>
 
-    <p class="u-heading">Lose your mind, find your soul.</p>
+    <p class="u-heading">Lose your mind, find your soul - hier geht's zu unserem Buchungsportal...</p>
 
-    <a class="booking u-button" :href="coursePlanUrl" target="_blank" rel="noopener">Kursplan</a>
+    <div class="u-margin-left-m u-margin-right-m" data-eversports-widget-id="4b30ad4f-57c9-412c-b5bc-9e83e37b5432" />
   </section>
 </template>
 
@@ -71,7 +80,8 @@ const linkItems = [
 @use 'sass:color';
 @use '../assets/variables';
 
-$link-image-width: 196px;
+$link-image-width: 168px;
+$link-image-height: 120px;
 
 .container {
   background-color: variables.$background-color-alternate;
@@ -84,12 +94,13 @@ $link-image-width: 196px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: variables.$space-l;
+  padding-bottom: variables.$space-xl;
 }
 
 .link {
   &__image-container {
     width: $link-image-width;
-    height: $link-image-width;
+    height: $link-image-height;
     overflow: hidden;
   }
 
@@ -122,11 +133,6 @@ $link-image-width: 196px;
   }
 }
 
-.booking {
-  align-self: center;
-  margin-bottom: variables.$space-xl;
-}
-
 @media (max-width: variables.$max-width-desktop) {
   .link-list {
     grid-template-columns: $link-image-width $link-image-width $link-image-width;
@@ -141,7 +147,7 @@ $link-image-width: 196px;
   .link {
     &__image-container {
       width: 50vw;
-      height: 50vw;
+      height: 32vw;
     }
   }
 }

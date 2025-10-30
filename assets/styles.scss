@@ -60,6 +60,8 @@
 body {
   font-family: variables.$font-family-default;
   color: variables.$font-color-default;
+  font-size: variables.$font-size-default;
+  line-height: variables.$line-height-default;
   margin: 0;
   padding: 0;
 }
@@ -101,7 +103,6 @@ li {
   text-transform: uppercase;
   padding: variables.$space-s variables.$space-xxl;
   border: 1px solid variables.$font-color-default;
-  border-radius: 4px;
 
   &:hover {
     color: color.adjust(variables.$font-color-default, $lightness: -20%);
@@ -128,15 +129,15 @@ li {
     }
   }
 
-  &--primary-gray-blue {
+  &--primary-beige {
     color: rgb(5, 10, 10);
-    background-color: #7ea7bf;
-    border-color: #7ea7bf;
+    background-color: variables.$background-color-alternate;
+    border-color: variables.$background-color-alternate;
 
     &:hover {
       color: rgb(5, 10, 10);
-      background-color: color.adjust(#7ea7bf, $lightness: -10%);
-      border-color: color.adjust(#7ea7bf, $lightness: -10%);
+      background-color: color.adjust(variables.$background-color-alternate, $lightness: -10%);
+      border-color: color.adjust(variables.$background-color-alternate, $lightness: -10%);
     }
   }
 
@@ -147,54 +148,65 @@ li {
 
 .u-font-xs {
   font-size: variables.$font-size-xs;
-  line-height: variables.$line-height-xs;
   &--paragraph {
-    margin-bottom: variables.$line-height-xs;
+    margin-bottom: variables.$font-size-xs * variables.$line-height-default;
   }
 }
 
 .u-font-s {
   font-size: variables.$font-size-s;
-  line-height: variables.$line-height-s;
   &--paragraph {
-    margin-bottom: variables.$line-height-s;
+    margin-bottom: variables.$font-size-s * variables.$line-height-default;
   }
 }
 
 .u-font-m {
   font-size: variables.$font-size-m;
-  line-height: variables.$line-height-m;
   &--paragraph {
-    margin-bottom: variables.$line-height-m;
+    margin-bottom: variables.$font-size-m * variables.$line-height-default;
   }
 }
 
 .u-font-l {
   font-size: variables.$font-size-l;
-  line-height: variables.$line-height-l;
-  &--paragraph {
-    margin-bottom: variables.$line-height-l;
-  }
 }
 
 .u-font-xl {
   font-size: variables.$font-size-xl;
-  line-height: variables.$line-height-xl;
-  &--paragraph {
-    margin-bottom: variables.$line-height-l;
-  }
 }
 
 .u-font-xxl {
   font-size: variables.$font-size-xxl;
-  line-height: variables.$line-height-xxl;
-  &--paragraph {
-    margin-bottom: variables.$line-height-l;
-  }
+}
+
+.u-text-align-center {
+  text-align: center;
 }
 
 .u-uppercase {
   text-transform: uppercase;
+}
+
+.u-nowrap {
+  text-wrap: nowrap;
+}
+
+.u-background-alternate {
+  background-color: variables.$background-color-alternate;
+}
+
+.u-max-page-width {
+  max-width: variables.$max-content-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 variables.$space-m;
+  box-sizing: border-box;
+}
+
+@media (max-width: variables.$max-width-mobile) {
+  .u-nowrap--wrap-mobile {
+    text-wrap: auto;
+  }
 }
 
 .u-heading {
@@ -206,6 +218,10 @@ li {
 
   &--white {
     color: variables.$font-color-white;
+  }
+
+  &--no-padding-top {
+    padding: 0 variables.$space-m variables.$space-xl variables.$space-m;
   }
 }
 
@@ -298,7 +314,6 @@ li {
   h1 {
     text-transform: uppercase;
     font-size: variables.$font-size-xl;
-    line-height: variables.$line-height-xl;
     color: variables.$font-color-default;
     margin-top: variables.$space-xl;
     margin-bottom: variables.$space-m;
@@ -307,7 +322,6 @@ li {
   h2 {
     text-transform: uppercase;
     font-size: variables.$font-size-l;
-    line-height: variables.$line-height-l;
     color: variables.$font-color-default;
     margin-top: variables.$space-xl;
     margin-bottom: variables.$space-m;
@@ -316,15 +330,23 @@ li {
   h3 {
     text-transform: uppercase;
     font-size: variables.$font-size-m;
-    line-height: variables.$line-height-m;
     color: variables.$font-color-default;
     margin-top: variables.$space-l;
-    margin-bottom: variables.$space-m;
+    margin-bottom: variables.$space-s;
   }
 
   p {
     @extend .u-font-m;
-    @extend .u-font-m--paragraph;
+    &:not(:last-child) {
+      @extend .u-font-m--paragraph;
+    }
+    &.u-margin-bottom-xs {
+      @extend .u-margin-bottom-xs;
+    }
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   .u-font-s {

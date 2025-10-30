@@ -24,8 +24,8 @@ useMeta('Impressum | Datenschutz');
         <h3>Betreiber der Webseite</h3>
         <p>
           Mirka Carlsen<br />
-          Monschauer Straße 12<br />
-          52076 Aachen<br />
+          Am Viadukt 7<br />
+          52066 Aachen<br />
           Telefon: 0151 59173563<br />
           Email: <a href="mailto:mirka@mirkasyogahaeuschen.de">mirka@mirkasyogahaeuschen.de</a>
         </p>
@@ -162,7 +162,7 @@ useMeta('Impressum | Datenschutz');
           bzw. Stelle:<br />
           <span class="adsimple-311879228" style="font-weight: 400"
             >Mirka Carlsen<br />
-            Monschauer Straße 12, 52076 Aachen, Deutschland</span
+            Am Viadukt 7, 52066 Aachen, Deutschland</span
           >
         </p>
         <p>
@@ -920,7 +920,6 @@ useMeta('Impressum | Datenschutz');
 .heading-thank-you {
   font-family: variables.$font-family-header-default;
   font-size: variables.$font-size-xl;
-  line-height: variables.$line-height-xl;
   margin-bottom: variables.$space-s;
 }
 </style>

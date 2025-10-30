@@ -102,7 +102,6 @@ function getTitle(event: EventDocument) {
     font-size: variables.$font-size-s;
     text-transform: uppercase;
     border: 1px solid variables.$font-color-white;
-    border-radius: 4px;
     padding: variables.$space-xs variables.$space-xxl;
 
     &:hover {

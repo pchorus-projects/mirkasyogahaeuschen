@@ -309,7 +309,7 @@ const yogaUndMehrItems = [
     `,
   },
   {
-    name: 'Herzensfeste & Yoga – wir gestalten Eure besonderen Momente und Anlässe, die das Leben und Eure Verbindung feiern',
+    name: 'Herzensfeste & Yoga',
     shortName: 'Herzensfeste',
     to: 'herzensfeste',
     image: 'herzensfeste.jpg',
@@ -451,7 +451,7 @@ const yogaUndMehrItems = [
     image: 'coaching-und-chakra.jpg',
     imageAltText: 'gemalter Mensch bei Nacht vor buntem Mond, der seine Hand auf seinen bunten Herzraum legt',
     text: `
-            <h3>Yoga Coaching – <span >innere Rückverbindung | spürbare Wahrheit | verkörpertes Fühlen</span></h3>
+            <h3 style="margin-top: 0;">Yoga Coaching – <span >innere Rückverbindung | spürbare Wahrheit | verkörpertes Fühlen</span></h3>
             <p>
               Du wünschst dir mehr Verbindung nach innen? Möchtest dir selbst wieder näherkommen,
               deine Gefühle bewusster wahrnehmen, verstehen – und dieses gefühlte Verständnis wirklich

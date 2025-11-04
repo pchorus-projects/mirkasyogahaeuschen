@@ -70,6 +70,10 @@ const linkItems = [
       </li>
     </ul>
 
+    <div class="u-max-page-width u-margin-bottom-xl">
+      <NuxtLink class="u-button" to="/yoga-und-mehr" external>Mehr erfahren</NuxtLink>
+    </div>
+
     <p class="u-heading">Lose your mind, find your soul - hier geht's zu unserem Buchungsportal...</p>
 
     <div class="u-margin-left-m u-margin-right-m" data-eversports-widget-id="4b30ad4f-57c9-412c-b5bc-9e83e37b5432" />
@@ -94,7 +98,7 @@ $link-image-height: 120px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: variables.$space-l;
-  padding-bottom: variables.$space-xl;
+  padding-bottom: variables.$space-l;
 }
 
 .link {

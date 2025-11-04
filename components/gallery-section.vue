@@ -10,7 +10,7 @@ const images = [
   },
   {
     name: 'Micha',
-    description: 'Humorvoll, Weltoffen,<br>always caring<br>im Mutterschutz',
+    description: 'Humorvoll, Weltoffen,<br>always caring',
     image: {
       filename: 'Micha.jpg',
       altText: '',
@@ -89,6 +89,8 @@ const images = [
     },
   },
 ];
+
+const visibleOverlayIndex = ref<number | undefined>(undefined);
 </script>
 
 <template>
@@ -96,7 +98,12 @@ const images = [
     <h2 class="u-heading">Dein Yogahäuschen-Team</h2>
 
     <div class="gallery">
-      <div v-for="item in images" :key="item.name" class="gallery__item">
+      <div
+        v-for="(item, index) in images"
+        :key="item.name"
+        @touchstart="visibleOverlayIndex = index"
+        class="gallery__item"
+      >
         <NuxtImg
           class="gallery__image"
           :src="`images/gallery/${item.image.filename}`"
@@ -105,7 +112,11 @@ const images = [
         />
         <div class="gallery__image-overlay"></div>
         <div class="gallery__image-name">{{ item.name }}</div>
-        <div class="gallery__image-description" v-html="item.description"></div>
+        <div
+          class="gallery__image-description"
+          :class="{ 'gallery__image-description--visible': visibleOverlayIndex === index }"
+          v-html="item.description"
+        ></div>
       </div>
       <div class="gallery__item gallery__item--empty">Hier<br />könntest<br />Du<br />strahlen</div>
     </div>
@@ -131,6 +142,7 @@ $link-image-height: 220px;
 
   &__item {
     position: relative;
+
     &:hover .gallery__image-description {
       visibility: visible;
     }
@@ -187,6 +199,10 @@ $link-image-height: 220px;
     align-items: center;
     justify-content: center;
     position: absolute;
+
+    &--visible {
+      visibility: visible;
+    }
 
     background: radial-gradient(rgba(107, 78, 67, 0.7) 0%, rgba(107, 78, 67, 0) 70%);
     top: variables.$space-s;

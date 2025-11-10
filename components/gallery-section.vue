@@ -2,7 +2,7 @@
 const images = [
   {
     name: 'Mirka',
-    description: 'Tiefgründige Seele,<br>Yin-verliebt, Licht-Löwin<br>Studio-Inhaberin',
+    description: 'Tiefgründige Seele,<br>Yin-verliebt, Licht-Löwin,<br>Studio-Inhaberin',
     image: {
       filename: 'Mirka.jpg',
       altText: '',
@@ -10,7 +10,7 @@ const images = [
   },
   {
     name: 'Micha',
-    description: 'Humorvoll, Weltoffen,<br>always caring',
+    description: 'Humorvoll, weltoffen,<br>always caring',
     image: {
       filename: 'Micha.jpg',
       altText: '',
@@ -18,7 +18,7 @@ const images = [
   },
   {
     name: 'Johanna',
-    description: 'Holistic, Flow Goddess,<br>Sun & Paws<br>Yin Yoga Ausbilderin, Flow Into Restorative, Workshops',
+    description: 'Holistic, Flow Goddess,<br>Sun & Paws,<br>Yin Yogaausbildung, Flow Into Restorative, Workshops',
     image: {
       filename: 'Johanna.jpg',
       altText: '',
@@ -26,7 +26,7 @@ const images = [
   },
   {
     name: 'Isabell',
-    description: 'Strahelnd, liebevoll, kreativ<br>Yin & Yang, Klang,<br>Special-Queen',
+    description: 'Strahelnd, liebevoll, kreativ,<br>Yin & Yang, Klang,<br>Special-Queen',
     image: {
       filename: 'Isabell.jpg',
       altText: '',
@@ -42,7 +42,7 @@ const images = [
   },
   {
     name: 'Sabrina',
-    description: 'Fels in der Brandung,<br>ruhige Kraft, Garden Soul<br>Yin Yoga',
+    description: 'Fels in der Brandung,<br>ruhige Kraft, Garden Soul,<br>Yin Yoga',
     image: {
       filename: 'Sabrina.jpg',
       altText: '',
@@ -50,7 +50,7 @@ const images = [
   },
   {
     name: 'Kathrin',
-    description: 'Klar, ruhig, stark<br>Postnatal/Mothers Yoga',
+    description: 'Klar, ruhig, stark,<br>Postnatal/Mothers Yoga',
     image: {
       filename: 'Kathrin.jpg',
       altText: '',
@@ -58,7 +58,7 @@ const images = [
   },
   {
     name: 'Nikki',
-    description: 'Waldherz, Creative Soul, Herzensnah<br>Hatha Yoga, Shake the Dust, Kreativ-Workshops',
+    description: 'Waldherz, Creative Soul, herzensnah,<br>Hatha Yoga, Shake the Dust, Kreativ-Workshops',
     image: {
       filename: 'Nikki.jpg',
       altText: '',
@@ -66,7 +66,7 @@ const images = [
   },
   {
     name: 'Mira',
-    description: 'Soulful Fire, Intuitive Dancer, Inspired & Inspiring<br>Kundalini Yoga, Soul Motion, Coaching',
+    description: 'Soulful Fire, Intuitive Dancer, Inspired & Inspiring,<br>Kundalini Yoga, Soul Motion, Coaching',
     image: {
       filename: 'Mira.jpg',
       altText: '',
@@ -74,7 +74,7 @@ const images = [
   },
   {
     name: 'Carlchen',
-    description: 'Kleiner Clown, großes Herz, Lebensfreude<br>Begleitet Mirka',
+    description: 'Kleiner Clown, großes Herz, Lebensfreude,<br>begleitet Mirka',
     image: {
       filename: 'Carlchen.jpg',
       altText: '',
@@ -82,7 +82,7 @@ const images = [
   },
   {
     name: 'Milo',
-    description: 'Herzens-Eisbär,<br>Yoga Buddy, always kind<br>Begleitet Isabell',
+    description: 'Herzens-Eisbär,<br>Yoga Buddy, always kind,<br>begleitet Isabell',
     image: {
       filename: 'Milo.jpg',
       altText: '',

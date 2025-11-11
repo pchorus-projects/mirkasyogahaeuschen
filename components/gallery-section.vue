@@ -101,8 +101,8 @@ const visibleOverlayIndex = ref<number | undefined>(undefined);
       <div
         v-for="(item, index) in images"
         :key="item.name"
-        @touchstart="visibleOverlayIndex = index"
         class="gallery__item"
+        @touchstart="visibleOverlayIndex = index"
       >
         <NuxtImg
           class="gallery__image"

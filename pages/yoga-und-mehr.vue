@@ -93,7 +93,11 @@ const yogaUndMehrItems = [
     to: 'yoga-und-mehr',
     image: 'yoga-und-mehr.jpg',
     imageAltText: 'Mirka in Fisch-Asana',
-    text: `
+    sections: [
+      {
+        name: null,
+        media: null,
+        text: `
             <p>
               In unserem Studio verbinden wir eine vielfältige Yoga-Praxis mit geschützter Umgebung für
               innere Ruhe, Energiefluss und persönliche Entwicklung. Unsere Angebote laden dich dazu
@@ -171,16 +175,25 @@ const yogaUndMehrItems = [
             <p class="u-margin-bottom-xs"><span class="u-nowrap">110,- € inkl. 19 % MwSt. für 1 Stunde</span> <span class="u-nowrap">(oder 10 x bei 990,- €)</span></p>
             <p><span class="u-nowrap">155,- € inkl. 19 % MwSt. für 1,5 Stunden</span> <span>(oder 10 x bei 1.395,- €)</span></p>
           `,
+      },
+    ],
   },
   {
     name: 'Rund um die Geburt',
     shortName: 'Rund um die Geburt',
     to: 'rund-um-die-geburt',
-    image: 'rund-um-die-geburt.jpg',
-    imageAltText: 'Mutter und Baby Kopf an Kopf',
-    text: `
-            <p>Wir begleiten dich rund um die Geburt. Von der Schwangerschaft über eine innige Blessing Way Zeremonie bis zu der Zeit nach der Geburt.</p>
-            <h3 class="yoga-list__subtitle">Yoga in der Schwangerschaft – <span class="u-nowrap u-nowrap--wrap-mobile">einzigartig | herzlich | unterstützend</span></h3>
+    introduction:
+      '<p>Wir begleiten dich rund um die Geburt. Von der Schwangerschaft über eine innige Blessing Way Zeremonie bis zu der Zeit nach der Geburt.</p>',
+    sections: [
+      {
+        name: 'Yoga in der Schwangerschaft',
+        media: {
+          type: 'image',
+          src: 'images/yoga-und-mehr-thumbnails/schwangerschaft1.jpg',
+          alt: 'Schwangere Frau im Yogisitz, Frau berührt und hält ihren Baby-Bauch in ihren Händen und schmiegt grüne Pflanzenblätter an den Bauch',
+        },
+        text: `
+            <p>einzigartig | herzlich | unterstützend</p>
             <p>
               Die Schwangerschaft ist eine einzigartige Lebensphase – voller Veränderung, Wunder und
               Vorfreude. In unseren Stunden darfst du dir bewusst Zeit für dich und dein Baby nehmen. Mit
@@ -210,13 +223,17 @@ const yogaUndMehrItems = [
             </p>
             <p class="u-margin-bottom-xs"><span class="u-nowrap">110,- € inkl. 19 % MwSt. für 1 Stunde</span> <span class="u-nowrap">(oder 10 x bei 990,- €)</span></p>
             <p><span class="u-nowrap">155,- € inkl. 19 % MwSt. für 1,5 Stunden</span> <span class="u-nowrap">(oder 10 x bei 1.395,- €)</span></p>
-            <h3 class="yoga-list__subtitle">Blessing Way, ein liebevolles Ritual für die werdende Mama – <span class="u-nowrap u-nowrap--wrap-mobile">verbunden | emotional | liebevoll</span></h3>
-            <NuxtImg
-              :class="yoga-list__image"
-              :src="images/yoga-und-mehr-thumbnails/blessing-way.jpg"
-              :alt="item.imageAltText"
-              width="768"
-            />
+        `,
+      },
+      {
+        name: 'Blessing Way, ein liebevolles Ritual für die werdende Mama',
+        media: {
+          type: 'image',
+          src: 'images/yoga-und-mehr-thumbnails/blessing-way1.jpg',
+          alt: 'Fünf Frauen laufen, Hand haltend in wehenden Hippie-Kleidern in Richtung Sonnenuntergang',
+        },
+        text: `
+            <p>verbunden | emotional | liebevoll</p>
             <p>
               Ein Blessing Way ist ein Geschenk voller Herz, Wärme und Weiblichkeit – eine Zeremonie,
               die die Schwangere in dieser besonderen Zeit umhüllt, feiert und stärkt. Eingeladen sind ihre
@@ -239,7 +256,17 @@ const yogaUndMehrItems = [
               einfach eine kurze Nachricht</a> mit euren Wünschen und zeitlicher Vorstellung und wir planen
               gemeinsam etwas Besonderes.</i>
             </p>
-            <h3 class="yoga-list__subtitle">Mothers Yoga, Postnatales Yoga – <span class="u-nowrap u-nowrap--wrap-mobile">stärkend | sanft | soulful</span></h3>
+`,
+      },
+      {
+        name: 'Mothers Yoga, Postnatales Yoga',
+        media: {
+          type: 'video',
+          src: '/videos/yoga-und-mehr/mothers-yoga1.mp4',
+          alt: 'Junge Frau strahlt draußen in der Natur im Licht der Abendsonne in die Kamera und formt mit ihren Händen ein Herz, durch das sie schaut',
+        },
+        text: `
+            <p>stärkend | sanft | soulful</p>
             <p>
               Die Zeit nach der Geburt ist besonders, wertvoll, intensiv und gefühlvoll. In unserem Mothers
               Yoga Kurs darfst du dir bewusst Zeit für dich selbst nehmen, sobald dein Wochenbett
@@ -255,7 +282,17 @@ const yogaUndMehrItems = [
               spüren kannst.
             </p>
             <p><i>All unsere Gruppenangebote findest du in unserem <a href="https://www.eversports.de/sk/mirkas-yogahauschen" target="_blank" rel="noopener">Kursplan</a>.</i></p>
-            <h3 class="yoga-list__subtitle">Mama & Baby Yoga – <span class="u-nowrap u-nowrap--wrap-mobile">gemeinsam | spielerisch | liebevoll</span></h3>
+        `,
+      },
+      {
+        name: 'Mama & Baby Yoga',
+        media: {
+          type: 'image',
+          src: 'images/yoga-und-mehr-thumbnails/rund-um-die-geburt.jpg',
+          alt: 'Junge Mutter hält ihr Kind auf dem Arm und lehnt mit geschlossenen Augen ihre Stirn an die Stirn ihres Babys',
+        },
+        text: `
+            <p>gemeinsam | spielerisch | liebevoll</p>
             <p>
               Dieses Angebot richtet sich an dich und dein Baby – ein liebevoller Raum, der euch beide
               verbindet.
@@ -278,7 +315,9 @@ const yogaUndMehrItems = [
               nicht "Yoga mit Baby", sondern wirklich Yoga für euch beide ist.
             </p>
             <p><i>All unsere Gruppenangebote findest du in unserem <a href="https://www.eversports.de/sk/mirkas-yogahauschen" target="_blank" rel="noopener">Kursplan</a>.</i></p>
-    `,
+        `,
+      },
+    ],
   },
   {
     name: 'Specials, Workshops, Events & Retreats',
@@ -286,8 +325,11 @@ const yogaUndMehrItems = [
     to: 'specials',
     image: 'specials.jpg',
     imageAltText: 'Frau im Yogisitz mit bunter Farbe auf der Haut',
-    text: `
-            <p><span class="u-uppercase">Specials, Workshops, Events & Retreats</span> – <span class="u-nowrap u-nowrap--wrap-mobile">magisch | nährend | herzensnah</span></p>
+    sections: [
+      {
+        media: null,
+        text: `
+            <p>magisch | nährend | herzensnah</p>
             <p>
               Neben unserem wöchentlichen Yogaprogramm und den individuellen Angeboten wie
               Einzelstunden, Coaching, Chakra Clearing oder Herzenszeremonien erwarten dich
@@ -307,15 +349,21 @@ const yogaUndMehrItems = [
               </i>
             </p>
     `,
+      },
+    ],
   },
   {
     name: 'Herzensfeste & Yoga',
     shortName: 'Herzensfeste',
     to: 'herzensfeste',
     image: 'herzensfeste.jpg',
-    imageAltText: 'Vier strahlende Freundinnen, die Freude ausstrahlen mit bunten Konfetti um sie herum',
-    text: `
-            <p><span class="u-uppercase">Herzensfeste & Yoga – wir gestalten Eure besonderen Momente und Anlässe, die das Leben und Eure Verbindung feiern</span> – <span class="u-nowrap u-nowrap--wrap-mobile">herzerwärmend | gemeinsam | besonders</span></p>
+    imageAltText: 'Vier Freundinnen strahlen eng beieinander, glücklich in Konfetti-Regen',
+    sections: [
+      {
+        media: null,
+        text: `
+            <p>herzerwärmend | gemeinsam | besonders</p>
+            <p class="u-uppercase">Wir gestalten Eure besonderen Momente und Anlässe, die das Leben und Eure Verbindung feiern.</p>
             <p>
               Manche Anlässe im Leben verdienen es, auf ganz besondere Weise gefeiert zu werden. Ob
               als inniger Kreis, als ausgelassene Freundinnengruppe oder als Überraschung für einen
@@ -355,6 +403,8 @@ const yogaUndMehrItems = [
               damit wir euer ganz persönliches Herzensfest gestalten können.
             </p>
     `,
+      },
+    ],
   },
   {
     name: 'Diving Deep, Yin Yoga Ausbildung',
@@ -362,8 +412,11 @@ const yogaUndMehrItems = [
     to: 'yin-ausbildung',
     image: 'yin-ausbildung.jpg',
     imageAltText: 'Ausbilderin Johanna zeigt Meridiane an Puppe',
-    text: `
-            <p><span class="u-uppercase">Diving Deep, Yin Yoga Ausbildung</span> – <span class="u-nowrap u-nowrap--wrap-mobile">tiefgründig | inspirierend | transformierend</span></p>
+    sections: [
+      {
+        media: null,
+        text: `
+            <p>tiefgründig | inspirierend | transformierend</p>
             <p>Komm mit auf eine magische Reise in die Tiefe deines Selbst</p>
             <p>
               Wenn du Yin Yoga auch für dich entdeckt und lieben gelernt hast, wenn du tiefer eintauchen,
@@ -443,15 +496,24 @@ const yogaUndMehrItems = [
               deiner bisherigen Yin Yoga Erfahrung sowie deinen Wünschen und Zielen.
             </p>
     `,
+      },
+    ],
   },
   {
     name: 'Coaching & Chakra',
     shortName: 'Coaching & Chakra',
     to: 'coaching-und-chakra',
-    image: 'coaching-und-chakra.jpg',
-    imageAltText: 'gemalter Mensch bei Nacht vor buntem Mond, der seine Hand auf seinen bunten Herzraum legt',
-    text: `
-            <h3 style="margin-top: 0;">Yoga Coaching – <span >innere Rückverbindung | spürbare Wahrheit | verkörpertes Fühlen</span></h3>
+    sections: [
+      {
+        name: 'Yoga Coaching',
+        media: {
+          type: 'image',
+          src: 'images/yoga-und-mehr-thumbnails/coaching-und-chakra.jpg',
+          position: 'top',
+          alt: 'gemalter Mensch bei Nacht vor buntem Mond, der seine Hand auf seinen bunten Herzraum legt',
+        },
+        text: `
+            <p>verkörpertes Fühlen | spürbare Wahrheit | innere Rückverbindung</p>
             <p>
               Du wünschst dir mehr Verbindung nach innen? Möchtest dir selbst wieder näherkommen,
               deine Gefühle bewusster wahrnehmen, verstehen – und dieses gefühlte Verständnis wirklich
@@ -481,7 +543,17 @@ const yogaUndMehrItems = [
               <i>Der Ausgleich für deine persönliche 1,5-stündige Yoga-Coaching-Session beträgt 155,- € inkl. 19 % MwSt.</i>
             </p>
 
-            <h3>Chakra Clearing</h3>
+    `,
+      },
+      {
+        name: 'Chakra Clearing',
+        media: {
+          type: 'video',
+          src: '/videos/yoga-und-mehr/chakra-clearing.mp4',
+          alt: 'Junge Frau empfängt den Sound einer Klangschale im Bereich ihres Kopfes sowie die Energie, verschiedener Heilsteine, die auf ihren Chakras liegen',
+        },
+        text: `
+            <p>tief | exklusiv | sincere</p>
             <p>
               Chakren sind Energiefelder, die Körper, Geist und Emotionen miteinander verbinden. Sie
               stehen in feiner Resonanz und in ständiger Wechselwirkung miteinander. Wenn eines ins
@@ -514,7 +586,9 @@ const yogaUndMehrItems = [
               <i>Der Ausgleich für eine intensive 2,5-stündige Chakra Clearing Session inkl. Vorgespräch,
               Durchführung und Integration für Körper, Geist und Seele liegt bei 330,- € inkl. 19 % MwSt.</i>
             </p>
-    `,
+        `,
+      },
+    ],
   },
 ];
 </script>
@@ -545,12 +619,42 @@ const yogaUndMehrItems = [
       <div class="yoga-list__item">
         <h2 class="yoga-list__title" v-html="item.name"></h2>
         <NuxtImg
+          v-if="item.image"
           :class="`yoga-list__image yoga-list__image--${index + 1}`"
           :src="`images/yoga-und-mehr-thumbnails/${item.image}`"
           :alt="item.imageAltText"
           width="768"
         />
-        <div class="yoga-list__text u-text-block" v-html="item.text" />
+        <div v-if="item.introduction" class="yoga-list__text u-text-block" v-html="item.introduction"></div>
+        <template v-for="section in item.sections" :key="section">
+          <h3
+            v-if="section.name"
+            class="yoga-list__subtitle yoga-list__subtitle--mobile-padding u-margin-bottom-m"
+            v-html="section.name"
+          ></h3>
+          <div v-if="section.media" class="yoga-list__media-container">
+            <video
+              v-if="section.media.type === 'video'"
+              class="yoga-list__image"
+              :src="section.media.src"
+              :aria-label="section.media.alt"
+              autoplay
+              loop
+              muted
+              playsinline
+            />
+
+            <NuxtImg
+              v-if="section.media.type === 'image'"
+              class="yoga-list__image"
+              :class="{ 'u-object-position-top': section.media.position === 'top' }"
+              :src="section.media.src"
+              :alt="section.media.alt"
+              width="384"
+            />
+          </div>
+          <div class="yoga-list__text u-text-block" v-html="section.text" />
+        </template>
       </div>
     </section>
   </div>
@@ -561,6 +665,10 @@ const yogaUndMehrItems = [
 
 html {
   scroll-behavior: smooth;
+}
+
+.section {
+  padding: variables.$space-m 0;
 }
 
 .navigation {
@@ -608,7 +716,7 @@ html {
 
   &__image {
     width: 100%;
-    height: 480px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: top;
     margin-bottom: variables.$space-m;
@@ -619,7 +727,25 @@ html {
     }
   }
 
+  &__media-container {
+    video,
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    img.u-object-position-top {
+      object-position: top;
+    }
+  }
+
   &__text {
+    &:not(:last-child) {
+      margin-bottom: variables.$space-l;
+    }
+
     ul {
       list-style-position: outside;
       margin-left: variables.$space-m;
@@ -633,10 +759,6 @@ html {
 }
 
 @media (max-width: variables.$max-width-tablet) {
-  .section {
-    padding: variables.$space-m 0;
-  }
-
   .yoga-list {
     &__item {
       width: 100%;
@@ -645,6 +767,12 @@ html {
 
     &__title {
       padding: 0 variables.$space-m variables.$space-m variables.$space-m;
+    }
+
+    &__subtitle {
+      &--mobile-padding {
+        padding: 0 variables.$space-m;
+      }
     }
 
     &__text {
@@ -657,19 +785,6 @@ html {
   .navigation {
     ol {
       justify-content: normal;
-    }
-  }
-  .yoga-list {
-    &__image {
-      height: 380px;
-    }
-  }
-}
-
-@media (max-width: variables.$max-width-mobile) {
-  .yoga-list {
-    &__image {
-      height: 280px;
     }
   }
 }

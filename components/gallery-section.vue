@@ -199,11 +199,6 @@ $link-image-height: 220px;
     align-items: center;
     justify-content: center;
     position: absolute;
-
-    &--visible {
-      visibility: visible;
-    }
-
     background: radial-gradient(rgba(107, 78, 67, 0.7) 0%, rgba(107, 78, 67, 0) 70%);
     top: variables.$space-s;
     left: variables.$space-s;
@@ -212,6 +207,10 @@ $link-image-height: 220px;
     color: variables.$font-color-white;
     font-size: variables.$font-size-s;
     text-align: center;
+
+    &--visible {
+      visibility: visible;
+    }
   }
 }
 

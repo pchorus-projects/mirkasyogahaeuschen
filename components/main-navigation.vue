@@ -15,6 +15,14 @@ const navItems = [
     to: '/#events',
   },
   {
+    name: 'Team',
+    to: '/#team',
+  },
+  {
+    name: 'Newsletter',
+    to: '/#newsletter',
+  },
+  {
     name: 'Kontakt',
     to: '/#kontakt',
   },
@@ -51,6 +59,8 @@ withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
   justify-content: center;
   flex-wrap: wrap;
   background-color: transparent;
+  gap: variables.$space-s;
+  margin-bottom: variables.$space-s;
 
   &--footer {
     background-color: variables.$background-color-default;
@@ -61,10 +71,6 @@ withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
     text-transform: uppercase;
     color: variables.$font-color-white;
     white-space: nowrap;
-
-    &:not(last-child) {
-      margin-right: variables.$space-s;
-    }
 
     &--footer {
       color: variables.$font-color-default;

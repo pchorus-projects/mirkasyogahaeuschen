@@ -10,7 +10,7 @@ const images = [
   },
   {
     name: 'Micha',
-    description: 'Humorvoll, weltoffen,<br>always caring',
+    description: 'Humorvoll, weltoffen,<br>always caring,<br>Im Mutterschutz',
     image: {
       filename: 'Micha.jpg',
       altText: '',

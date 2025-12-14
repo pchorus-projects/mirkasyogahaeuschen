@@ -58,8 +58,8 @@
     </div>
   </section>
 
-  <section class="section">
-    <div class="text">
+  <section class="qualification-section u-max-page-width">
+    <div class="qualification-section__text">
       <p class="u-margin-bottom-xs">Meine Qualifikationen und Lehrtätigkeiten:</p>
       <ul>
         <li>
@@ -80,6 +80,8 @@
         <li>Kinder- & Familien-Yoga<br />(Ausbildung Kinder-Yoga: Carolin Richard)</li>
       </ul>
     </div>
+
+    <NuxtImg class="qualification-section__image" src="images/mirka.svg" alt="Portrait von Mirka" width="420" />
   </section>
 </template>
 
@@ -108,13 +110,32 @@ li {
   margin: auto;
 }
 
+.qualification-section {
+  padding: variables.$space-xxl 0;
+  position: relative;
+  max-width: 768px;
+
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: variables.$space-l;
+    opacity: 0.42;
+  }
+
+  &__text {
+    @extend .text;
+
+    padding-bottom: variables.$space-xxxl;
+  }
+}
+
 .text {
   max-width: 768px;
   margin: auto;
 
   > p,
   > ul {
-    padding: 0 variables.$space-xl variables.$space-m variables.$space-xl;
+    padding: 0 variables.$space-m variables.$space-m variables.$space-m;
   }
 }
 
@@ -133,6 +154,28 @@ li {
       display: block;
       width: 100%;
       height: 100%;
+    }
+  }
+}
+
+@media (max-width: variables.$max-width-tablet) {
+  .qualification-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+
+    ul {
+      padding-bottom: 0;
+    }
+
+    &__text {
+      padding-bottom: 0;
+    }
+    &__image {
+      position: initial;
+      opacity: 0.72;
+      width: 240px;
     }
   }
 }

@@ -14,7 +14,7 @@ useMeta(
     <YogahaeuschenSection id="mirka-und-das-yogahaeuschen" />
     <YogaUndMehrSection id="yoga-und-mehr" />
     <EventsSection id="events" />
-    <GallerySection />
+    <GallerySection id="team" />
     <div class="illustration">
       <NuxtImg
         class="illustration__image"
@@ -24,7 +24,7 @@ useMeta(
       />
     </div>
     <TeilnehmerstimmenSection />
-    <NewsletterSection />
+    <NewsletterSection id="newsletter" />
   </div>
 </template>
 

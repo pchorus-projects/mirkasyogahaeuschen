@@ -29,7 +29,7 @@
 
     img {
       height: 100%;
-      width: 100%;
+      width: 50vw;
       object-fit: cover;
     }
   }
@@ -44,6 +44,12 @@
 @media (max-width: variables.$max-width-mobile-landscape) {
   .content {
     flex-direction: column;
+
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 </style>

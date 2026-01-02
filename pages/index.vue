@@ -10,7 +10,6 @@ useMeta(
 <template>
   <div>
     <LandingPageHero id="willkommen" />
-    <GutscheineSection />
     <YogahaeuschenSection id="mirka-und-das-yogahaeuschen" />
     <YogaUndMehrSection id="yoga-und-mehr" />
     <EventsSection id="events" />
@@ -25,6 +24,7 @@ useMeta(
     </div>
     <TeilnehmerstimmenSection />
     <NewsletterSection id="newsletter" />
+    <GutscheineSection />
   </div>
 </template>
 

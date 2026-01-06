@@ -3,7 +3,7 @@ import { coursePlanUrl } from '~/constants';
 
 const navItems = [
   {
-    name: 'Mirka & Das Yogahäuschen',
+    name: 'Home',
     to: '/#mirka-und-das-yogahaeuschen',
   },
   {
@@ -21,6 +21,10 @@ const navItems = [
   {
     name: 'Newsletter',
     to: '/#newsletter',
+  },
+  {
+    name: 'Gutscheine',
+    to: '/#gutscheine',
   },
   {
     name: 'Kontakt',

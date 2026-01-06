@@ -24,7 +24,7 @@ useMeta(
     </div>
     <TeilnehmerstimmenSection />
     <NewsletterSection id="newsletter" />
-    <GutscheineSection />
+    <GutscheineSection id="gutscheine" />
   </div>
 </template>
 

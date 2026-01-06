@@ -84,8 +84,8 @@ const linkItems = [
 @use 'sass:color';
 @use '../assets/variables';
 
-$link-image-width: 168px;
-$link-image-height: 120px;
+$link-image-width: 220px;
+$link-image-height: 164px;
 
 .container {
   background-color: variables.$background-color-alternate;
@@ -98,7 +98,7 @@ $link-image-height: 120px;
   grid-template-columns: $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width $link-image-width;
   justify-content: center;
   row-gap: variables.$space-l;
-  padding-bottom: variables.$space-l;
+  padding-bottom: variables.$space-xl;
 }
 
 .link {
@@ -146,6 +146,7 @@ $link-image-height: 120px;
 @media (max-width: variables.$max-width-mobile) {
   .link-list {
     grid-template-columns: 1fr 1fr;
+    padding-bottom: variables.$space-l;
   }
 
   .link {

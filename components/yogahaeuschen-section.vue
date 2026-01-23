@@ -49,7 +49,7 @@
         </div>
         <div class="location__image">
           <NuxtImg
-            src="images/studio.jpg"
+            src="images/studio-innen.jpg"
             alt="Gezeichnetes Viadukut Aachen mit Sicht auf Dachgeschoss zu Mirkas Yogahäuschen mit Logo"
             width="320"
           />

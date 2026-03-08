@@ -9,7 +9,7 @@
       width="1000"
     />
     <div class="hero__content">
-      <MainNavigation />
+      <MainNavigationHero />
       <NuxtLink to="/#willkommen">
         <h1 class="hero__welcome">A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong></h1>
       </NuxtLink>
@@ -66,7 +66,7 @@
 
   &__welcome {
     font-size: variables.$font-size-s;
-    margin-top: variables.$space-xs;
+    margin-top: variables.$space-m;
     text-transform: uppercase;
     text-align: center;
     color: variables.$font-color-white;

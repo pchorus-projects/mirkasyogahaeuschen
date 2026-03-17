@@ -1,38 +1,11 @@
 <script setup lang="ts">
-import { coursePlanUrl } from '~/constants';
-
-const navItems = [
-  {
-    name: 'Mirka & Das Yogahäuschen',
-    to: '/#mirka-und-das-yogahaeuschen',
-  },
-  {
-    name: 'Yoga & Mehr',
-    to: '/#yoga-und-mehr',
-  },
-  {
-    name: 'Events',
-    to: '/#events',
-  },
-  {
-    name: 'Team',
-    to: '/#team',
-  },
-  {
-    name: 'Newsletter',
-    to: '/#newsletter',
-  },
-  {
-    name: 'Kontakt',
-    to: '/#kontakt',
-  },
-];
+import { coursePlanUrl, navItems } from '~/constants';
 
 withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
 </script>
 
 <template>
-  <nav class="nav" :class="{ 'is-footer': isFooter }">
+  <nav class="nav" :class="{ 'nav--footer': isFooter }">
     <NuxtLink
       v-for="navItem in navItems"
       :key="navItem.to"
@@ -60,7 +33,7 @@ withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
   flex-wrap: wrap;
   background-color: transparent;
   gap: variables.$space-s;
-  margin-bottom: variables.$space-s;
+  margin-bottom: 0;
 
   &--footer {
     background-color: variables.$background-color-default;
@@ -74,26 +47,6 @@ withDefaults(defineProps<{ isFooter?: boolean }>(), { isFooter: false });
 
     &--footer {
       color: variables.$font-color-default;
-    }
-  }
-}
-
-@media (max-width: variables.$max-width-mobile) {
-  .nav {
-    align-self: flex-end;
-    margin-bottom: variables.$space-s;
-
-    &__item {
-      display: none;
-    }
-
-    &.is-footer {
-      margin-bottom: 0;
-
-      .nav__item {
-        display: block;
-        margin-bottom: variables.$space-xs;
-      }
     }
   }
 }

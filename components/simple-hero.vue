@@ -8,7 +8,7 @@ withDefaults(defineProps<{ title: string; imagePath: string; imageAltText: strin
   <section class="hero">
     <NuxtImg class="hero__image" :src="imagePath" :alt="imageAltText" width="1000" />
     <div class="hero__content" :class="{ 'hero__content--dark': dark }">
-      <MainNavigation />
+      <MainNavigationHero />
       <NuxtLink to="/#willkommen">
         <p class="hero__welcome u-margin-bottom-m">
           A <strong>warm</strong> welcome to Mirkas <strong>Yogahäuschen</strong>
@@ -74,7 +74,7 @@ withDefaults(defineProps<{ title: string; imagePath: string; imageAltText: strin
 
   &__welcome {
     font-size: variables.$font-size-s;
-    margin-top: variables.$space-xs;
+    margin-top: variables.$space-m;
     text-transform: uppercase;
     text-align: center;
     color: variables.$font-color-white;

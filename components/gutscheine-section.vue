@@ -36,6 +36,7 @@
   }
 
   &__text {
+    width: 50vw;
     text-align: center;
     padding: variables.$space-l variables.$space-xl;
   }

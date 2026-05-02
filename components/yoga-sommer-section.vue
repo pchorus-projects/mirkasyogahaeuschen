@@ -28,6 +28,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
+  margin: 0;
 
   &__image {
     align-self: stretch;
@@ -40,6 +41,7 @@
   }
 
   &__text {
+    width: 50vw;
     text-align: center;
     padding: variables.$space-l variables.$space-xl;
   }

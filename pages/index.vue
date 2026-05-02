@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NewsletterSection from '~/components/newsletter-section.vue';
+import YogaSommerSection from '~/components/yoga-sommer-section.vue';
 
 useMeta(
   'Welcome',
@@ -10,6 +11,7 @@ useMeta(
 <template>
   <div>
     <LandingPageHero id="willkommen" />
+    <YogaSommerSection id="yoga-sommer" />
     <YogahaeuschenSection id="mirka-und-das-yogahaeuschen" />
     <YogaUndMehrSection id="yoga-und-mehr" />
     <EventsSection id="events" />

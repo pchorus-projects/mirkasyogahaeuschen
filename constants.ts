@@ -15,10 +15,10 @@ export const navItems = [
     name: 'Events',
     to: '/events',
   },
-  {
-    name: 'Team',
-    to: '/#team',
-  },
+  // {
+  //   name: 'Team',
+  //   to: '/#team',
+  // },
   {
     name: 'Newsletter',
     to: '/#newsletter',

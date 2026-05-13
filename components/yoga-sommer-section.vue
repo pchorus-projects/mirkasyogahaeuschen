@@ -6,10 +6,9 @@
       <NuxtImg src="images/yoga-sommer.png" width="768" />
     </div>
     <div class="content__text">
-      <h2 class="u-heading u-heading--no-padding-top">Dein Yoga-Sommer für 99€</h2>
-      <p class="u-margin-bottom-xl">
-        Komme im Sommer so oft, du möchtest.<br />Sichere dir bis 7.5.26 deine Sommer-Freiheit für nur 99€!
-      </p>
+      <h2 class="u-heading u-heading--no-padding-top">Dein Yoga-Sommer für 119€</h2>
+      <p class="u-margin-bottom-m">Sichere dir deine Sommer-Freiheit! Komme fast 9 Wochen lang so oft du möchtest.</p>
+      <p class="u-margin-bottom-xl">Late Early Bird für kurze Zeit: 119€</p>
       <a
         class="u-button"
         href="https://www.eversports.de/o/mirkas-yogahauschen/520b9e12-7957-4426-9694-584a18c79f3e"
